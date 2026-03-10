@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { navLinks } from "../data/content";
+import zocoLogo from "../assets/logo/zocoticket 1.svg";
 import Button from "./ui/Button";
 
 export default function Header() {
@@ -21,8 +22,8 @@ export default function Header() {
       }`}
     >
       <div className="container-shell flex items-center justify-between">
-        <a href="#" className="font-display text-lg font-semibold tracking-tight">
-          ZOCO<span className="text-fern"> tickets</span>
+        <a href="#" className="flex items-center gap-2">
+          <img src={zocoLogo} alt="ZOCO tickets" className="h-6 w-auto" />
         </a>
         <nav className="hidden items-center gap-8 lg:flex">
           {navLinks.map((link) => (

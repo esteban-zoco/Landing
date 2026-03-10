@@ -13,8 +13,8 @@ export default {
         mint: "#B7E5BA",
       },
       fontFamily: {
-        sans: ["Manrope", "ui-sans-serif", "system-ui", "sans-serif"],
-        display: ["Sora", "Manrope", "ui-sans-serif", "system-ui", "sans-serif"],
+        sans: ["Montserrat", "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ["Montserrat", "ui-sans-serif", "system-ui", "sans-serif"],
       },
       boxShadow: {
         soft: "0 20px 60px -30px rgba(10, 24, 16, 0.45)",

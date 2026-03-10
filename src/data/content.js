@@ -58,6 +58,21 @@ export const floatingPhotos = [
     src: "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=800&auto=format&fit=crop",
     alt: "Control de accesos",
   },
+  {
+    id: 9,
+    src: "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=800&auto=format&fit=crop",
+    alt: "Backstage",
+  },
+  {
+    id: 10,
+    src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=800&auto=format&fit=crop",
+    alt: "Celebración en vivo",
+  },
+  {
+    id: 11,
+    src: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=800&auto=format&fit=crop",
+    alt: "Público vibrando",
+  },
 ];
 
 export const featureCards = [
