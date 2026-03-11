@@ -18,10 +18,10 @@ export default function AppDownloadSection() {
                 {appDownload.description}
               </p>
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                <button className="rounded-full border border-ink/10 bg-white px-6 py-3 text-sm font-medium transition hover:border-ink/20">
+                <button className="rounded-[8px] border border-ink/10 bg-white px-6 py-3 text-sm font-medium transition hover:border-ink/20">
                   {appDownload.appStore}
                 </button>
-                <button className="rounded-full border border-ink/10 bg-white px-6 py-3 text-sm font-medium transition hover:border-ink/20">
+                <button className="rounded-[8px] border border-ink/10 bg-white px-6 py-3 text-sm font-medium transition hover:border-ink/20">
                   {appDownload.googlePlay}
                 </button>
               </div>

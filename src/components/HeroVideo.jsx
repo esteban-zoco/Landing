@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Button from "./ui/Button";
 import { heroContent } from "../data/content";
+import arrowDown from "../assets/flecha-hacia-abajo-para-navegar 2.svg";
 
 export default function HeroVideo() {
   const sectionRef = useRef(null);
@@ -28,7 +29,7 @@ export default function HeroVideo() {
     <section
       id="plataforma"
       ref={sectionRef}
-      className="relative h-[160vh] bg-mist"
+      className="relative h-[110vh] bg-mist"
     >
       <div className="sticky top-0 h-screen">
         <motion.div
@@ -52,21 +53,32 @@ export default function HeroVideo() {
           <div className="absolute inset-0 flex items-center justify-center text-center">
             <motion.div
               style={{ opacity: contentOpacity, y: contentY }}
-              className="max-w-3xl px-6 text-white"
+              className="max-w-[980px] px-6 text-white"
             >
-              <p className="mb-4 text-xs uppercase tracking-[0.3em] text-white/70">
+             {/* <p className="mb-4 text-xs uppercase tracking-[0.3em] text-white/70">
                 Plataforma integral de eventos
-              </p>
-              <h1 className="text-balance font-display text-4xl font-semibold leading-tight md:text-6xl">
-                {heroContent.title}
+              </p>*/}
+              <h1 className="mx-auto max-w-[908px] font-display text-[34px] font-semibold leading-[42px] sm:text-[40px] sm:leading-[48px] lg:text-[48px] lg:leading-[54px]">
+                <span className="block">{heroContent.titleLine1}</span>
+                <span className="block">{heroContent.titleLine2}</span>
               </h1>
-              <p className="mt-5 text-base text-white/80 md:text-lg">
+              {/*<p className="mt-5 text-base text-white/80 md:text-lg">
                 {heroContent.subtitle}
-              </p>
-              <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-                <Button size="lg">{heroContent.primaryCta}</Button>
-                <Button variant="secondary" size="lg">
-                  {heroContent.secondaryCta}
+              </p>*/}
+              <div className="mt-16 flex flex-col items-center justify-center gap-3 sm:flex-row">
+                <Button
+                  size="lg"
+                  className="px-[16px] py-[8px] text-[15px] leading-[1]"
+                >
+                  {heroContent.primaryCta}
+                </Button>
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  className="gap-2 px-[16px] py-[8px] text-[15px] leading-[1]"
+                >
+                  <span>{heroContent.secondaryCta}</span>
+                  <img src={arrowDown} alt="" className="h-3 w-3" />
                 </Button>
               </div>
             </motion.div>

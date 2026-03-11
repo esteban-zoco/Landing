@@ -38,20 +38,22 @@ export default function FloatingPhotoGrid() {
     <section className="relative h-screen bg-white">
       <div className="relative mx-auto h-full max-w-none px-6 md:px-10">
         <div className="pt-10 text-center lg:hidden">
-          <p className="mt-4 text-sm uppercase tracking-[0.35em] text-ink/50">
-            Vende entradas y gestiona tus eventos.
-          </p>
-          <p className="mt-4 text-base font-medium text-ink/80 sm:text-lg">
-            Unica plataforma 100% gratuita. Sin cargos de servicio. Sin costo
-            por ticket. Sin contratos de permanencia.
-          </p>
-        </div>
-        <div className="pointer-events-none absolute inset-0 hidden items-center justify-center lg:flex">
-          <div className="max-w-2xl text-center">
-            <p className="mt-4 text-sm uppercase tracking-[0.35em] text-ink/50">
+          <div className="mx-auto w-full max-w-[951px]">
+            <p className="text-[22px] font-medium uppercase tracking-[0.2em] text-ink/70">
               Vende entradas y gestiona tus eventos.
             </p>
-            <p className="mt-4 text-lg font-medium text-ink/80 md:text-xl">
+            <p className=" text-[15px] font-medium uppercase tracking-[0.18em] text-ink/70 ">
+              Unica plataforma 100% gratuita. Sin cargos de servicio. 
+              Sin costo por ticket. Sin contratos de permanencia.
+            </p>
+          </div>
+        </div>
+        <div className="pointer-events-none absolute inset-0 hidden items-center justify-center lg:flex">
+          <div className="mx-auto w-full max-w-[971px] text-center">
+            <p className="text-[22px] font-medium uppercase tracking-[0.2em] text-ink/70">
+              Vende entradas y gestiona tus eventos.
+            </p>
+            <p className=" text-[22px] font-medium uppercase tracking-[0.18em] text-ink/70 ">
               Unica plataforma 100% gratuita. Sin cargos de servicio. Sin costo
               por ticket. Sin contratos de permanencia.
             </p>
@@ -92,18 +94,18 @@ export default function FloatingPhotoGrid() {
                   animate={
                     isActive
                       ? { opacity: 1, scale: 1, filter: "blur(0px)" }
-                      : { opacity: 0.25, scale: 1.06, filter: "blur(6px)" }
+                      : { opacity: 0.10, scale: 1.06, filter: "blur(6px)" }
                   }
                   transition={{
                     duration: 0.65,
                     ease: [0.22, 1, 0.36, 1],
                   }}
                 />
-                <motion.div
-                  className="absolute inset-0 bg-white/25"
-                  animate={isActive ? { opacity: 0 } : { opacity: 1 }}
-                  transition={{ duration: 0.5 }}
-                />
+                  <motion.div
+                    className="absolute inset-0 bg-white/45"
+                    animate={isActive ? { opacity: 0 } : { opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                  />
               </motion.div>
             );
           })}
@@ -130,7 +132,7 @@ export default function FloatingPhotoGrid() {
                   animate={
                     isActive
                       ? { opacity: 1, scale: 1, filter: "blur(0px)" }
-                      : { opacity: 0.25, scale: 1.06, filter: "blur(6px)" }
+                      : { opacity: 0.15, scale: 1.06, filter: "blur(6px)" }
                   }
                   transition={{
                     duration: 0.65,
@@ -138,7 +140,7 @@ export default function FloatingPhotoGrid() {
                   }}
                 />
                 <motion.div
-                  className="absolute inset-0 bg-white/25"
+                  className="absolute inset-0 bg-white/45"
                   animate={isActive ? { opacity: 0 } : { opacity: 1 }}
                   transition={{ duration: 0.5 }}
                 />

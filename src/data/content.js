@@ -1,76 +1,85 @@
-export const navLinks = [
+﻿export const navLinks = [
+  {/*
   { label: "Plataforma", href: "#plataforma" },
   { label: "Servicios", href: "#servicios" },
   { label: "POS", href: "#pos" },
   { label: "Eventos", href: "#eventos" },
   { label: "App", href: "#app" },
+   */}
 ];
 
 export const heroContent = {
-  title: "Solución integral para todo tipo de eventos.",
+  titleLine1: "Solución integral para todo",
+  titleLine2: "tipo de eventos.",
   subtitle:
     "Ventas, accesos, comunicación y datos en un solo lugar, con una estética premium.",
   primaryCta: "Empezar ahora",
   secondaryCta: "Saber más",
   videoUrl:
     "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/video-herolanding.mp4",
-  posterUrl: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1600&auto=format&fit=crop",
+  posterUrl:
+    "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/video-herolanding.png",
 };
 
 export const floatingPhotos = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=800&auto=format&fit=crop",
+    src: "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Mask+group.jpg",
     alt: "Asistentes en festival",
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=800&auto=format&fit=crop",
+    src: "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Mask+group+(1).jpg",
     alt: "Escaneo de entradas",
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1523521803700-b3bcaeab0150?q=80&w=800&auto=format&fit=crop",
+    src: "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Mask+group+(2).jpg",
     alt: "Show en vivo",
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1515165562835-c4c3ff0e4cfd?q=80&w=800&auto=format&fit=crop",
+    src: "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Mask+group+(4).jpg",
     alt: "Equipo de producción",
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=800&auto=format&fit=crop",
+    src: "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Mask+group+(9).jpg",
+    alt: "Ingreso con QR",
+  },
+  {
+    id: 5,
+    src: "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Mask+group+(3).jpg",
     alt: "Ingreso con QR",
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?q=80&w=800&auto=format&fit=crop",
+    src: "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Mask+group+(5).jpg",
     alt: "Ambiente editorial",
   },
   {
     id: 7,
-    src: "https://images.unsplash.com/photo-1521335629791-ce4aec67dd47?q=80&w=800&auto=format&fit=crop",
+    src: "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Mask+group+(8).jpg",
     alt: "Conferencias premium",
   },
   {
     id: 8,
-    src: "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=800&auto=format&fit=crop",
+    src: "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Mask+group+(7).jpg",
     alt: "Control de accesos",
   },
   {
     id: 9,
-    src: "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=800&auto=format&fit=crop",
+    src: "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Mask+group+(6).jpg",
     alt: "Backstage",
   },
   {
     id: 10,
-    src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=800&auto=format&fit=crop",
+    src: "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Mask+group+(10).jpg",
     alt: "Celebración en vivo",
   },
   {
     id: 11,
-    src: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=800&auto=format&fit=crop",
+    src: "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Mask+group.jpg",
     alt: "Público vibrando",
   },
 ];
@@ -168,3 +177,5 @@ export const footerLinks = [
   { label: "Integraciones", href: "#" },
   { label: "Contacto", href: "#" },
 ];
+
+

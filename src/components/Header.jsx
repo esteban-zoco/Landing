@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from "framer-motion";
+﻿import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { navLinks } from "../data/content";
 import zocoLogo from "../assets/logo/zocoticket 1.svg";
@@ -21,7 +21,7 @@ export default function Header() {
         scrolled ? "glass-surface shadow-sm py-3" : "py-5"
       }`}
     >
-      <div className="container-shell flex items-center justify-between">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 md:px-10">
         <a href="#" className="flex items-center gap-2">
           <img src={zocoLogo} alt="ZOCO tickets" className="h-6 w-auto" />
         </a>
@@ -30,14 +30,28 @@ export default function Header() {
             <a
               key={link.label}
               href={link.href}
-              className="text-sm text-ink/70 transition hover:text-ink"
+              className={`text-sm transition ${
+                scrolled
+                  ? "text-ink/70 hover:text-ink"
+                  : "text-white/80 hover:text-white"
+              }`}
             >
               {link.label}
             </a>
           ))}
         </nav>
         <div className="hidden lg:block">
-          <Button size="sm">Agendar llamada</Button>
+          <Button
+            size="sm"
+            variant={scrolled ? "primary" : "secondary"}
+            className={
+              scrolled
+                ? ""
+                : "!bg-white !text-ink shadow-none hover:!bg-white"
+            }
+          >
+            DESCARGÁ LA APP
+          </Button>
         </div>
         <button
           className="flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 lg:hidden"
@@ -68,7 +82,16 @@ export default function Header() {
                   {link.label}
                 </a>
               ))}
-              <Button className="w-full">Agendar llamada</Button>
+              <Button
+                variant={scrolled ? "primary" : "secondary"}
+                className={
+                  scrolled
+                    ? "w-full"
+                    : "w-full !bg-white !text-ink shadow-none hover:!bg-white"
+                }
+              >
+                DESCARGÁ LA APP
+              </Button>
             </div>
           </motion.div>
         )}
@@ -76,3 +99,4 @@ export default function Header() {
     </motion.header>
   );
 }
+
