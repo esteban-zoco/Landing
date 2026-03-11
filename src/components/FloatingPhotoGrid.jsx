@@ -72,7 +72,7 @@ export default function FloatingPhotoGrid() {
               "lg:top-32 lg:right-[28%]", // inner right
               "lg:top-[44%] lg:right-12", // right mid
               "lg:bottom-16 lg:left-10", // left bottom
-              "lg:bottom-24 lg:left-[28%]", // inner bottom left
+              "lg:bottom-28 lg:left-[25%]", // inner bottom left
               "lg:bottom-20 lg:left-1/2 lg:-translate-x-1/2", // bottom center
               "lg:bottom-20 lg:right-12", // bottom right
             ];

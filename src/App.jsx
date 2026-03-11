@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import HeroVideo from "./components/HeroVideo";
 import FloatingPhotoGrid from "./components/FloatingPhotoGrid";
 import FeatureCards from "./components/FeatureCards";
+import VideoCarouselSection from "./components/VideoCarouselSection";
 import POSSection from "./components/POSSection";
 import EventTypesCarousel from "./components/EventTypesCarousel";
 import CTASection from "./components/CTASection";
@@ -45,6 +46,7 @@ export default function App() {
         <HeroVideo />
         <FloatingPhotoGrid />
         <FeatureCards />
+        <VideoCarouselSection />
         <POSSection />
         <EventTypesCarousel />
         <CTASection />

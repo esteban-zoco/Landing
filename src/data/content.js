@@ -21,6 +21,39 @@ export const heroContent = {
     "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/video-herolanding.png",
 };
 
+export const panelCarousel = {
+  title: "Organización simplificada con un panel donde controlás todo.",
+  slides: [
+    {
+      title: "Estadísticas del evento",
+      description:
+        "Accedé a métricas clave de ventas de entradas, asistentes registrados y rendimiento del evento.",
+      videoUrl:
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/video-herolanding.mp4",
+      poster:
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/video-herolanding.png",
+    },
+    {
+      title: "Gestión del equipo",
+      description:
+        "Asigná permisos, coordiná accesos y mantené a tu equipo sincronizado en tiempo real.",
+      videoUrl:
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/video-herolanding.mp4",
+      poster:
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/video-herolanding.png",
+    },
+    {
+      title: "Control de asistencia",
+      description:
+        "Visualizá ingresos, validaciones y flujo de público desde un único panel.",
+      videoUrl:
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/video-herolanding.mp4",
+      poster:
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/video-herolanding.png",
+    },
+  ],
+};
+
 export const floatingPhotos = [
   {
     id: 1,
@@ -177,5 +210,4 @@ export const footerLinks = [
   { label: "Integraciones", href: "#" },
   { label: "Contacto", href: "#" },
 ];
-
 
