@@ -5,12 +5,12 @@ import Reveal from "./Reveal";
 
 export default function EventTypesCarousel() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-20% 0px -20% 0px" });
+  const isInView = useInView(ref, { once: true, margin: "-35% 0px -35% 0px" });
   const items = useMemo(() => [...eventTypes, ...eventTypes], []);
   const baseCardWidth = 345;
-  const compressedCardWidth = 595;
+  const compressedCardWidth = 700;
   const compressedScaleX = 1;
-  const overlap = 40;
+  const overlap = 55;
   const maxOffset = (compressedCardWidth - baseCardWidth) / 2;
   const expandedSpacing = 380;
   const carouselShift = `calc(${expandedSpacing}px - (100% - ${baseCardWidth}px) / 2)`;
