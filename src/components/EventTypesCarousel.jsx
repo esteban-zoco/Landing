@@ -14,8 +14,10 @@ export default function EventTypesCarousel() {
   const maxOffset = (compressedCardWidth - baseCardWidth) / 2;
   const expandedSpacing = 380;
   const carouselShift = `calc(${expandedSpacing}px - (100% - ${baseCardWidth}px) / 2)`;
+  const postExpandShift = expandedSpacing * (items.length / 2);
   const midIndex = (items.length - 1) / 2;
   const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
+  const dragBounds = { left: -postExpandShift, right: 0 };
   const cardVariants = {
     hidden: (index) => ({
       opacity: 0.9,
@@ -55,12 +57,14 @@ export default function EventTypesCarousel() {
           </div>
         </div>
         <div
-          className="mx-auto w-full max-w-[1440px] px-6 md:px-10 translate-x-0 md:-translate-x-[var(--carousel-shift)]"
+          className="mx-auto w-full max-w-[1440px] overflow-hidden px-6 md:px-10 translate-x-0 md:-translate-x-[var(--carousel-shift)]"
           style={{ "--carousel-shift": carouselShift }}
         >
           <motion.div
             ref={ref}
-            className="relative h-[480px] w-full overflow-hidden"
+            className="relative h-[480px] w-full cursor-grab active:cursor-grabbing"
+            drag={isInView ? "x" : false}
+            dragConstraints={dragBounds}
             initial="hidden"
             animate={isInView ? "show" : "hidden"}
             variants={{ show: { transition: { staggerChildren: 0.08 } } }}
