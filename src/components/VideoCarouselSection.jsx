@@ -66,7 +66,7 @@ export default function VideoCarouselSection() {
 
     const interval = setInterval(() => {
       setActiveIndex((prev) => clampIndex(prev + 1));
-    }, 16000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, [slides.length]);
@@ -111,6 +111,9 @@ export default function VideoCarouselSection() {
                   loop
                   playsInline
                 />
+                {!isActive ? (
+                  <div className="pointer-events-none absolute inset-0 bg-white/5 backdrop-blur-[10px]" />
+                ) : null}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-6 left-14 right-6 text-white">
                   <div className="flex items-center gap-2 text-[20px] font-semibold">
