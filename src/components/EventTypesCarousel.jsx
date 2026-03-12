@@ -32,7 +32,14 @@ export default function EventTypesCarousel() {
   };
 
   return (
-    <section id="eventos" className="section-spacing">
+    <motion.section
+      id="eventos"
+      className="section-spacing bg-white"
+      initial={{ opacity: 0, y: 52 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-20% 0px -10% 0px" }}
+      transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+    >
       <Reveal className="container-shell">
         <div className="mb-10 flex flex-col gap-6 md:grid md:grid-cols-[1.1fr_0.9fr] md:items-start md:gap-16">
           <h2 className="max-w-[502px] font-semibold text-3xl font-display leading-tight md:text-[36px]">
@@ -68,12 +75,11 @@ export default function EventTypesCarousel() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
                   <h3 className="text-lg font-semibold">{item.title}</h3>
-                  <p className="mt-2 text-xs text-white/80">{item.description}</p>
                 </div>
             </motion.article>
           ))}
         </motion.div>
       </Reveal>
-    </section>
+    </motion.section>
   );
 }
