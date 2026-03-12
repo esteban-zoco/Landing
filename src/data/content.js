@@ -152,7 +152,29 @@ export const posSection = {
   description:
     "Una experiencia omnicanal que combina ticketing online y POS físico con control total.",
   image:
-    "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/freepik__ultrarealistic-product-render-of-two-modern-pos-de__40407+copia+1+(1).jpg",
+    "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/freepik__ultrarealistic-product-render-of-two-modern-pos-de__40407+copia+1.svg",
+  features: [
+    {
+      title: "Experiencia de compra rápida",
+      description:
+        "Ofrezca a los asistentes una entrada rápida y una admisión indolora para que pasen sin fricciones de las filas a los momentos.",
+    },
+    {
+      title: "Hardware y software totalmente integrados",
+      description:
+        "Acepte pagos en PDV con un lector de tarjetas totalmente integrado, impulsado por ZOCO Servicios de Pago.",
+    },
+    {
+      title: "Potentes informes",
+      description:
+        "Adáptese a las crecientes tendencias de su negocio con análisis unificados que combinan las ventas en el lugar y en línea.",
+    },
+    {
+      title: "Cajas rápidas",
+      description:
+        "Cierre ventas de entradas y productos rápidamente en un panel fácil de usar que mantiene todo al alcance de su mano.",
+    },
+  ],
 };
 
 export const eventTypes = [
@@ -210,4 +232,3 @@ export const footerLinks = [
   { label: "Integraciones", href: "#" },
   { label: "Contacto", href: "#" },
 ];
-
