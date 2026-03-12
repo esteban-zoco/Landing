@@ -1,11 +1,18 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { floatingPhotos } from "../data/content";
 import zocoLogo from "../assets/logo/zocoticket 1.svg";
+import Reveal from "./Reveal";
 
 export default function FloatingPhotoGrid() {
   const [activeIds, setActiveIds] = useState(() => new Set());
   const timersRef = useRef(new Map());
+  const sectionRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "center center"],
+  });
+  const imageScale = useTransform(scrollYProgress, [0, 0.6], [0.55, 1]);
 
   const activate = (id, duration = 30000) => {
     setActiveIds((prev) => {
@@ -35,8 +42,8 @@ export default function FloatingPhotoGrid() {
   }, []);
 
   return (
-    <section className="relative h-screen bg-white">
-      <div className="relative mx-auto h-full max-w-none px-6 md:px-10">
+    <section ref={sectionRef} className="relative h-screen bg-white">
+      <Reveal className="relative mx-auto h-full max-w-none px-6 md:px-10">
         <div className="pt-10 text-center lg:hidden">
           <div className="mx-auto w-full max-w-[951px]">
             <p className="text-[22px] font-medium uppercase tracking-[0.2em] text-ink/70">
@@ -84,6 +91,7 @@ export default function FloatingPhotoGrid() {
                 onTouchStart={() => {
                   activate(photo.id, 6000);
                 }}
+                style={{ scale: imageScale }}
                 className={`absolute h-[185px] w-[185px] overflow-hidden rounded-2xl bg-stone/60 ${positions[index % positions.length]}`}
               >
                 <motion.img
@@ -122,6 +130,7 @@ export default function FloatingPhotoGrid() {
                 onTouchStart={() => {
                   activate(photo.id, 6000);
                 }}
+                style={{ scale: imageScale }}
                 className="relative aspect-square overflow-hidden rounded-2xl bg-stone/60"
               >
                 <motion.img
@@ -148,7 +157,7 @@ export default function FloatingPhotoGrid() {
             );
           })}
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }

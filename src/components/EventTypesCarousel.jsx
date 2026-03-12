@@ -11,23 +11,21 @@ export default function EventTypesCarousel() {
 
   return (
     <section id="eventos" className="section-spacing">
-      <div className="container-shell">
-        <Reveal>
-          <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-            <div>
-              <p className="text-xs uppercase tracking-[0.3em] text-ink/50">
-                Versatilidad
-              </p>
-              <h2 className="mt-3 text-3xl font-display md:text-4xl">
-                ZOCO tickets funciona para todo tipo de eventos.
-              </h2>
-            </div>
-            <p className="max-w-sm text-sm text-ink/60">
-              Al llegar, las cards se expanden y luego se desplazan suavemente en
-              un carrusel continuo.
+      <Reveal className="container-shell">
+        <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p className="text-xs uppercase tracking-[0.3em] text-ink/50">
+              Versatilidad
             </p>
+            <h2 className="mt-3 text-3xl font-display md:text-4xl">
+              ZOCO tickets funciona para todo tipo de eventos.
+            </h2>
           </div>
-        </Reveal>
+          <p className="max-w-sm text-sm text-ink/60">
+            Al llegar, las cards se expanden y luego se desplazan suavemente en
+            un carrusel continuo.
+          </p>
+        </div>
         <div
           ref={ref}
           className="scrollbar-hide overflow-x-auto"
@@ -71,7 +69,7 @@ export default function EventTypesCarousel() {
             ))}
           </div>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }

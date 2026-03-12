@@ -152,7 +152,7 @@ export const posSection = {
   description:
     "Una experiencia omnicanal que combina ticketing online y POS físico con control total.",
   image:
-    "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1800&auto=format&fit=crop",
+    "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/freepik__ultrarealistic-product-render-of-two-modern-pos-de__40407+copia+1+(1).jpg",
 };
 
 export const eventTypes = [

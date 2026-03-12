@@ -1,3 +1,4 @@
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import Reveal from "./Reveal";
 import { panelCarousel } from "../data/content";
@@ -7,6 +8,18 @@ export default function VideoCarouselSection() {
   const [activeIndex, setActiveIndex] = useState(0);
   const cardRefs = useRef([]);
   const videoRefs = useRef([]);
+  const trackRef = useRef(null);
+  const sectionRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "center center"],
+  });
+  const cardScaleRaw = useTransform(scrollYProgress, [0, 0.6], [0.75, 1]);
+  const cardScale = useSpring(cardScaleRaw, {
+    stiffness: 140,
+    damping: 24,
+    mass: 0.9,
+  });
 
   const clampIndex = (nextIndex) => {
     if (nextIndex < 0) {
@@ -23,13 +36,14 @@ export default function VideoCarouselSection() {
   };
 
   useEffect(() => {
+    const track = trackRef.current;
     const card = cardRefs.current[activeIndex];
-    if (card) {
-      card.scrollIntoView({
-        behavior: "smooth",
-        inline: "center",
-        block: "nearest",
-      });
+    if (track && card) {
+      const cardLeft = card.offsetLeft;
+      const cardWidth = card.offsetWidth;
+      const trackWidth = track.clientWidth;
+      const nextLeft = cardLeft - (trackWidth - cardWidth) / 2;
+      track.scrollTo({ left: Math.max(0, nextLeft), behavior: "smooth" });
     }
 
     videoRefs.current.forEach((video, index) => {
@@ -42,27 +56,48 @@ export default function VideoCarouselSection() {
     });
   }, [activeIndex]);
 
+  useEffect(() => {
+    const prefersReduced = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    );
+    if (prefersReduced.matches) {
+      return undefined;
+    }
+
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => clampIndex(prev + 1));
+    }, 16000);
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
   return (
-    <section className="section-spacing bg-[#F3F3F3]">
-      <div className="container-shell">
-        <Reveal>
-          <div className="mb-16 max-w-2xl">
-            <h2 className="font-semibold text-3xl font-display md:text-4xl">{title}</h2>
-          </div>
-        </Reveal>
+    <section ref={sectionRef} className="section-spacing bg-[#F3F3F3]">
+      <Reveal className="container-shell">
+        <div className="mb-16 max-w-2xl">
+          <h2 className="font-semibold text-3xl font-display md:text-4xl">{title}</h2>
+        </div>
 
         <div className="space-y-6">
-          <div className="scrollbar-hide -mx-[calc(50vw-50%)] flex w-screen items-center snap-x snap-mandatory gap-6 overflow-x-auto overflow-y-visible px-6 py-12 md:px-10">
+          <div
+            ref={trackRef}
+            className="scrollbar-hide -mx-[calc(50vw-50%)] flex w-screen items-center snap-x snap-mandatory gap-6 overflow-x-auto overflow-y-visible px-6 py-12 md:px-10"
+          >
             {slides.map((slide, index) => {
               const isActive = index === activeIndex;
               return (
-              <div
+              <motion.div
                 key={slide.title}
                 ref={(node) => {
                   cardRefs.current[index] = node;
                 }}
-                className={`relative h-[420px] w-[670px] shrink-0 snap-center overflow-hidden rounded-3xl bg-ink/10 shadow-card transition-all duration-500 ${
-                  isActive ? "scale-[1.06] opacity-100" : "scale-[0.92] opacity-70"
+                onMouseEnter={() => setActiveIndex(index)}
+                onFocus={() => setActiveIndex(index)}
+                style={{ scale: cardScale }}
+                className={`relative h-[572px] w-[520px] shrink-0 snap-center overflow-hidden rounded-3xl bg-ink/10 shadow-card transition-all duration-500 ${
+                  isActive
+                    ? "h-[572px] w-[762px] opacity-100"
+                    : "h-[572px] w-[520px] opacity-70"
                 }`}
               >
                 <video
@@ -88,7 +123,7 @@ export default function VideoCarouselSection() {
                     </p>
                   ) : null}
                 </div>
-              </div>
+              </motion.div>
               );
             })}
           </div>
@@ -134,7 +169,7 @@ export default function VideoCarouselSection() {
             </button>
           </div>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }

@@ -4,17 +4,15 @@ import polygonIcon from "../assets/Polygon 2.svg";
 export default function FeatureCards() {
   return (
     <section id="servicios" className="section-spacing bg-white">
-      <div className="container-shell">
-        <Reveal>
-          <div className="mb-16 max-w-[1080px]">
-            <h2 className="mt-3 font-semibold text-3xl font-display md:text-[45px]">
-              No somos una ticketera más. <br />
-              Conectamos todo lo que un evento necesita.
-            </h2>
-          </div>
-        </Reveal>
+      <Reveal className="container-shell">
+        <div className="mb-16 max-w-[1080px]">
+          <h2 className="mt-3 font-semibold text-3xl font-display md:text-[45px]">
+            No somos una ticketera más. <br />
+            Conectamos todo lo que un evento necesita.
+          </h2>
+        </div>
 
-          <div className="grid gap-6 lg:grid-cols-[369px_1fr]">
+        <div className="grid gap-6 lg:grid-cols-[369px_1fr]">
             <div className="group relative h-[547px] overflow-hidden rounded-3xl bg-[#F3F3F3] px-6 pb-8 pt-[33px] shadow-card transition-colors duration-500">
             <div
               className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
@@ -161,7 +159,7 @@ export default function FeatureCards() {
             </div>
           </div>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }

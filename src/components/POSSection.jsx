@@ -10,25 +10,23 @@ export default function POSSection() {
     offset: ["start end", "end start"],
   });
 
-  const scale = useTransform(scrollYProgress, [0, 0.6], [1.12, 0.92]);
+  const scale = useTransform(scrollYProgress, [0, 0.6], [1.20, 0.82]);
   const y = useTransform(scrollYProgress, [0, 0.6], [0, 40]);
 
   return (
-    <section id="pos" ref={ref} className="section-spacing">
-      <div className="container-shell">
-        <Reveal>
-          <div className="mb-10 max-w-2xl">
-            <p className="text-xs uppercase tracking-[0.3em] text-ink/50">
-              Punto de venta
-            </p>
-            <h2 className="mt-3 text-3xl font-display md:text-4xl">
-              {posSection.title}
-            </h2>
-            <p className="mt-4 text-base text-ink/70">
-              {posSection.description}
-            </p>
-          </div>
-        </Reveal>
+    <section id="pos" ref={ref} className="section-spacing bg-white">
+      <Reveal className="container-shell">
+        <div className="mb-10 max-w-2xl">
+          <p className="text-xs uppercase tracking-[0.3em] text-ink/50">
+            Punto de venta
+          </p>
+          <h2 className="mt-3 text-3xl font-display md:text-4xl">
+            {posSection.title}
+          </h2>
+          <p className="mt-4 text-base text-ink/70">
+            {posSection.description}
+          </p>
+        </div>
         <motion.div style={{ scale, y }} className="overflow-hidden rounded-3xl">
           <img
             src={posSection.image}
@@ -37,7 +35,7 @@ export default function POSSection() {
             loading="lazy"
           />
         </motion.div>
-      </div>
+      </Reveal>
     </section>
   );
 }
