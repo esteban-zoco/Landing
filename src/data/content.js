@@ -1,4 +1,10 @@
-﻿export const navLinks = [
+﻿import iconStats from "../assets/estadistica 1.svg";
+import iconTeam from "../assets/agregar-usuario (1) 2 (1).svg";
+import iconScan from "../assets/boleto (2) 2.svg";
+import iconInvite from "../assets/Vector (1).svg";
+import iconCertificate from "../assets/Group 415.svg";
+import iconReport from "../assets/Vector (1).svg";
+export const navLinks = [
   {/*
   { label: "Plataforma", href: "#plataforma" },
   { label: "Servicios", href: "#servicios" },
@@ -28,28 +34,61 @@ export const panelCarousel = {
       title: "Estadísticas del evento",
       description:
         "Accedé a métricas clave de ventas de entradas, asistentes registrados y rendimiento del evento.",
+      icon: iconStats,
       videoUrl:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/video-herolanding.mp4",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/2.mp4",
       poster:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/video-herolanding.png",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/2.jpg",
     },
     {
       title: "Gestión del equipo",
       description:
-        "Asigná permisos, coordiná accesos y mantené a tu equipo sincronizado en tiempo real.",
+        "Creá usuarios y asigná un rol específico para delegar tareas a miembros del equipo.",
+      icon: iconReport,
       videoUrl:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/video-herolanding.mp4",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/3.mp4",
       poster:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/video-herolanding.png",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/3.jpg",
     },
     {
       title: "Control de asistencia",
       description:
-        "Visualizá ingresos, validaciones y flujo de público desde un único panel.",
+        "Supervisá el ingreso de asistentes y validaciones de QR desde el panel.",
+      icon: iconTeam,
       videoUrl:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/video-herolanding.mp4",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/1.mp4",
       poster:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/video-herolanding.png",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/1.jpg",
+    },
+    {
+      title: "Invitaciones especiales",
+      description:
+        "Generá entradas con accesos exclusivos, definí una hora de vencimiento y ya tenés un QR listo para compartir.",
+      icon: iconScan,
+      videoUrl:
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/4.mp4",
+      poster:
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/4.jpg",
+    },
+    {
+      title: "Certificados digitales",
+      description:
+        "Emití certificados digitales para participantes, conferencias o eventos educativos.",
+      icon: iconCertificate,
+      videoUrl:
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/5.mp4",
+      poster:
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/5.jpg",
+    },
+    {
+      title: "Reporte financiero",
+      description:
+        "Visualizá un resumen completo de los ingresos de tu evento, incluyendo ventas de entradas y consumos.",
+      icon: iconCertificate,
+      videoUrl:
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/6.mp4",
+      poster:
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/6.jpg",
     },
   ],
 };
@@ -232,3 +271,5 @@ export const footerLinks = [
   { label: "Integraciones", href: "#" },
   { label: "Contacto", href: "#" },
 ];
+
+

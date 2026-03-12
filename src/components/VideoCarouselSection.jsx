@@ -112,13 +112,20 @@ export default function VideoCarouselSection() {
                   playsInline
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <div className="flex items-center gap-2 text-sm font-semibold">
-                    <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-white/40" />
+                <div className="absolute bottom-6 left-14 right-6 text-white">
+                  <div className="flex items-center gap-2 text-[20px] font-semibold">
+                    {slide.icon ? (
+                      <img
+                        src={slide.icon}
+                        alt=""
+                        aria-hidden="true"
+                        className="h-6 w-6"/>
+                    ) : null}
+
                     <span>{slide.title}</span>
                   </div>
                   {isActive ? (
-                    <p className="mt-2 text-sm text-white/85 max-w-[445px]">
+                    <p className="mt-2 text-[18px] text-white/85 max-w-[445px]">
                       {slide.description}
                     </p>
                   ) : null}
