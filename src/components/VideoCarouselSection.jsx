@@ -97,7 +97,7 @@ export default function VideoCarouselSection() {
                 className={`relative h-[572px] w-[520px] shrink-0 snap-center overflow-hidden rounded-3xl bg-ink/10 shadow-card transition-all duration-500 ${
                   isActive
                     ? "h-[572px] w-[762px] opacity-100"
-                    : "h-[572px] w-[520px] opacity-70"
+                    : "h-[572px] w-[520px] opacity-100"
                 }`}
               >
                 <video
@@ -112,7 +112,7 @@ export default function VideoCarouselSection() {
                   playsInline
                 />
                 {!isActive ? (
-                  <div className="pointer-events-none absolute inset-0 bg-white/5 backdrop-blur-[10px]" />
+                  <div className="pointer-events-none absolute inset-0 bg-black/60 backdrop-blur-[10px]" />
                 ) : null}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-6 left-14 right-6 text-white">

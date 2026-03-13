@@ -34,7 +34,7 @@ export default function POSSection() {
             />
           </motion.div>
           <motion.div
-            className="relative z-0 mx-auto -mt-32 max-w-4xl rounded-3xl bg-[#F3F3F3] p-8 pt-16 text-center md:-mt-40 md:p-10 md:pt-28 min-w-[140px]"
+            className="relative z-0 mx-auto -mt-32 max-w-[1180px] rounded-3xl bg-[#F3F3F3] p-8 pt-16 text-center md:-mt-40 md:p-10 md:pt-28 min-w-[140px]"
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
