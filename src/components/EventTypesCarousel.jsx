@@ -44,8 +44,8 @@ export default function EventTypesCarousel() {
       transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
     >
       <Reveal className="w-full">
-        <div className="container-shell">
-          <div className="mb-10 flex flex-col gap-6 md:grid md:grid-cols-[1.1fr_0.9fr] md:items-start md:gap-16">
+        <div className="container-shell !max-w-[1280px]">
+          <div className="mb-14 flex flex-col gap-6 md:grid md:grid-cols-[1.1fr_0.9fr] md:items-start md:gap-16">
             <h2 className="max-w-[502px] font-semibold text-3xl font-display leading-tight md:text-[36px]">
               ZOCO tickets funciona para todo tipo de eventos.
             </h2>
@@ -57,7 +57,7 @@ export default function EventTypesCarousel() {
           </div>
         </div>
         <div
-          className="mx-auto w-full max-w-[1440px] overflow-hidden px-6 md:px-10 translate-x-0 md:-translate-x-[var(--carousel-shift)]"
+          className="mx-auto w-full max-w-[1202px] overflow-hidden px-6 md:px-10 translate-x-0 "
           style={{ "--carousel-shift": carouselShift }}
         >
           <motion.div

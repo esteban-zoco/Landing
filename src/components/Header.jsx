@@ -21,7 +21,7 @@ export default function Header() {
         scrolled ? "glass-surface shadow-sm py-3" : "py-5"
       }`}
     >
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 md:px-10">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 md:px-[72px] min-w-[1440px]  ">
         <a href="#" className="flex items-center gap-2">
           <img src={zocoLogo} alt="ZOCO tickets" className="h-6 w-auto" />
         </a>

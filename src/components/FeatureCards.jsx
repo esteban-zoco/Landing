@@ -4,7 +4,7 @@ import polygonIcon from "../assets/Polygon 2.svg";
 export default function FeatureCards() {
   return (
     <section id="servicios" className="section-spacing bg-white">
-      <Reveal className="container-shell">
+      <Reveal className="container-shell !max-w-[1280px]">
         <div className="mb-16 max-w-[1080px]">
           <h2 className="mt-3 font-semibold text-3xl font-display md:text-[45px]">
             No somos una ticketera más. <br />

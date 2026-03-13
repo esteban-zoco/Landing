@@ -221,37 +221,37 @@ export const eventTypes = [
     title: "Deportivos",
     description: "Entradas, abonos y control de accesos en estadios.",
     image:
-      "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1200&auto=format&fit=crop",
+      "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/Deportivos.jpg",
   },
   {
     title: "Conferencias",
     description: "Check-in rápido y contenido exclusivo para asistentes.",
     image:
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop",
+      "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/Conferencias.jpg",
   },
   {
     title: "Fiestas",
     description: "Listas, preventas y QR en segundos.",
     image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
+      "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/Fiestas.jpg  ",
   },
   {
     title: "Festivales",
     description: "Gestión de flujos masivos con métricas en vivo.",
     image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
+      "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/Festivales.jpg",
   },
   {
-    title: "Teatro",
+    title: "Conciertos",
     description: "Butacas numeradas y control de invitaciones.",
     image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
+      "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/Conciertos.jpg",
   },
   {
-    title: "Gastronomía",
+    title: "Boliches y Bares",
     description: "Experiencias premium con cupos y horarios.",
     image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
+      "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/Boliches.jpg",
   },
 ];
 
