@@ -7,7 +7,7 @@ export default function CTASection() {
     <section className="section-spacing bg-white">
       <div className="container-shell">
         <Reveal>
-          <div className="relative overflow-hidden rounded-3xl px-6 py-16 text-center md:px-10 md:py-24">
+          <div className="relative overflow-hidden rounded-3xl px-6 py-16 text-center md:px-10 md:py-24 mt-10 mb-10">
             <img
               src={boletoWp}
               alt=""

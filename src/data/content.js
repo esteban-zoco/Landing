@@ -266,10 +266,10 @@ export const appDownload = {
 };
 
 export const footerLinks = [
-  { label: "Soporte", href: "#" },
-  { label: "Seguridad", href: "#" },
-  { label: "Integraciones", href: "#" },
-  { label: "Contacto", href: "#" },
+  { label: "Inicio", href: "#" },
+  { label: "Eventos", href: "#eventos" },
+  { label: "Política de Privacidad", href: "#" },
+  { label: "Términos y Condiciones", href: "#" },
+  { label: "¿Necesitás soporte?", href: "#" },
 ];
-
 
