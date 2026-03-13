@@ -11,13 +11,13 @@ export default function CTASection() {
             <img
               src={boletoWp}
               alt=""
-              className="pointer-events-none absolute left-1/2 top-1/2 h-[320px] w-auto -translate-x-1/2 -translate-y-1/2 opacity-80 brightness-90"
+              className="pointer-events-none absolute left-1/2 top-1/2 h-[320px] w-auto -translate-x-1/2 -translate-y-1/2 opacity-40 brightness-90"
             />
             <div className="relative z-10 mx-auto max-w-3xl">
               <h2 className="text-3xl font-display font-semibold text-ink md:text-[40px]">
               ¿Querés empezar a vender entradas?
               </h2>
-              <p className="mt-4 text-[13px] font-medium uppercase tracking-[0.2em] text-ink/60 md:text-[14px]">
+              <p className="mt-7 text-[13px] font-medium uppercase tracking-[0.2em] text-ink/60 md:text-[14px]">
                 Nuestro equipo puede ayudarte a configurar tu evento
                 <br />
                 y empezar a vender en minutos.

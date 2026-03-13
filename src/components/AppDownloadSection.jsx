@@ -3,7 +3,7 @@ import { appDownload } from "../data/content";
 
 export default function AppDownloadSection() {
   return (
-    <section id="app" className="section-spacing">
+    <section id="app" className="section-spacing bg-white">
       <div className="container-shell">
         <Reveal>
           <div className="card-surface flex flex-col items-center gap-8 rounded-3xl px-8 py-12 md:flex-row md:justify-between md:px-12">
