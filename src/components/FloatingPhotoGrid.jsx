@@ -58,10 +58,10 @@ export default function FloatingPhotoGrid() {
       <Reveal className="relative mx-auto h-full max-w-none px-6 md:px-10">
         <div className="pt-10 text-center lg:hidden">
           <div className="mx-auto w-full max-w-[951px]">
-            <p className="text-[22px] font-medium uppercase tracking-[0.2em] text-ink/70">
+            <p className="text-[22px] font-medium uppercase tracking-[0.2em] text-ink">
               Vende entradas y gestiona tus eventos.
             </p>
-            <p className=" text-[15px] font-medium uppercase tracking-[0.18em] text-ink/70 ">
+            <p className=" text-[15px] font-medium uppercase tracking-[0.18em] text-ink ">
               Unica plataforma 100% gratuita. Sin cargos de servicio. 
               Sin costo por ticket. Sin contratos de permanencia.
             </p>
@@ -69,10 +69,10 @@ export default function FloatingPhotoGrid() {
         </div>
         <div className="pointer-events-none absolute inset-0 hidden items-center justify-center lg:flex">
           <div className="mx-auto w-full max-w-[971px] text-center">
-            <p className="text-[22px] font-medium uppercase tracking-[0.2em] text-ink/70">
+            <p className="text-[22px] font-medium uppercase tracking-[0.2em] text-ink">
               Vende entradas y gestiona tus eventos.
             </p>
-            <p className=" text-[22px] font-medium uppercase tracking-[0.18em] text-ink/70 ">
+            <p className=" text-[22px] font-medium uppercase tracking-[0.18em] text-ink ">
               Unica plataforma 100% gratuita. Sin cargos de servicio. Sin costo
               por ticket. Sin contratos de permanencia.
             </p>
@@ -88,7 +88,7 @@ export default function FloatingPhotoGrid() {
               "lg:top-10 lg:left-1/2 lg:-translate-x-1/2", // center top
               "lg:top-12 lg:right-12", // right top
               "lg:top-[38%] lg:left-10", // left mid
-              "lg:top-32 lg:right-[28%]", // inner right
+              "lg:top-32 lg:right-[20%]", // inner right
               "lg:top-[44%] lg:right-12", // right mid
               "lg:bottom-16 lg:left-10", // left bottom
               "lg:bottom-28 lg:left-[25%]", // inner bottom left

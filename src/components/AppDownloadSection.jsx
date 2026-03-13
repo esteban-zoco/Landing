@@ -10,7 +10,7 @@ export default function AppDownloadSection() {
             <div className="rounded-[28px] bg-[#EAEDF3] px-8 py-10 md:h-[420px] md:px-14 md:py-0 overflow-visible md:w-[1300px]">
               <div className="flex flex-col gap-10 md:h-full md:flex-row md:items-center md:justify-between">
                 <div className="max-w-[620px]">
-                  <div className="text-[20px] font-semibold text-ink/80 md:text-sm">
+                  <div className="text-[20px] font-semibold text-ink md:text-[20px]">
                     <div>Descargá la app de ZOCO Tickets</div>
                     <div className="mt-2 h-px w-full bg-[repeating-linear-gradient(to_right,rgba(20,24,22,0.4)_0_6px,transparent_6px_12px)]" />
                   </div>

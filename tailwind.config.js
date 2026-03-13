@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: "#0F1412",
+        ink: "#2D3035",
         mist: "#F5F5F2",
         stone: "#E9EAE6",
         sage: "#1A5140",

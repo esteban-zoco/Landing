@@ -17,7 +17,7 @@ export default function CTASection() {
               <h2 className="text-3xl font-display font-semibold text-ink md:text-[40px]">
               ¿Querés empezar a vender entradas?
               </h2>
-              <p className="mt-7 text-[13px] font-medium uppercase tracking-[0.2em] text-ink/60 md:text-[14px]">
+              <p className="mt-7 text-[13px] font-medium uppercase tracking-[0.2em] text-ink md:text-[14px]">
                 Nuestro equipo puede ayudarte a configurar tu evento
                 <br />
                 y empezar a vender en minutos.

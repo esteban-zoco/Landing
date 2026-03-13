@@ -49,7 +49,7 @@ export default function EventTypesCarousel() {
             <h2 className="max-w-[502px] font-semibold text-3xl font-display leading-tight md:text-[36px]">
               ZOCO tickets funciona para todo tipo de eventos.
             </h2>
-            <p className="max-w-[548px] text-sm leading-relaxed text-ink/60 md:text-[15px]">
+            <p className="max-w-[548px] text-sm leading-relaxed text-ink md:text-[15px]">
               Sea un festival multitudinario, una noche de boliche o un evento
               deportivo, ZOCO tickets te permite gestionar la venta de entradas y
               el control de accesos desde un solo lugar.

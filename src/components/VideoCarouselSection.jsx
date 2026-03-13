@@ -81,7 +81,7 @@ export default function VideoCarouselSection() {
         <div className="space-y-6">
           <div
             ref={trackRef}
-            className="scrollbar-hide -mx-[calc(50vw-50%)] flex w-screen items-center snap-x snap-mandatory gap-6 overflow-x-auto overflow-y-visible px-6 py-12 md:px-10"
+            className="scrollbar-hide -mx-[calc(50vw-50%)] flex w-screen items-center gap-6 overflow-x-auto overflow-y-visible px-6 py-12 md:px-10"
           >
             {slides.map((slide, index) => {
               const isActive = index === activeIndex;
@@ -94,7 +94,7 @@ export default function VideoCarouselSection() {
                 onMouseEnter={() => setActiveIndex(index)}
                 onFocus={() => setActiveIndex(index)}
                 style={{ scale: cardScale }}
-                className={`relative h-[572px] w-[520px] shrink-0 snap-center overflow-hidden rounded-3xl bg-ink/10 shadow-card transition-all duration-500 ${
+                className={`relative h-[572px] w-[520px] shrink-0 overflow-hidden rounded-3xl bg-ink/10 shadow-card transition-all duration-500 ${
                   isActive
                     ? "h-[572px] w-[762px] opacity-100"
                     : "h-[572px] w-[520px] opacity-100"
