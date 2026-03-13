@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { floatingPhotos } from "../data/content";
 import zocoLogo from "../assets/logo/zocoticket 1.svg";
@@ -8,6 +8,8 @@ export default function FloatingPhotoGrid() {
   const [activeIds, setActiveIds] = useState(() => new Set());
   const timersRef = useRef(new Map());
   const sectionRef = useRef(null);
+  const hasIntroRef = useRef(false);
+  const isInView = useInView(sectionRef, { margin: "-20% 0px -20% 0px" });
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start end", "center center"],
@@ -40,6 +42,16 @@ export default function FloatingPhotoGrid() {
       timersRef.current.clear();
     };
   }, []);
+
+  useEffect(() => {
+    if (!isInView || hasIntroRef.current) return;
+    hasIntroRef.current = true;
+    setActiveIds(new Set(floatingPhotos.map((photo) => photo.id)));
+    const timeout = setTimeout(() => {
+      setActiveIds(new Set());
+    }, 1200);
+    return () => clearTimeout(timeout);
+  }, [isInView]);
 
   return (
     <section ref={sectionRef} className="relative h-screen bg-white">
