@@ -74,8 +74,8 @@ export default function VideoCarouselSection() {
   return (
     <section ref={sectionRef} className="section-spacing bg-[#F3F3F3]">
       <Reveal className="container-shell">
-        <div className="mb-16 max-w-2xl">
-          <h2 className="font-semibold text-3xl font-display md:text-4xl">{title}</h2>
+        <div className="max-w-2xl md:mb-16">
+          <h2 className="font-semibold text-[23px] font-display md:text-4xl">{title}</h2>
         </div>
 
         <div className="space-y-6">
@@ -94,10 +94,10 @@ export default function VideoCarouselSection() {
                 onMouseEnter={() => setActiveIndex(index)}
                 onFocus={() => setActiveIndex(index)}
                 style={{ scale: cardScale }}
-                className={`relative h-[572px] w-[520px] shrink-0 overflow-hidden rounded-3xl bg-ink/10 shadow-card transition-all duration-500 ${
+                className={`relative h-[460px] w-[342px] shrink-0 overflow-hidden rounded-3xl bg-ink/10 shadow-card transition-all duration-500 md:h-[572px] md:w-[520px] ${
                   isActive
-                    ? "h-[572px] w-[762px] opacity-100"
-                    : "h-[572px] w-[520px] opacity-100"
+                    ? "opacity-100 md:w-[762px]"
+                    : "opacity-100 md:w-[520px]"
                 }`}
               >
                 <video
@@ -115,8 +115,8 @@ export default function VideoCarouselSection() {
                   <div className="pointer-events-none absolute inset-0 bg-black/60 backdrop-blur-[10px]" />
                 ) : null}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                <div className="absolute bottom-6 left-14 right-6 text-white">
-                  <div className="flex items-center gap-2 text-[20px] font-semibold">
+                <div className="absolute bottom-6 left-6 right-6 text-white md:bottom-6 md:left-14 md:right-6">
+                  <div className="flex items-center gap-2 text-[18px] font-semibold leading-[21px] md:text-[20px] md:leading-normal">
                     {slide.icon ? (
                       <img
                         src={slide.icon}
@@ -128,7 +128,7 @@ export default function VideoCarouselSection() {
                     <span>{slide.title}</span>
                   </div>
                   {isActive ? (
-                    <p className="mt-2 text-[18px] text-white/85 max-w-[445px]">
+                    <p className="mt-2 text-[15px] text-white/85 max-w-[445px] leading-[20px] md:text-[18px] md:leading-normal">
                       {slide.description}
                     </p>
                   ) : null}
