@@ -13,7 +13,7 @@ export default function FeatureCards() {
         </div>
 
         <div className="grid gap-6 justify-items-center lg:justify-items-stretch lg:grid-cols-[369px_1fr]">
-            <div className="group relative h-[423px] w-[282px] overflow-hidden rounded-3xl bg-[#F3F3F3] px-5 pb-5 pt-5 shadow-card transition-all duration-500 hover:h-[414px] md:h-[547px] md:w-full md:px-6 md:pb-8 md:pt-[33px] md:hover:h-[547px]">
+            <div className="group relative h-[423px] w-[282px] overflow-hidden rounded-[15px] bg-[#F3F3F3] px-5 pb-5 pt-5 shadow-card transition-all duration-500 hover:h-[414px] md:h-[547px] md:w-full md:rounded-3xl md:px-6 md:pb-8 md:pt-[33px] md:hover:h-[547px]">
             <div
               className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
               style={{
@@ -29,11 +29,11 @@ export default function FeatureCards() {
                   className="h-[300px] w-[242px] rounded-xl object-cover transition-all duration-500 group-hover:h-[198px] group-hover:w-[230px] md:h-[382px] md:w-[293px] md:group-hover:h-[304px] md:group-hover:w-[293px]"
                 />
               </div>
-              <div className="mx-auto w-[242px] md:w-[293px]">
+              <div className="mx-auto w-[242px] md:mx-0 md:w-[293px]">
                 <h3 className="mt-4 text-[23px] font-medium leading-[25px] text-ink transition-colors duration-500 group-hover:text-white md:mt-6 md:text-[30px] md:leading-[1]">
                   Creá y publicá gratis tus eventos
                 </h3>
-                <p className="mt-3 translate-y-3 text-[15px] leading-[22px] text-white/90 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 md:mt-4 md:text-sm md:leading-normal">
+                <p className="mt-3 translate-y-3 text-[14px] leading-[17px] text-white/90 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 md:mt-4 md:text-sm md:leading-normal">
                   Configurá tu evento y empezá a vender entradas en minutos con
                   un proceso de compra simple y sin fricciones.
                 </p>
@@ -43,7 +43,7 @@ export default function FeatureCards() {
 
           <div className="grid gap-6">
             <div className="grid gap-6 lg:grid-cols-[299px_486px]">
-              <div className="group relative flex h-[95px] w-[282px] items-start justify-start overflow-hidden rounded-3xl bg-[#F3F3F3] px-5 py-3 transition-all duration-500 hover:h-[180px] md:h-[263px] md:w-full md:items-center md:justify-center md:px-6 md:py-5 md:hover:h-[263px] lg:w-[299px]">
+              <div className="group relative flex h-[95px] w-[282px] items-start justify-start overflow-hidden rounded-[15px] bg-[#F3F3F3] px-5 py-3 transition-all duration-500 hover:h-[180px] md:h-[263px] md:w-full md:items-center md:justify-center md:rounded-3xl md:px-6 md:py-5 md:hover:h-[263px] lg:w-[299px]">
                 <div
                   className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                   style={{
@@ -51,20 +51,20 @@ export default function FeatureCards() {
                       "radial-gradient(circle at 20% 15%, rgba(27,127,220,0.95) 0%, rgba(27,127,220,0) 60%), radial-gradient(circle at 85% 20%, rgba(13,136,211,0.9) 0%, rgba(13,136,211,0) 55%), radial-gradient(circle at 20% 85%, rgba(6,91,152,0.9) 0%, rgba(6,91,152,0) 62%), #0F202A",
                   }}
                 />
-                <div className="relative z-10 w-full max-w-[240px] text-left md:max-w-[220px]">
-                  <h3 className="text-[18px] font-medium leading-[20px] text-ink transition-colors duration-500 group-hover:text-white md:text-[30px] md:leading-tight">
+                <div className="relative z-10 w-full max-w-[240px] text-left md:max-w-[220px] mx-auto md:mx-0">
+                  <h3 className="text-[23px] font-medium leading-[25px] text-ink transition-colors duration-500 group-hover:text-white md:text-[30px] md:leading-tight">
                     Cero cargo
                     para el
                     organizador
                   </h3>
-                  <p className="mt-3 max-w-[220px] text-[15px] leading-[22px] text-white/90 opacity-0 transition-all duration-500 group-hover:opacity-100 md:mt-4 md:text-sm md:leading-normal">
+                  <p className="mt-3 max-w-[220px] text-[14px] leading-[17px] text-white/90 opacity-0 transition-all duration-500 group-hover:opacity-100 md:mt-4 md:text-sm md:leading-normal">
                     Vendé entradas sin pagar comisiones ni cargos ocultos. Toda
                     la ganancia es para el organizador.
                   </p>
                 </div>
               </div>
 
-              <div className="group relative h-[277px] w-[282px] overflow-hidden rounded-3xl bg-[#F3F3F3] px-5 py-5 transition-all duration-500 hover:h-[282px] hover:w-[335px] md:h-[263px] md:w-full md:px-6 md:py-6 md:hover:h-[263px] md:hover:w-full lg:w-[486px] lg:hover:w-[486px]">
+              <div className="group relative h-[277px] w-[282px] max-w-[282px] overflow-hidden rounded-[15px] bg-[#F3F3F3] px-5 py-5 transition-all duration-500 hover:h-[282px] md:h-[263px] md:w-full md:max-w-none md:rounded-3xl md:px-6 md:py-6 md:hover:h-[263px] lg:w-[486px]">
                 <div
                   className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                   style={{
@@ -72,14 +72,14 @@ export default function FeatureCards() {
                       "radial-gradient(circle at 70% 15%, rgba(90,90,90,0.55) 0%, rgba(90,90,90,0) 60%), radial-gradient(circle at 20% 75%, rgba(40,40,40,0.85) 0%, rgba(40,40,40,0) 65%), #0F0F12",
                   }}
                 />
-                <div className="relative z-10 h-full">
-                  <div className="relative z-10 max-w-[240px] md:max-w-[320px]">
+                <div className="relative z-10 flex h-full flex-col">
+                  <div className="relative z-10 max-w-[240px] md:max-w-[320px] mx-auto md:mx-0">
                     <h3 className="text-[23px] font-medium leading-[25px] text-ink transition-colors duration-500 group-hover:text-white md:text-[30px] md:leading-[1.15]">
                       Gestioná todo en
                       <br />
                       un solo panel
                     </h3>
-                    <p className="mt-2 max-w-[220px] text-[15px] leading-[22px] text-white/90 opacity-0 transition-all duration-500 group-hover:opacity-100 md:mt-3 md:text-sm md:leading-normal">
+                    <p className="mt-2 max-w-[220px] text-[14px] leading-[17px] text-white/90 opacity-0 transition-all duration-500 group-hover:opacity-100 md:mt-3 md:text-sm md:leading-normal">
                       Administrá entradas, accesos, invitados y ventas desde un
                       solo lugar.
                     </p>
@@ -88,7 +88,7 @@ export default function FeatureCards() {
                       <span>Descubrir funciones</span>
                     </div>
                   </div>
-                  <div className="absolute bottom-0 right-4 z-0 flex items-end transition-transform duration-500 group-hover:translate-x-4 md:right-6">
+                  <div className="relative mt-4 flex w-full -translate-y-10 justify-center transition-transform duration-500 group-hover:-translate-y-8 md:absolute md:bottom-0 md:right-6 md:mt-0 md:w-auto md:translate-y-0 md:justify-end md:group-hover:translate-y-0 md:group-hover:translate-x-4">
                     <img
                       src="https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Group+375.svg"
                       alt="Gestión en un solo panel"
@@ -100,7 +100,7 @@ export default function FeatureCards() {
             </div>
 
             <div className="grid gap-6 lg:grid-cols-[528px_257px]">
-              <div className="group relative h-[277px] w-[282px] overflow-hidden rounded-3xl bg-[#F3F3F3] py-5 transition-all duration-500 hover:h-[282px] hover:w-[335px] md:h-[263px] md:w-full md:py-6 md:hover:h-[263px] md:hover:w-full lg:w-[528px] lg:hover:w-[528px]">
+              <div className="group relative h-[277px] w-[282px] max-w-[282px] overflow-hidden rounded-[15px] bg-[#F3F3F3] py-5 transition-all duration-500 hover:h-[282px] md:h-[263px] md:w-full md:max-w-none md:rounded-3xl md:py-6 md:hover:h-[263px] lg:w-[528px]">
                 <div
                   className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                   style={{
@@ -108,12 +108,12 @@ export default function FeatureCards() {
                       "radial-gradient(circle at 70% 20%, rgba(90,90,90,0.6) 0%, rgba(90,90,90,0) 55%), radial-gradient(circle at 20% 85%, rgba(32,32,32,0.9) 0%, rgba(32,32,32,0) 62%), #0F0F12",
                   }}
                 />
-                <div className="relative z-10 h-full">
-                  <div className="relative z-10 mx-auto w-full max-w-[240px] px-5 md:max-w-[435px] md:px-6 lg:px-0">
-                    <h3 className="text-[23px] font-medium leading-[25px] text-ink transition-colors duration-500 group-hover:text-white md:text-[28px] md:leading-[1.1]">
+                <div className="relative z-10 flex h-full flex-col">
+                  <div className="relative z-10 mx-auto w-full max-w-[240px] px-3  md:max-w-[435px] md:px-6 lg:px-0">
+                    <h3 className="text-[23px] min-w-[230px] font-medium leading-[25px] text-ink transition-colors duration-500 group-hover:text-white md:text-[28px] md:leading-[1.1]">
                       Escaneá entradas al instante
                     </h3>
-                    <p className="mt-2 text-[15px] leading-[22px] text-white/90 opacity-0 transition-all duration-500 group-hover:opacity-100 md:mt-3 md:text-sm md:leading-normal">
+                    <p className="mt-2 text-[14px] leading-[17px] text-white/90 opacity-0 transition-all duration-500 group-hover:opacity-100 md:mt-3 md:text-sm md:leading-normal">
                       Validá tickets con rapidez desde la app de escáner.
                       Ingreso ágil, sin filas y con registro inmediato de
                       asistencia.
@@ -123,8 +123,8 @@ export default function FeatureCards() {
                       <span>Obtené la app</span>
                     </div>
                   </div>
-                  <div className="absolute bottom-[-16px] left-1/2 z-0 h-[140px] w-[282px] -translate-x-1/2 transition-all duration-500 group-hover:translate-y-4 group-hover:h-[198px] group-hover:w-[230px] md:bottom-[-23px] md:h-[180px] md:w-[435px] md:group-hover:h-[180px] md:group-hover:w-[435px]">
-                    <div className="absolute bottom-0 left-0 h-[120px] w-full rounded-t-[22px] rounded-b-none bg-white shadow-card transition-all duration-500 group-hover:h-[104px] md:h-[160px]" />
+                  <div className="relative z-0 mx-auto mt-4 h-[140px] w-[282px] -translate-y-12 transition-all duration-500 group-hover:-translate-y-12 group-hover:h-[198px] group-hover:w-[230px] md:absolute md:bottom-[-23px] md:left-1/2 md:mt-0 md:h-[180px] md:w-[435px] md:-translate-x-1/2 md:translate-y-0 md:group-hover:translate-y-0 md:group-hover:h-[180px] md:group-hover:w-[435px]">
+                    <div className="absolute bottom-[-40px] left-0 h-[120px] w-full rounded-t-[22px] rounded-b-none bg-white shadow-card transition-all duration-500 group-hover:h-[104px] md:bottom-0 md:h-[160px] " />
                     <img
                       src="https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/e470f6db-1b35-4642-83ea-9ae3037edeed+copia+2+1.svg"
                       alt="App de escaneo"
@@ -134,21 +134,20 @@ export default function FeatureCards() {
                 </div>
               </div>
 
-              <div className="group relative flex h-[80px] w-[282px] items-start justify-start overflow-hidden rounded-3xl bg-[#F3F3F3] px-5 py-3 transition-all duration-500 hover:h-[140px] md:h-[263px] md:w-full md:items-center md:justify-center md:px-6 md:py-6 md:hover:h-[263px] lg:w-[257px]">
+              <div className="group relative flex h-[80px] w-[282px] items-start justify-start overflow-hidden rounded-[15px] bg-[#F3F3F3] px-5 py-3 transition-all duration-500 hover:h-[140px] md:h-[263px] md:w-full md:items-center md:justify-center md:rounded-3xl md:px-6 md:py-6 md:hover:h-[263px] lg:w-[257px]">
                 <div
-                  className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                  className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 "
                   style={{
                     background:
                       "radial-gradient(circle at 20% 15%, rgba(117,72,210,0.95) 0%, rgba(117,72,210,0) 60%), radial-gradient(circle at 85% 20%, rgba(38,21,152,0.9) 0%, rgba(38,21,152,0) 55%), radial-gradient(circle at 20% 85%, rgba(1,0,148,0.9) 0%, rgba(1,0,148,0) 62%), #080523",
                   }}
                 />
-                <div className="relative z-10 w-full max-w-[240px] text-left transition-transform duration-500 group-hover:-translate-y-2 md:max-w-[210px]">
+                <div className="relative z-10 mt-4 w-full max-w-[240px] text-left transition-transform duration-500 group-hover:-translate-y-2 md:max-w-[210px] mx-auto md:mx-0">
                   <h3 className="translate-y-2 text-[23px] font-medium leading-[25px] text-ink transition-all duration-500 group-hover:translate-y-0 group-hover:text-white md:translate-y-16 md:text-[30px] md:leading-tight">
                     Pagos
-                    <br />
                     integrados
                   </h3>
-                  <p className="mt-3 text-[15px] leading-[22px] text-white/90 opacity-0 transition-all duration-500 group-hover:opacity-100 md:mt-4 md:text-sm md:leading-normal">
+                  <p className="mt-3 text-[14px] leading-[17px] text-white/90 opacity-0 transition-all duration-500 group-hover:opacity-100 md:mt-4 md:text-sm md:leading-normal">
                     Cobrá tus entradas de forma simple y segura con todas las
                     tarjetas y billeteras virtuales.
                   </p>
