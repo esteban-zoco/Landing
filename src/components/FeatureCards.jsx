@@ -14,47 +14,59 @@ export default function FeatureCards() {
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(min-width: 768px)");
-    let observer;
+    let rafId = null;
 
-    const setupObserver = () => {
-      if (observer) {
-        observer.disconnect();
-        observer = null;
-      }
-
+    const updateActiveCard = () => {
       if (mediaQuery.matches) {
         setActiveIndex(-1);
         return;
       }
 
-      observer = new IntersectionObserver(
-        (entries) => {
-          const visible = entries.filter((entry) => entry.isIntersecting);
-          if (!visible.length) {
-            return;
-          }
-          const mostVisible = visible.reduce((current, entry) =>
-            entry.intersectionRatio > current.intersectionRatio
-              ? entry
-              : current
-          );
-          const index = Number(mostVisible.target.dataset.cardIndex);
-          if (!Number.isNaN(index)) {
-            setActiveIndex(index);
-          }
-        },
-        { threshold: [0.2, 0.4, 0.6, 0.8] }
-      );
+      const viewportCenter = window.innerHeight * 0.45;
+      let bestIndex = -1;
+      let bestDistance = Number.POSITIVE_INFINITY;
 
-      cardRefs.current.forEach((element) => {
-        if (element) {
-          observer.observe(element);
+      cardRefs.current.forEach((element, index) => {
+        if (!element) {
+          return;
         }
+        const rect = element.getBoundingClientRect();
+        if (rect.bottom <= 0 || rect.top >= window.innerHeight) {
+          return;
+        }
+        const midPoint = rect.top + rect.height / 2;
+        const distance = Math.abs(midPoint - viewportCenter);
+        if (distance < bestDistance) {
+          bestDistance = distance;
+          bestIndex = index;
+        }
+      });
+
+      setActiveIndex(bestIndex);
+    };
+
+    const scheduleUpdate = () => {
+      if (rafId !== null) {
+        return;
+      }
+      rafId = window.requestAnimationFrame(() => {
+        rafId = null;
+        updateActiveCard();
       });
     };
 
-    setupObserver();
-    const handleChange = () => setupObserver();
+    const handleChange = () => {
+      if (mediaQuery.matches) {
+        setActiveIndex(-1);
+        return;
+      }
+      scheduleUpdate();
+    };
+
+    scheduleUpdate();
+    window.addEventListener("scroll", scheduleUpdate, { passive: true });
+    window.addEventListener("resize", scheduleUpdate);
+    window.addEventListener("orientationchange", scheduleUpdate);
 
     if (mediaQuery.addEventListener) {
       mediaQuery.addEventListener("change", handleChange);
@@ -63,9 +75,12 @@ export default function FeatureCards() {
     }
 
     return () => {
-      if (observer) {
-        observer.disconnect();
+      if (rafId !== null) {
+        window.cancelAnimationFrame(rafId);
       }
+      window.removeEventListener("scroll", scheduleUpdate);
+      window.removeEventListener("resize", scheduleUpdate);
+      window.removeEventListener("orientationchange", scheduleUpdate);
       if (mediaQuery.removeEventListener) {
         mediaQuery.removeEventListener("change", handleChange);
       } else {
@@ -224,7 +239,7 @@ export default function FeatureCards() {
                     <img
                       src={scanMobileImage}
                       alt="App de escaneo"
-                      className="md:hidden relative h-full w-full rounded-[18px] object-cover shadow-card transition-all duration-700 duration-500 group-hover:bottom-[-40px] "
+                      className="md:hidden relative h-full w-full rounded-[18px] object-cover shadow-card transition-all duration-700 md:duration-500 group-hover:bottom-[-40px] group-data-[active=true]:bottom-[-40px]"
                     />
                     <img
                       src="https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/e470f6db-1b35-4642-83ea-9ae3037edeed+copia+2+1.svg"
