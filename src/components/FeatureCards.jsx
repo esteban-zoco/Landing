@@ -124,7 +124,7 @@ export default function FeatureCards() {
                   "radial-gradient(circle at 18% 18%, rgba(183,229,186,0.95) 0%, rgba(183,229,186,0) 60%), radial-gradient(circle at 82% 20%, rgba(92,168,124,0.9) 0%, rgba(92,168,124,0) 58%), radial-gradient(circle at 20% 85%, rgba(40,135,96,0.9) 0%, rgba(40,135,96,0) 62%), #1A5140",
               }}
             />
-            <div className="relative z-10">
+            <div className="relative z-10 flex h-full flex-col items-center justify-center md:block md:h-auto">
               <div className="flex justify-center rounded-2xl p-0 transition-all duration-700 md:duration-500">
                 <img
                   src="https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Mask+group+(11).jpg"
@@ -150,7 +150,7 @@ export default function FeatureCards() {
                 ref={setCardRef(1)}
                 data-card-index={1}
                 data-active={activeIndex === 1}
-                className="group relative flex h-[95px] w-[282px] items-start justify-start overflow-hidden rounded-[15px] bg-[#F3F3F3] px-5 py-3 transition-all duration-700 md:duration-500 hover:h-[180px] data-[active=true]:h-[180px] md:h-[263px] md:w-full md:items-center md:justify-center md:rounded-3xl md:px-6 md:py-5 md:hover:h-[263px] md:data-[active=true]:h-[263px] lg:w-[299px]"
+                className="group relative flex h-[95px] w-[282px] items-center justify-center overflow-hidden rounded-[15px] bg-[#F3F3F3] px-5 py-3 transition-all duration-700 md:duration-500 hover:h-[180px] data-[active=true]:h-[180px] md:h-[263px] md:w-full md:items-center md:justify-center md:rounded-3xl md:px-6 md:py-5 md:hover:h-[263px] md:data-[active=true]:h-[263px] lg:w-[299px]"
               >
                 <div
                   className="absolute inset-0 opacity-0 transition-opacity duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100"
@@ -159,13 +159,13 @@ export default function FeatureCards() {
                       "radial-gradient(circle at 20% 15%, rgba(27,127,220,0.95) 0%, rgba(27,127,220,0) 60%), radial-gradient(circle at 85% 20%, rgba(13,136,211,0.9) 0%, rgba(13,136,211,0) 55%), radial-gradient(circle at 20% 85%, rgba(6,91,152,0.9) 0%, rgba(6,91,152,0) 62%), #0F202A",
                   }}
                 />
-                <div className="relative z-10 w-full max-w-[240px] text-left md:max-w-[220px] mx-auto md:mx-0">
+                <div className="relative z-10 w-[220px] max-w-[220px] text-left md:w-full md:max-w-[220px] mx-auto md:mx-0">
                   <h3 className="text-[23px] font-medium leading-[25px] text-ink transition-colors duration-700 md:duration-500 group-hover:text-white group-data-[active=true]:text-white md:text-[30px] md:leading-tight">
                     Cero cargo
                     para el
                     organizador
                   </h3>
-                  <p className="mt-3 max-w-[220px] text-[14px] leading-none text-white/90 opacity-0 transition-all duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100 md:mt-4 md:text-sm md:leading-normal">
+                  <p className="mt-0 max-h-0 overflow-hidden max-w-[220px] text-[14px] leading-none text-white/90 opacity-0 transition-all duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100 group-hover:max-h-[120px] group-data-[active=true]:max-h-[120px] group-hover:mt-3 group-data-[active=true]:mt-3 md:mt-4 md:text-sm md:leading-normal md:max-h-none md:overflow-visible">
                     Vendé entradas sin pagar comisiones ni cargos ocultos. Toda
                     la ganancia es para el organizador.
                   </p>
@@ -266,7 +266,7 @@ export default function FeatureCards() {
                 ref={setCardRef(4)}
                 data-card-index={4}
                 data-active={activeIndex === 4}
-                className="group relative flex h-[80px] w-[282px] items-start justify-start overflow-hidden rounded-[15px] bg-[#F3F3F3] px-5 py-3 transition-all duration-700 md:duration-500 hover:h-[140px] data-[active=true]:h-[140px] md:h-[263px] md:w-full md:items-center md:justify-center md:rounded-3xl md:px-6 md:py-6 md:hover:h-[263px] md:data-[active=true]:h-[263px] lg:w-[257px]"
+                className="group relative flex h-[80px] w-[282px] items-center justify-center overflow-hidden rounded-[15px] bg-[#F3F3F3] px-5 py-3 transition-all duration-700 md:duration-500 hover:h-[140px] data-[active=true]:h-[140px] md:h-[263px] md:w-full md:items-center md:justify-center md:rounded-3xl md:px-6 md:py-6 md:hover:h-[263px] md:data-[active=true]:h-[263px] lg:w-[257px]"
               >
                 <div
                   className="absolute inset-0 opacity-0 transition-opacity duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100 "
@@ -275,12 +275,12 @@ export default function FeatureCards() {
                       "radial-gradient(circle at 20% 15%, rgba(117,72,210,0.95) 0%, rgba(117,72,210,0) 60%), radial-gradient(circle at 85% 20%, rgba(38,21,152,0.9) 0%, rgba(38,21,152,0) 55%), radial-gradient(circle at 20% 85%, rgba(1,0,148,0.9) 0%, rgba(1,0,148,0) 62%), #080523",
                   }}
                 />
-                <div className="relative z-10 mt-4 w-full max-w-[240px] text-left transition-transform duration-700 md:duration-500 group-hover:-translate-y-2 group-data-[active=true]:-translate-y-2 md:max-w-[210px] mx-auto md:mx-0">
+                <div className="relative z-10 mt-0 w-[220px] max-w-[220px] text-left transition-transform duration-700 md:duration-500 group-hover:-translate-y-2 group-data-[active=true]:-translate-y-2 md:mt-4 md:w-full md:max-w-[210px] mx-auto md:mx-0">
                   <h3 className="translate-y-0 text-[23px] font-medium leading-[25px] text-ink transition-all duration-700 md:duration-500 group-hover:translate-y-0 group-data-[active=true]:translate-y-0 group-hover:text-white group-data-[active=true]:text-white md:translate-y-16 md:text-[30px] md:leading-tight">
                     Pagos
                     integrados
                   </h3>
-                  <p className="mt-3 text-[14px] leading-none text-white/90 opacity-0 transition-all duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100 md:mt-4 md:text-sm md:leading-normal">
+                  <p className="mt-0 max-h-0 overflow-hidden text-[14px] leading-none text-white/90 opacity-0 transition-all duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100 group-hover:max-h-[120px] group-data-[active=true]:max-h-[120px] group-hover:mt-3 group-data-[active=true]:mt-3 md:mt-4 md:text-sm md:leading-normal md:max-h-none md:overflow-visible">
                     Cobrá tus entradas de forma simple y segura con todas las
                     tarjetas y billeteras virtuales.
                   </p>
