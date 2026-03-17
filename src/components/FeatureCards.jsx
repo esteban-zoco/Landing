@@ -123,7 +123,7 @@ export default function FeatureCards() {
                       <span>Obtené la app</span>
                     </div>
                   </div>
-                  <div className="relative z-0 mx-auto mt-4 h-[140px] w-[282px] -translate-y-12 transition-all duration-500 group-hover:-translate-y-12 group-hover:h-[198px] group-hover:w-[230px] md:absolute md:bottom-[-23px] md:left-1/2 md:mt-0 md:h-[180px] md:w-[435px] md:-translate-x-1/2 md:translate-y-0 md:group-hover:translate-y-0 md:group-hover:h-[180px] md:group-hover:w-[435px]">
+                  <div className="relative z-0 mx-auto mt-4 h-[176px] w-[282px] -translate-y-16 transition-all duration-500 group-hover:-translate-y-16 group-hover:h-[176px] group-hover:w-[282px] md:absolute md:bottom-[-23px] md:left-1/2 md:mt-0 md:h-[180px] md:w-[435px] md:-translate-x-1/2 md:translate-y-0 md:group-hover:translate-y-0 md:group-hover:h-[180px] md:group-hover:w-[435px]">
                     <div className="absolute bottom-[-40px] left-0 h-[120px] w-full rounded-t-[22px] rounded-b-none bg-white shadow-card transition-all duration-500 group-hover:h-[104px] md:bottom-0 md:h-[160px] " />
                     <img
                       src="https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/e470f6db-1b35-4642-83ea-9ae3037edeed+copia+2+1.svg"
