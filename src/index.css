@@ -24,7 +24,7 @@ img {
 }
 
 .section-spacing {
-  @apply py-20 md:py-28;
+  @apply py-8 md:py-28;
 }
 
 .glass-surface {

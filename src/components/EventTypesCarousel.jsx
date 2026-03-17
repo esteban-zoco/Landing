@@ -1,5 +1,5 @@
 import { motion, useInView } from "framer-motion";
-import { useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { eventTypes } from "../data/content";
 import Reveal from "./Reveal";
 
@@ -7,12 +7,23 @@ export default function EventTypesCarousel() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-35% 0px -35% 0px" });
   const items = useMemo(() => [...eventTypes, ...eventTypes], []);
-  const baseCardWidth = 345;
-  const compressedCardWidth = 700;
+  const [isDesktop, setIsDesktop] = useState(() =>
+    typeof window !== "undefined" ? window.innerWidth >= 768 : false
+  );
+
+  useEffect(() => {
+    const handleResize = () => setIsDesktop(window.innerWidth >= 768);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const baseCardWidth = isDesktop ? 345 : 270;
+  const compressedCardWidth = isDesktop ? 700 : 560;
   const compressedScaleX = 1;
-  const overlap = 55;
+  const overlap = isDesktop ? 55 : 36;
   const maxOffset = (compressedCardWidth - baseCardWidth) / 2;
-  const expandedSpacing = 380;
+  const expandedSpacing = isDesktop ? 380 : 300;
   const carouselShift = `calc(${expandedSpacing}px - (100% - ${baseCardWidth}px) / 2)`;
   const postExpandShift = expandedSpacing * (items.length / 2);
   const midIndex = (items.length - 1) / 2;
@@ -46,10 +57,10 @@ export default function EventTypesCarousel() {
       <Reveal className="w-full">
         <div className="container-shell !max-w-[1280px]">
           <div className="mb-14 flex flex-col gap-6 md:grid md:grid-cols-[1.1fr_0.9fr] md:items-start md:gap-16">
-            <h2 className="max-w-[502px] font-semibold text-3xl font-display leading-tight md:text-[36px]">
+            <h2 className="max-w-[502px] font-semibold text-[23px] font-display leading-tight md:text-[36px]">
               ZOCO tickets funciona para todo tipo de eventos.
             </h2>
-            <p className="max-w-[548px] text-sm leading-relaxed text-ink md:text-[15px]">
+            <p className="max-w-[548px] text-[15px] leading-relaxed text-ink md:text-[15px]">
               Sea un festival multitudinario, una noche de boliche o un evento
               deportivo, ZOCO tickets te permite gestionar la venta de entradas y
               el control de accesos desde un solo lugar.
@@ -62,7 +73,7 @@ export default function EventTypesCarousel() {
         >
           <motion.div
             ref={ref}
-            className="relative h-[480px] w-full cursor-grab active:cursor-grabbing"
+            className="relative h-[375px] w-full cursor-grab active:cursor-grabbing md:h-[480px]"
             drag={isInView ? "x" : false}
             dragConstraints={dragBounds}
             initial="hidden"
@@ -75,7 +86,7 @@ export default function EventTypesCarousel() {
                 custom={index}
                 variants={cardVariants}
                 style={{ zIndex: items.length - index, transformOrigin: "center" }}
-                className="absolute left-1/2 top-0 h-[480px] w-[345px] -translate-x-1/2 overflow-hidden rounded-3xl bg-white shadow-card"
+                className="absolute left-1/2 top-0 h-[375px] w-[270px] -translate-x-1/2 overflow-hidden rounded-3xl bg-white shadow-card md:h-[480px] md:w-[345px]"
               >
                   <img
                     src={item.image}

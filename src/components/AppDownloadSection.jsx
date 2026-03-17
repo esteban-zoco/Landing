@@ -4,20 +4,20 @@ import phoneMock from "../assets/Mask group.svg";
 export default function AppDownloadSection() {
   return (
     <section id="app" className="section-spacing bg-white">
-      <div className="px-6 md:px-10 mb-16">
+      <div className="mb-16 px-6 md:px-10">
         <Reveal>
           <div className="mx-auto w-full max-w-[1300px]">
-            <div className="rounded-[28px] bg-[#EAEDF3] px-8 py-10 md:h-[420px] md:px-14 md:py-0 overflow-visible md:w-[1300px]">
-              <div className="flex flex-col gap-10 md:h-full md:flex-row md:items-center md:justify-between">
-                <div className="max-w-[620px]">
-                  <div className="text-[20px] font-semibold text-ink md:text-[20px]">
+            <div className="overflow-visible rounded-[28px] bg-[#EAEDF3] px-6 pt-6 md:pt-8 md:h-[420px] md:w-[1300px] md:px-14 md:py-0">
+              <div className="flex flex-col items-center gap-10 md:h-full md:flex-row md:items-center md:justify-between">
+                <div className="max-w-[620px] text-center md:text-left">
+                  <div className="text-[17px] font-semibold text-ink md:text-[20px]">
                     <div>Descargá la app de ZOCO Tickets</div>
                     <div className="mt-2 h-px w-full bg-[repeating-linear-gradient(to_right,rgba(20,24,22,0.4)_0_6px,transparent_6px_12px)]" />
                   </div>
-                  <h2 className="mt-4 text-[32px] font-display text-ink md:text-[26px]">
+                  <h2 className="mt-4 text-[23px] font-display text-ink md:text-[26px]">
                     Gestioná tu evento desde cualquier lugar.
                   </h2>
-                  <div className="mt-6 flex flex-wrap gap-3">
+                  <div className="mt-6 flex flex-wrap justify-center gap-3 md:justify-start">
                     <button className="inline-flex h-10 items-center gap-2 rounded-[10px] bg-[#2D3035] px-4 text-xs font-semibold text-white shadow-soft transition hover:-translate-y-0.5">
                       <svg
                         aria-hidden="true"
@@ -40,7 +40,7 @@ export default function AppDownloadSection() {
                     </button>
                   </div>
                 </div>
-                <div className="relative w-full max-w-[505px] md:h-[487px] md:w-[505px] md:self-end  md:translate-x-6">
+                <div className="relative mx-auto w-full max-w-[320px] md:mx-0 md:h-[487px] md:w-[505px] md:max-w-[505px] md:self-end md:translate-x-6">
                   <img
                     src={phoneMock}
                     alt="Mockup de la app"

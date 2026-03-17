@@ -7,36 +7,35 @@ import youtubeIcon from "../assets/youtube-2.svg";
 
 export default function Footer() {
   return (
-    <footer className="pb-10 bg-white ">
-      <div className="container-shell min-w-[1380px] ">
+    <footer className="bg-white pb-10">
+      <div className="container-shell md:min-w-[1380px]">
         <Reveal>
-          <div className="border-t border-ink/15 pt-8">
-            <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-              <div className="flex items-center gap-6">
+          <div className="border-t border-ink/15 pt-6 md:pt-8">
+            <div className="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
+              <div className="flex items-center gap-4 md:gap-6">
                 <img
                   src={zocoLogoSolo}
                   alt="ZOCO"
-                  className="h-[33px] w-[142px]"
+                  className="h-[26px] w-[112px] md:h-[33px] md:w-[142px]"
                 />
-                <div className="flex items-center gap-3">
-            
-                    <img src={facebookIcon} alt="" className="h-[33px]  w-[33px]" />
-                    <img src={instagramIcon} alt="" className="h-[33px] w-[33px]" />
-                    <img src={youtubeIcon} alt="" className="h-[33px] w-[33px]" />
+                <div className="flex items-center gap-2 md:gap-3">
+                    <img src={facebookIcon} alt="" className="h-6 w-6 md:h-[33px] md:w-[33px]" />
+                    <img src={instagramIcon} alt="" className="h-6 w-6 md:h-[33px] md:w-[33px]" />
+                    <img src={youtubeIcon} alt="" className="h-6 w-6 md:h-[33px] md:w-[33px]" />
                 </div>
               </div>
-              <p className="text-[24px] font-semibold text-ink/50">
+              <p className="text-[14px] font-semibold text-ink/50 md:text-[24px]">
                 La única plataforma sin cargos de servicios ni por ticket
               </p>
             </div>
-            <div className="mt-[70px] flex flex-wrap items-center justify-center gap-6 text-[18px] text-ink/50">
+            <div className="mt-6 flex flex-col items-start gap-2 text-[14px] text-ink/50 md:mt-[70px] md:flex-row md:flex-wrap md:items-center md:justify-center md:gap-6 md:text-[18px]">
               {footerLinks.map((link) => (
                 <a key={link.label} href={link.href} className="hover:text-ink">
                   {link.label}
                 </a>
               ))}
             </div>
-            <p className="mt-6 text-center text-[18px] text-ink/40">
+            <p className="mt-6 text-center text-[12px] text-ink/40 md:text-[18px]">
               Copyright © ZOCO 2025
             </p>
           </div>
