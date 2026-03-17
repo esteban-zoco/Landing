@@ -30,10 +30,10 @@ export default function FeatureCards() {
                 />
               </div>
               <div className="mx-auto w-[242px] md:mx-0 md:w-[293px]">
-                <h3 className="mt-4 text-[23px] font-medium leading-[25px] text-ink transition-colors duration-500 group-hover:text-white md:mt-6 md:text-[30px] md:leading-[1]">
+                <h3 className="mt-4 text-[23px] font-medium leading-[25px] text-ink transition-colors duration-500 group-hover:text-white md:mt-6 md:text-[30px] md:leading-[1] md:ml-[15px]">
                   Creá y publicá gratis tus eventos
                 </h3>
-                <p className="mt-3 translate-y-3 text-[14px] leading-[17px] text-white/90 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 md:mt-4 md:text-sm md:leading-normal">
+                <p className="mt-3 translate-y-3 text-[14px] leading-[17px] text-white/90 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 md:mt-4 md:text-sm md:leading-normal md:ml-[15px]">
                   Configurá tu evento y empezá a vender entradas en minutos con
                   un proceso de compra simple y sin fricciones.
                 </p>
@@ -143,7 +143,7 @@ export default function FeatureCards() {
                   }}
                 />
                 <div className="relative z-10 mt-4 w-full max-w-[240px] text-left transition-transform duration-500 group-hover:-translate-y-2 md:max-w-[210px] mx-auto md:mx-0">
-                  <h3 className="translate-y-2 text-[23px] font-medium leading-[25px] text-ink transition-all duration-500 group-hover:translate-y-0 group-hover:text-white md:translate-y-16 md:text-[30px] md:leading-tight">
+                  <h3 className="translate-y-0 text-[23px] font-medium leading-[25px] text-ink transition-all duration-500 group-hover:translate-y-0 group-hover:text-white md:translate-y-16 md:text-[30px] md:leading-tight">
                     Pagos
                     integrados
                   </h3>
