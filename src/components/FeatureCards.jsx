@@ -22,25 +22,37 @@ export default function FeatureCards() {
         return;
       }
 
-      const viewportCenter = window.innerHeight * 0.45;
+      const anchorLine = window.innerHeight * 0.45;
       let bestIndex = -1;
-      let bestDistance = Number.POSITIVE_INFINITY;
 
       cardRefs.current.forEach((element, index) => {
         if (!element) {
           return;
         }
         const rect = element.getBoundingClientRect();
-        if (rect.bottom <= 0 || rect.top >= window.innerHeight) {
-          return;
-        }
-        const midPoint = rect.top + rect.height / 2;
-        const distance = Math.abs(midPoint - viewportCenter);
-        if (distance < bestDistance) {
-          bestDistance = distance;
+        if (rect.top <= anchorLine && rect.bottom >= anchorLine) {
           bestIndex = index;
         }
       });
+
+      if (bestIndex === -1) {
+        let bestDistance = Number.POSITIVE_INFINITY;
+        cardRefs.current.forEach((element, index) => {
+          if (!element) {
+            return;
+          }
+          const rect = element.getBoundingClientRect();
+          if (rect.bottom <= 0 || rect.top >= window.innerHeight) {
+            return;
+          }
+          const midPoint = rect.top + rect.height / 2;
+          const distance = Math.abs(midPoint - anchorLine);
+          if (distance < bestDistance) {
+            bestDistance = distance;
+            bestIndex = index;
+          }
+        });
+      }
 
       setActiveIndex(bestIndex);
     };
@@ -239,7 +251,7 @@ export default function FeatureCards() {
                     <img
                       src={scanMobileImage}
                       alt="App de escaneo"
-                      className="md:hidden relative h-full w-full rounded-[18px] object-cover shadow-card transition-all duration-700 md:duration-500 group-hover:bottom-[-40px] group-data-[active=true]:bottom-[-40px]"
+                      className="md:hidden relative bottom-0 h-full w-full rounded-[18px] object-cover shadow-card transition-all duration-700 md:duration-500 group-hover:bottom-[-40px] group-data-[active=true]:bottom-[-40px]"
                     />
                     <img
                       src="https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/e470f6db-1b35-4642-83ea-9ae3037edeed+copia+2+1.svg"
