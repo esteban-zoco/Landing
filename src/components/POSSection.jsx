@@ -47,7 +47,7 @@ export default function POSSection() {
                   <h3 className="text-[18px] font-display font-semibold leading-[21px] md:text-[30px] md:leading-normal">
                     {feature.title}
                   </h3>
-                  <p className="mt-2 text-[15px] font-normal text-ink leading-[22px] md:mt-3 md:text-[18px] md:leading-normal">
+                  <p className="mt-2 text-[15px] leading-[1.1] font-normal text-ink md:leading-[22px] md:mt-3 md:text-[18px] md:leading-normal">
                     {feature.description}
                   </p>
                 </div>

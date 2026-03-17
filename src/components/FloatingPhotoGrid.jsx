@@ -179,8 +179,6 @@ export default function FloatingPhotoGrid() {
             );
           })}
         </div>
-
-
       </Reveal>
     </section>
   );

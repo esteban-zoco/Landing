@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { navLinks } from "../data/content";
 import zocoLogo from "../assets/logo/zocoticket 1.svg";
+import zocoLogoScrolled from "../assets/logo/zocotickets.png";
 import Button from "./ui/Button";
 
 export default function Header() {
@@ -23,7 +24,11 @@ export default function Header() {
     >
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 md:px-[72px] min-w-[1440px]  ">
         <a href="#" className="flex items-center gap-2">
-          <img src={zocoLogo} alt="ZOCO tickets" className="h-6 w-auto" />
+          <img
+            src={scrolled ? zocoLogoScrolled : zocoLogo}
+            alt="ZOCO tickets"
+            className="h-6 w-auto"
+          />
         </a>
         <nav className="hidden items-center gap-8 lg:flex">
           {navLinks.map((link) => (
@@ -99,4 +104,3 @@ export default function Header() {
     </motion.header>
   );
 }
-

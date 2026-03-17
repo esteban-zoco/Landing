@@ -33,7 +33,7 @@ export default function FeatureCards() {
                 <h3 className="mt-4 text-[23px] font-medium leading-[25px] text-ink transition-colors duration-500 group-hover:text-white md:mt-6 md:text-[30px] md:leading-[1] md:ml-[15px]">
                   Creá y publicá gratis tus eventos
                 </h3>
-                <p className="mt-3 translate-y-3 text-[14px] leading-[17px] text-white/90 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 md:mt-4 md:text-sm md:leading-normal md:ml-[15px]">
+                <p className="mt-3 translate-y-3 text-[14px] leading-none text-white/90 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 md:mt-4 md:text-sm md:leading-normal md:ml-[15px]">
                   Configurá tu evento y empezá a vender entradas en minutos con
                   un proceso de compra simple y sin fricciones.
                 </p>
@@ -57,7 +57,7 @@ export default function FeatureCards() {
                     para el
                     organizador
                   </h3>
-                  <p className="mt-3 max-w-[220px] text-[14px] leading-[17px] text-white/90 opacity-0 transition-all duration-500 group-hover:opacity-100 md:mt-4 md:text-sm md:leading-normal">
+                  <p className="mt-3 max-w-[220px] text-[14px] leading-none text-white/90 opacity-0 transition-all duration-500 group-hover:opacity-100 md:mt-4 md:text-sm md:leading-normal">
                     Vendé entradas sin pagar comisiones ni cargos ocultos. Toda
                     la ganancia es para el organizador.
                   </p>
@@ -79,7 +79,7 @@ export default function FeatureCards() {
                       <br />
                       un solo panel
                     </h3>
-                    <p className="mt-2 max-w-[220px] text-[14px] leading-[17px] text-white/90 opacity-0 transition-all duration-500 group-hover:opacity-100 md:mt-3 md:text-sm md:leading-normal">
+                    <p className="mt-2 max-w-[220px] text-[14px] leading-none text-white/90 opacity-0 transition-all duration-500 group-hover:opacity-100 md:mt-3 md:text-sm md:leading-normal">
                       Administrá entradas, accesos, invitados y ventas desde un
                       solo lugar.
                     </p>
@@ -113,7 +113,7 @@ export default function FeatureCards() {
                     <h3 className="text-[23px] min-w-[230px] font-medium leading-[25px] text-ink transition-colors duration-500 group-hover:text-white md:text-[28px] md:leading-[1.1]">
                       Escaneá entradas al instante
                     </h3>
-                    <p className="mt-2 text-[14px] leading-[17px] text-white/90 opacity-0 transition-all duration-500 group-hover:opacity-100 md:mt-3 md:text-sm md:leading-normal">
+                    <p className="mt-2 text-[14px] leading-none text-white/90 opacity-0 transition-all duration-500 group-hover:opacity-100 md:mt-3 md:text-sm md:leading-normal">
                       Validá tickets con rapidez desde la app de escáner.
                       Ingreso ágil, sin filas y con registro inmediato de
                       asistencia.
@@ -147,7 +147,7 @@ export default function FeatureCards() {
                     Pagos
                     integrados
                   </h3>
-                  <p className="mt-3 text-[14px] leading-[17px] text-white/90 opacity-0 transition-all duration-500 group-hover:opacity-100 md:mt-4 md:text-sm md:leading-normal">
+                  <p className="mt-3 text-[14px] leading-none text-white/90 opacity-0 transition-all duration-500 group-hover:opacity-100 md:mt-4 md:text-sm md:leading-normal">
                     Cobrá tus entradas de forma simple y segura con todas las
                     tarjetas y billeteras virtuales.
                   </p>

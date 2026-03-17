@@ -75,7 +75,7 @@ export default function VideoCarouselSection() {
     <section ref={sectionRef} className="section-spacing bg-[#F3F3F3]">
       <Reveal className="container-shell">
         <div className="max-w-2xl md:mb-16">
-          <h2 className="font-semibold text-[23px] font-display md:text-[45px] md:min-w-[1061px] md:leading-[1.1]">{title}</h2>
+          <h2 className="font-semibold leading-[1.1] text-[23px] font-display md:text-[45px] md:min-w-[1061px] md:leading-[1.1]">{title}</h2>
         </div>
 
         <div className="space-y-6">
@@ -128,7 +128,7 @@ export default function VideoCarouselSection() {
                     <span>{slide.title}</span>
                   </div>
                   {isActive ? (
-                    <p className="mt-2 text-[15px] text-white/85 max-w-[445px] leading-[20px] md:text-[18px] md:leading-normal">
+                    <p className="mt-2 text-[15px] leading-[1.1] text-white/85 max-w-[445px] md:leading-[20px] md:text-[18px] md:leading-normal">
                       {slide.description}
                     </p>
                   ) : null}

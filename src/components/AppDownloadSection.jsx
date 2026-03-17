@@ -14,7 +14,7 @@ export default function AppDownloadSection() {
                     <div>Descargá la app de ZOCO Tickets</div>
                     <div className="mt-2 h-px w-full bg-[repeating-linear-gradient(to_right,rgba(20,24,22,0.4)_0_6px,transparent_6px_12px)]" />
                   </div>
-                  <h2 className="mt-4 text-[23px] font-display text-ink md:text-[26px]">
+                  <h2 className="mt-4 text-[23px] leading-[1.1] font-display text-ink md:text-[26px]">
                     Gestioná tu evento desde cualquier lugar.
                   </h2>
                   <div className="mt-6 flex flex-wrap justify-center gap-3 md:justify-start">
