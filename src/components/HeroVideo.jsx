@@ -6,6 +6,7 @@ import arrowDown from "../assets/flecha-hacia-abajo-para-navegar 2.svg";
 
 export default function HeroVideo() {
   const sectionRef = useRef(null);
+  const heroVideoRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start start", "end start"],
@@ -25,6 +26,25 @@ export default function HeroVideo() {
   const contentOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0.2]);
   const contentY = useTransform(scrollYProgress, [0, 0.3], [0, -40]);
 
+  useEffect(() => {
+    const video = heroVideoRef.current;
+    if (!video) return undefined;
+
+    const tryPlay = () => {
+      video.play().catch(() => {});
+    };
+
+    const onFirstTouch = () => {
+      tryPlay();
+      window.removeEventListener("touchstart", onFirstTouch);
+    };
+
+    window.addEventListener("touchstart", onFirstTouch, { passive: true });
+    tryPlay();
+
+    return () => window.removeEventListener("touchstart", onFirstTouch);
+  }, []);
+
   return (
     <section
       id="plataforma"
@@ -37,6 +57,7 @@ export default function HeroVideo() {
           className="relative h-full w-full overflow-hidden bg-black"
         >
           <video
+            ref={heroVideoRef}
             className="h-full w-full object-cover"
             src={heroContent.videoUrl}
             poster={heroContent.posterUrl}
