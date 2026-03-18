@@ -90,6 +90,7 @@ export default function HeroVideo() {
               <div className="mt-16 flex flex-row flex-nowrap items-center justify-center gap-3 sm:flex-row">
                 <Button
                   size="lg"
+                  href="#ctasection"
                   className="h-[35px] min-w-[140px] whitespace-nowrap px-4 py-0 text-[15px] leading-[1] sm:h-auto sm:min-w-0 sm:border sm:border-transparent sm:px-[16px] sm:py-[8px]"
                 >
                   {heroContent.primaryCta}

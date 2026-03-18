@@ -5,6 +5,7 @@ export default function Button({
   className = "",
   ...props
 }) {
+  const Component = props.href ? "a" : "button";
   const base =
     "inline-flex items-center justify-center rounded-[8px] font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fern/40";
   const sizes = {
@@ -22,11 +23,11 @@ export default function Button({
   };
 
   return (
-    <button
+    <Component
       className={`${base} ${sizes[size]} ${variants[variant]} ${className}`}
       {...props}
     >
       {children}
-    </button>
+    </Component>
   );
 }

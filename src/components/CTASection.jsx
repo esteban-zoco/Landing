@@ -4,7 +4,7 @@ import boletoWp from "../assets/Boletowp.svg";
 
 export default function CTASection() {
   return (
-    <section className="section-spacing bg-white">
+    <section id="ctasection" className="section-spacing bg-white">
       <div className="container-shell">
         <Reveal>
           <div className="relative overflow-hidden rounded-3xl px-6 py-16 text-center md:px-10 md:py-24 mt-10 mb-10">
@@ -22,7 +22,13 @@ export default function CTASection() {
                 y empezar a vender en minutos.
               </p>
               <div className="mt-6">
-                <Button size="md" className="gap-2 px-5 py-2.5 text-sm">
+                <Button
+                  size="md"
+                  href="https://wa.me/5493813545650"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="gap-2 px-5 py-2.5 text-sm"
+                >
                   <svg
                     aria-hidden="true"
                     viewBox="0 0 24 24"

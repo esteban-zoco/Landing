@@ -10,7 +10,7 @@ export const navLinks = [
   { label: "Servicios", href: "#servicios" },
   { label: "POS", href: "#pos" },
   { label: "Eventos", href: "#eventos" },
-  { label: "App", href: "#app" },
+  { label: "App", href: "#appdownloader" },
    */}
 ];
 
@@ -272,4 +272,3 @@ export const footerLinks = [
   { label: "Términos y Condiciones", href: "#" },
   { label: "¿Necesitás soporte?", href: "#" },
 ];
-

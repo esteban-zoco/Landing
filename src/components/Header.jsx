@@ -50,6 +50,7 @@ export default function Header() {
           <Button
             size="sm"
             variant={scrolled ? "primary" : "secondary"}
+            href="#appdownloader"
             className={
               scrolled
                 ? ""
@@ -61,7 +62,7 @@ export default function Header() {
         </div>
         <div className="flex items-center gap-2 lg:hidden">
           <a
-            href="#app"
+            href="#appdownloader"
             className="flex h-8 w-8 items-center justify-center rounded-full border border-ink/15 bg-white text-ink/90 shadow-soft"
             aria-label="Descargar app"
           >
@@ -104,6 +105,7 @@ export default function Header() {
               ))}
               <Button
                 variant={scrolled ? "primary" : "secondary"}
+                href="#appdownloader"
                 className={
                   scrolled
                     ? "w-full"
