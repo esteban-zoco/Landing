@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import Button from "./ui/Button";
 import { heroContent } from "../data/content";
 import arrowDown from "../assets/flecha-hacia-abajo-para-navegar 2.svg";
