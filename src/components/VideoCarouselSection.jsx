@@ -94,7 +94,7 @@ export default function VideoCarouselSection() {
                 onMouseEnter={() => setActiveIndex(index)}
                 onFocus={() => setActiveIndex(index)}
                 style={{ scale: cardScale }}
-                className={`relative h-[460px] w-[342px] shrink-0 overflow-hidden rounded-3xl bg-ink/10 shadow-card transition-all duration-500 md:h-[572px] md:w-[520px] ${
+                className={`relative h-[460px] w-[342px] shrink-0 overflow-hidden rounded-xl bg-ink/10 shadow-card transition-all duration-500 md:h-[572px] md:w-[520px] ${
                   isActive
                     ? "opacity-100 md:w-[762px]"
                     : "opacity-100 md:w-[520px]"

@@ -40,7 +40,7 @@ export default function POSSection() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <ul className="divide-y divide-ink/20 mx-auto max-w-[292px] md:max-w-[725px]">
+            <ul className="divide-y divide-ink mt-8 md:mt-0 mx-auto max-w-[292px] md:max-w-[725px]">
             {posSection.features.map((feature) => (
               <li key={feature.title} className="mt-0 py-4 md:mt-6 md:py-7">
                 <div className="mx-auto max-w-[292px] md:max-w-[725px]">
