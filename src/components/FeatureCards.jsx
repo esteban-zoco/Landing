@@ -196,7 +196,7 @@ export default function FeatureCards() {
                       Administrá entradas, accesos, invitados y ventas desde un
                       solo lugar.
                     </p>
-                    <div className="mt-5 flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-white/80 opacity-0 transition-all duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100">
+                    <div className="mt-5 flex items-center font-semibold gap-2 text-xs uppercase tracking-[0.2em] text-white opacity-0 transition-all duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100">
                       <img src={polygonIcon} alt="" className="h-3 w-3" />
                       <span>Descubrir funciones</span>
                     </div>
@@ -241,7 +241,7 @@ export default function FeatureCards() {
                       Ingreso ágil, sin filas y con registro inmediato de
                       asistencia.
                     </p>
-                    <div className="mt-5 flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-white/80 opacity-0 transition-all duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100">
+                    <div className="mt-5 flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-white font-semibold opacity-0 transition-all duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100">
                       <img src={polygonIcon} alt="" className="h-3 w-3" />
                       <span>Obtené la app</span>
                     </div>
@@ -256,7 +256,7 @@ export default function FeatureCards() {
                     <img
                       src="https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/e470f6db-1b35-4642-83ea-9ae3037edeed+copia+2+1.svg"
                       alt="App de escaneo"
-                      className="hidden md:block relative h-full w-full rounded-[18px] object-cover"
+                      className="hidden md:block relative h-full w-full rounded-[18px] object-cover md:ml-[25px]"
                     />
                   </div>
                 </div>
