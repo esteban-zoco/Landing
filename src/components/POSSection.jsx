@@ -1,7 +1,8 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+﻿import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Reveal from "./Reveal";
 import { posSection } from "../data/content";
+import TitleReveal from "./TitleReveal";
 
 export default function POSSection() {
   const ref = useRef(null);
@@ -17,9 +18,9 @@ export default function POSSection() {
     <section id="pos" ref={ref} className="section-spacing bg-white">
       <Reveal className="container-shell">
         <div className="mx-auto mb-6 max-w-[342px] text-center md:max-w-3xl">
-          <h2 className="mx-auto max-w-[342px] text-[24px] font-display font-semibold leading-[1.25] md:max-w-[741px] md:text-[45px] md:leading-[1.1]">
+          <TitleReveal className="mx-auto max-w-[342px] text-[24px] font-display font-semibold leading-[1.25] md:max-w-[741px] md:text-[45px] md:leading-[1.1]">
             {posSection.title}
-          </h2>
+          </TitleReveal>
         </div>
         <div className="relative">
           <motion.div

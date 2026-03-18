@@ -36,7 +36,7 @@ export default function Footer() {
               ))}
             </div>
             <p className="mt-6 text-center text-[12px] text-ink/40 md:text-[18px]">
-              Copyright © ZOCO 2025
+              Copyright © ZOCO 2026
             </p>
           </div>
         </Reveal>

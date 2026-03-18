@@ -3,6 +3,7 @@ import Reveal from "./Reveal";
 import polygonIcon from "../assets/Polygon 2.svg";
 import panelMobileImage from "../assets/computadora.svg";
 import scanMobileImage from "../assets/Mask group (1).svg";
+import TitleReveal from "./TitleReveal";
 
 export default function FeatureCards() {
   const cardRefs = useRef([]);
@@ -104,10 +105,10 @@ export default function FeatureCards() {
     <section id="servicios" className="section-spacing bg-white">
       <Reveal className="container-shell !max-w-[1280px]">
         <div className="mb-10 max-w-[342px] md:mb-16 md:max-w-[1080px]">
-          <h2 className="mt-0 font-semibold text-[23px] font-display leading-[25px] md:mt-3 md:text-[45px] md:leading-[1.1]">
+          <TitleReveal className="mt-0 font-semibold text-[23px] font-display leading-[25px] md:mt-3 md:text-[45px] md:leading-[1.1]">
             No somos una ticketera más. <br />
             Conectamos todo lo que un evento necesita.
-          </h2>
+          </TitleReveal>
         </div>
 
         <div className="grid gap-6 justify-items-center lg:justify-items-stretch lg:grid-cols-[369px_1fr]">

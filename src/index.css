@@ -1,4 +1,4 @@
-@tailwind base;
+﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -55,3 +55,41 @@ img {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.title-reveal__text {
+  display: inline;
+}
+
+.title-reveal__word {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.title-reveal__word-inner {
+  display: inline-block;
+  transform: translateY(120%);
+  will-change: transform;
+}
+
+.title-reveal--animate .title-reveal__word-inner {
+  animation: title-reveal 0.7s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  animation-delay: var(--delay, 0s);
+}
+
+@keyframes title-reveal {
+  from {
+    transform: translateY(120%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .title-reveal__word-inner {
+    animation: none;
+    transform: none;
+  }
+}
+

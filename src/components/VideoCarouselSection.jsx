@@ -1,7 +1,8 @@
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+﻿import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import Reveal from "./Reveal";
 import { panelCarousel } from "../data/content";
+import TitleReveal from "./TitleReveal";
 
 export default function VideoCarouselSection() {
   const { title, slides } = panelCarousel;
@@ -89,7 +90,7 @@ export default function VideoCarouselSection() {
     <section ref={sectionRef} className="section-spacing bg-[#F3F3F3]">
       <Reveal className="container-shell">
         <div className="max-w-2xl md:mb-16">
-          <h2 className="font-semibold leading-[1.1] text-[23px] font-display md:text-[45px] md:min-w-[1061px] md:leading-[1.1]">{title}</h2>
+          <TitleReveal className="font-semibold leading-[1.1] text-[23px] font-display md:text-[45px] md:min-w-[1061px] md:leading-[1.1]">{title}</TitleReveal>
         </div>
 
         <div className="space-y-6">

@@ -1,7 +1,8 @@
-import { motion, useInView } from "framer-motion";
+﻿import { motion, useInView } from "framer-motion";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { eventTypes } from "../data/content";
 import Reveal from "./Reveal";
+import TitleReveal from "./TitleReveal";
 
 function MobileEventCard({ item, isActive, cardRef }) {
   return (
@@ -25,14 +26,16 @@ function MobileEventCard({ item, isActive, cardRef }) {
         transition={{ duration: 0.35 }}
         className="absolute bottom-0 left-0 right-0 p-5 text-white"
       >
-        <h3 className="text-[20px] font-semibold">{item.title}</h3>
+        <h3 className="text-[26px] font-semibold leading-[1.05]">
+          {item.title}
+        </h3>
         <p className="mt-2 text-[14px] text-white/85">{item.description}</p>
       </motion.div>
       <motion.div
         initial={false}
         animate={{ opacity: isActive ? 0 : 0.55 }}
         transition={{ duration: 0.3 }}
-        className="absolute left-5 top-5 text-[24px] font-semibold leading-[1.05] text-white"
+        className="absolute inset-x-5 top-8 bottom-8 flex items-center text-[26px] font-semibold leading-[1.05] text-white"
       >
         {item.title}
       </motion.div>
@@ -136,9 +139,9 @@ export default function EventTypesCarousel() {
       <Reveal className="w-full">
         <div className="container-shell !max-w-[1280px]">
           <div className="mb-14 flex flex-col gap-6 md:grid md:grid-cols-[1.1fr_0.9fr] md:items-start md:gap-16">
-            <h2 className="max-w-[502px] font-semibold text-[23px] font-display leading-tight md:text-[36px]">
+            <TitleReveal className="max-w-[502px] font-semibold text-[23px] font-display leading-tight md:text-[36px]">
               ZOCO tickets funciona para todo tipo de eventos.
-            </h2>
+            </TitleReveal>
             <p className="max-w-[548px] leading-[1.1] text-[15px] md:leading-relaxed text-ink md:text-[15px]">
               Sea un festival multitudinario, una noche de boliche o un evento
               deportivo, ZOCO tickets te permite gestionar la venta de entradas y
