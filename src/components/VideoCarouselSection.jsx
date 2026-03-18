@@ -10,6 +10,7 @@ export default function VideoCarouselSection() {
   const videoRefs = useRef([]);
   const trackRef = useRef(null);
   const sectionRef = useRef(null);
+  const hoverCooldownRef = useRef(0);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start end", "center center"],
@@ -33,6 +34,19 @@ export default function VideoCarouselSection() {
 
   const goTo = (nextIndex) => {
     setActiveIndex(clampIndex(nextIndex));
+  };
+
+  const handleHoverStep = (index) => {
+    const now = Date.now();
+    if (now - hoverCooldownRef.current < 450) {
+      return;
+    }
+    hoverCooldownRef.current = now;
+    setActiveIndex((prev) => {
+      if (index === prev) return prev;
+      const direction = index > prev ? 1 : -1;
+      return clampIndex(prev + direction);
+    });
   };
 
   useEffect(() => {
@@ -91,7 +105,7 @@ export default function VideoCarouselSection() {
                 ref={(node) => {
                   cardRefs.current[index] = node;
                 }}
-                onMouseEnter={() => setActiveIndex(index)}
+                onMouseEnter={() => handleHoverStep(index)}
                 onFocus={() => setActiveIndex(index)}
                 style={{ scale: cardScale }}
                 className={`relative h-[460px] w-[342px] shrink-0 overflow-hidden rounded-xl bg-ink/10 shadow-card transition-all duration-500 md:h-[572px] md:w-[520px] ${
