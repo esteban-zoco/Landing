@@ -58,24 +58,24 @@ export default function HeroVideo() {
              {/* <p className="mb-4 text-xs uppercase tracking-[0.3em] text-white/70">
                 Plataforma integral de eventos
               </p>*/}
-              <h1 className="mx-auto max-w-[908px] font-display text-[34px] font-semibold leading-[42px] sm:text-[40px] sm:leading-[48px] lg:text-[48px] lg:leading-[54px]">
+              <h1 className="mx-auto max-w-[908px] font-display text-[44px] font-semibold leading-[42px] sm:text-[40px] sm:leading-[48px] lg:text-[64px] lg:leading-[66px]">
                 <span className="block">{heroContent.titleLine1}</span>
                 <span className="block">{heroContent.titleLine2}</span>
               </h1>
               {/*<p className="mt-5 text-base text-white/80 md:text-lg">
                 {heroContent.subtitle}
               </p>*/}
-              <div className="mt-16 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <div className="mt-16 flex flex-row flex-nowrap items-center justify-center gap-3 sm:flex-row">
                 <Button
                   size="lg"
-                  className="px-[16px] py-[8px] text-[15px] leading-[1]"
+                  className="h-[35px] w-[140px] px-0 py-0 text-[15px] leading-[1] sm:h-auto sm:w-auto sm:px-[16px] sm:py-[8px]"
                 >
                   {heroContent.primaryCta}
                 </Button>
                 <Button
                   variant="secondary"
                   size="lg"
-                  className="gap-2 px-[16px] py-[8px] text-[15px] leading-[1]"
+                  className="h-[35px] w-[120px] gap-2 px-0 py-0 text-[15px] leading-[1] sm:h-auto sm:w-auto sm:px-[16px] sm:py-[8px]"
                 >
                   <span>{heroContent.secondaryCta}</span>
                   <img src={arrowDown} alt="" className="h-3 w-3" />

@@ -15,8 +15,8 @@ export const navLinks = [
 ];
 
 export const heroContent = {
-  titleLine1: "Solución integral para todo",
-  titleLine2: "tipo de eventos.",
+  titleLine1: "Solución integral para todo tipo de eventos.",
+  titleLine2: "",
   subtitle:
     "Ventas, accesos, comunicación y datos en un solo lugar, con una estética premium.",
   primaryCta: "Empezar ahora",

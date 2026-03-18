@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { navLinks } from "../data/content";
 import zocoLogo from "../assets/logo/zocoticket 1.svg";
 import zocoLogoScrolled from "../assets/logo/zocotickets.png";
+import descargarIcon from "../assets/descargar.svg";
 import Button from "./ui/Button";
 
 export default function Header() {
@@ -22,12 +23,12 @@ export default function Header() {
         scrolled ? "glass-surface shadow-sm py-3" : "py-5"
       }`}
     >
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 md:px-[72px] min-w-[1440px]  ">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 md:px-[72px] lg:min-w-[1440px]">
         <a href="#" className="flex items-center gap-2">
           <img
             src={scrolled ? zocoLogoScrolled : zocoLogo}
             alt="ZOCO tickets"
-            className="h-6 w-auto"
+            className="h-[18px] w-[119px] lg:h-6 lg:w-auto"
           />
         </a>
         <nav className="hidden items-center gap-8 lg:flex">
@@ -58,14 +59,28 @@ export default function Header() {
             DESCARGÁ LA APP
           </Button>
         </div>
-        <button
-          className="flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 lg:hidden"
-          onClick={() => setOpen((prev) => !prev)}
-          aria-label="Abrir menú"
-          aria-expanded={open}
-        >
-          <span className="text-lg">{open ? "✕" : "☰"}</span>
-        </button>
+        <div className="flex items-center gap-2 lg:hidden">
+          <a
+            href="#app"
+            className="flex h-8 w-8 items-center justify-center rounded-full border border-ink/15 bg-white text-ink/90 shadow-soft"
+            aria-label="Descargar app"
+          >
+            <img
+              src={descargarIcon}
+              alt=""
+              className="h-4 w-4"
+              aria-hidden="true"
+            />
+          </a>
+          <button
+            className="hidden h-10 w-10 items-center justify-center rounded-full border border-ink/10"
+            onClick={() => setOpen((prev) => !prev)}
+            aria-label="Abrir menú"
+            aria-expanded={open}
+          >
+            <span className="text-lg">{open ? "✕" : "☰"}</span>
+          </button>
+        </div>
       </div>
       <AnimatePresence>
         {open && (
