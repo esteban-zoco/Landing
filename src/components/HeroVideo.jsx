@@ -40,8 +40,9 @@ export default function HeroVideo() {
             className="h-full w-full object-cover"
             src={heroContent.videoUrl}
             poster={heroContent.posterUrl}
-            preload="metadata"
+            preload="auto"
             muted
+            defaultMuted
             autoPlay
             loop
             playsInline
@@ -68,14 +69,14 @@ export default function HeroVideo() {
               <div className="mt-16 flex flex-row flex-nowrap items-center justify-center gap-3 sm:flex-row">
                 <Button
                   size="lg"
-                  className="h-[35px] w-[140px] px-0 py-0 text-[15px] leading-[1] sm:h-auto sm:w-auto sm:px-[16px] sm:py-[8px]"
+                  className="h-[35px] min-w-[140px] whitespace-nowrap px-4 py-0 text-[15px] leading-[1] sm:h-auto sm:min-w-0 sm:border sm:border-transparent sm:px-[16px] sm:py-[8px]"
                 >
                   {heroContent.primaryCta}
                 </Button>
                 <Button
                   variant="secondary"
                   size="lg"
-                  className="h-[35px] w-[120px] gap-2 px-0 py-0 text-[15px] leading-[1] sm:h-auto sm:w-auto sm:px-[16px] sm:py-[8px]"
+                  className="h-[35px] min-w-[120px] whitespace-nowrap gap-2 px-4 py-0 text-[15px] leading-[1] sm:h-auto sm:min-w-0 sm:px-[16px] sm:py-[8px]"
                 >
                   <span>{heroContent.secondaryCta}</span>
                   <img src={arrowDown} alt="" className="h-3 w-3" />
