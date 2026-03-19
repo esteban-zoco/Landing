@@ -54,7 +54,11 @@ export default function FloatingPhotoGrid() {
   }, [isInView]);
 
   return (
-    <section ref={sectionRef} className="relative h-screen bg-white">
+    <section
+      id="floating-photos"
+      ref={sectionRef}
+      className="relative h-screen bg-white"
+    >
       <Reveal className="relative mx-auto h-full max-w-none px-6 md:px-10">
         <div className="relative h-full lg:hidden">
           <div className="absolute inset-0 flex items-center justify-center px-6 text-center">

@@ -98,6 +98,7 @@ export default function HeroVideo() {
                 <Button
                   variant="secondary"
                   size="lg"
+                  href="#floating-photos"
                   className="h-[35px] min-w-[120px] whitespace-nowrap gap-2 px-4 py-0 text-[15px] leading-[1] sm:h-auto sm:min-w-0 sm:px-[16px] sm:py-[8px]"
                 >
                   <span>{heroContent.secondaryCta}</span>
