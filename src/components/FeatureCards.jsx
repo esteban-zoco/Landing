@@ -197,10 +197,15 @@ export default function FeatureCards() {
                       Administrá entradas, accesos, invitados y ventas desde un
                       solo lugar.
                     </p>
-                    <div className="mt-5 flex items-center font-semibold gap-2 text-xs uppercase tracking-[0.2em] text-white opacity-0 transition-all duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100">
+                    <a
+                      href="#funciones"
+                      className="mt-5 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-white opacity-0 transition-all duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100 group/link"
+                    >
                       <img src={polygonIcon} alt="" className="h-3 w-3" />
-                      <span>Descubrir funciones</span>
-                    </div>
+                      <span className="underline-offset-4 group-hover/link:underline">
+                        Descubrir funciones
+                      </span>
+                    </a>
                   </div>
                   <div className="relative mt-4 flex w-full -translate-y-10 justify-center transition-transform duration-700 md:duration-500 group-hover:-translate-y-8 group-data-[active=true]:-translate-y-8 md:absolute md:bottom-0 md:right-6 md:mt-0 md:w-auto md:translate-y-0 md:justify-end md:group-hover:translate-y-0 md:group-data-[active=true]:translate-y-0 md:group-hover:translate-x-4 md:group-data-[active=true]:translate-x-4">
                     <img
@@ -242,10 +247,15 @@ export default function FeatureCards() {
                       Ingreso ágil, sin filas y con registro inmediato de
                       asistencia.
                     </p>
-                    <div className="mt-5 flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-white font-semibold opacity-0 transition-all duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100">
+                    <a
+                      href="#appdownloader"
+                      className="mt-5 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-white opacity-0 transition-all duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100 group/link"
+                    >
                       <img src={polygonIcon} alt="" className="h-3 w-3" />
-                      <span>Obtené la app</span>
-                    </div>
+                      <span className="underline-offset-4 group-hover/link:underline">
+                        Obtené la app
+                      </span>
+                    </a>
                   </div>
                   <div className="relative z-0 mx-auto mt-4 h-[176px] w-[282px] -translate-y-16 transition-all duration-700 md:duration-500 group-hover:-translate-y-16 group-data-[active=true]:-translate-y-16 group-hover:h-[176px] group-data-[active=true]:h-[176px] group-hover:w-[282px] group-data-[active=true]:w-[282px] md:absolute md:bottom-[-23px] md:left-1/2 md:mt-0 md:h-[180px] md:w-[435px] md:-translate-x-1/2 md:translate-y-0 md:group-hover:translate-y-0 md:group-data-[active=true]:translate-y-0 md:group-hover:h-[180px] md:group-data-[active=true]:h-[180px] md:group-hover:w-[435px] md:group-data-[active=true]:w-[435px]">
                     <div className="absolute bottom-[-40px] left-0 h-[120px] w-full rounded-t-[22px] rounded-b-none bg-white shadow-card transition-all duration-700 md:duration-500 group-hover:h-[104px] group-data-[active=true]:h-[104px] md:bottom-0 md:h-[160px] " />

@@ -87,7 +87,11 @@ export default function VideoCarouselSection() {
   }, [slides.length]);
 
   return (
-    <section ref={sectionRef} className="section-spacing bg-[#F3F3F3]">
+    <section
+      id="funciones"
+      ref={sectionRef}
+      className="section-spacing bg-[#F3F3F3]"
+    >
       <Reveal className="container-shell">
         <div className="max-w-2xl md:mb-16">
           <TitleReveal className="font-semibold leading-[1.1] text-[23px] font-display md:text-[45px] md:min-w-[1061px] md:leading-[1.1]">{title}</TitleReveal>
