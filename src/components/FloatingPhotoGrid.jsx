@@ -9,6 +9,7 @@ export default function FloatingPhotoGrid() {
   const timersRef = useRef(new Map());
   const sectionRef = useRef(null);
   const hasIntroRef = useRef(false);
+  const INTRO_ACTIVE_MS = 6000;
   const isInView = useInView(sectionRef, { margin: "-20% 0px -20% 0px" });
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -49,7 +50,7 @@ export default function FloatingPhotoGrid() {
     setActiveIds(new Set(floatingPhotos.map((photo) => photo.id)));
     const timeout = setTimeout(() => {
       setActiveIds(new Set());
-    }, 1200);
+    }, INTRO_ACTIVE_MS);
     return () => clearTimeout(timeout);
   }, [isInView]);
 

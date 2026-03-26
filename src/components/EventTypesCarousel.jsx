@@ -150,7 +150,7 @@ export default function EventTypesCarousel() {
           </div>
         </div>
         <div className="md:hidden px-6">
-          <div className="space-y-6">
+          <div className="space-y-3">
             {eventTypes.map((item, index) => (
               <MobileEventCard
                 key={item.title}
