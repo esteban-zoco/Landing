@@ -1,4 +1,4 @@
-import { motion, useInView, useScroll, useTransform } from "framer-motion";
+﻿import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { floatingPhotos } from "../data/content";
 import zocoLogo from "../assets/logo/zocoticket 1.svg";
@@ -62,11 +62,10 @@ export default function FloatingPhotoGrid() {
     >
       <Reveal className="relative mx-auto h-full max-w-none px-6 md:px-10">
         <div className="relative h-full lg:hidden">
-          <div className="absolute inset-0 flex items-center justify-center px-6 text-center">
-            <div className="mx-auto w-full max-w-[320px]">
-              <p className="text-[18px] font-medium uppercase tracking-[0.18em] text-ink">
-                Unica plataforma 100% gratuita. Sin cargos de servicio. Sin costo
-                por ticket. Sin contratos de permanencia.
+          <div className="absolute inset-0 flex items-center justify-center px-6">
+            <div className="mx-auto w-full max-w-[342px]">
+              <p className="text-[16px] font-medium uppercase leading-[22px] text-center text-ink">
+                VENDÉ ENTRADAS Y QUEDATE CON TODO. Sin costo por ticket. Sin comisiones. Sin contratos.
               </p>
             </div>
           </div>
@@ -184,3 +183,4 @@ export default function FloatingPhotoGrid() {
     </section>
   );
 }
+

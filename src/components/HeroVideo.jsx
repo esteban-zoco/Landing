@@ -1,8 +1,9 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+﻿import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Button from "./ui/Button";
 import { heroContent } from "../data/content";
 import arrowDown from "../assets/flecha-hacia-abajo-para-navegar 2.svg";
+import arrowRight from "../assets/flecha-correcta (1) 1.svg";
 
 export default function HeroVideo() {
   const sectionRef = useRef(null);
@@ -77,6 +78,7 @@ export default function HeroVideo() {
               style={{ opacity: contentOpacity, y: contentY }}
               className="max-w-[980px] px-6 text-white"
             >
+              <div className="translate-y-[80px] md:translate-y-[160px]">
              {/* <p className="mb-4 text-xs uppercase tracking-[0.3em] text-white/70">
                 Plataforma integral de eventos
               </p>*/}
@@ -105,6 +107,25 @@ export default function HeroVideo() {
                   <img src={arrowDown} alt="" className="h-3 w-3" />
                 </Button>
               </div>
+              <div className="mt-[234px] flex justify-center">
+                <a
+                  href="https://zocotickets.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex flex-col items-center gap-2 text-[13px] font-medium text-white/90 transition hover:text-white md:flex-row md:gap-3 md:text-[15px]"
+                >
+                  <span className="text-center md:text-left">
+                    ¿Querés ver cómo se ve en vivo?
+                  </span>
+                  <span className="inline-flex items-center gap-2">
+                    <img src={arrowRight} alt="" className="hidden h-4 w-4 md:inline md:h-[22px] md:w-[22px]" />
+                    <span className="font-semibold text-white underline underline-offset-4">
+                      Ver eventos
+                    </span>
+                  </span>
+                </a>
+              </div>
+              </div>
             </motion.div>
           </div>
         </motion.div>
@@ -112,3 +133,6 @@ export default function HeroVideo() {
     </section>
   );
 }
+
+
+

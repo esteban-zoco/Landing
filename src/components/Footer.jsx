@@ -15,27 +15,21 @@ export default function Footer() {
         <Reveal>
           <div className="border-t border-ink/15 pt-6 md:pt-8">
             <div className="flex flex-col gap-6 md:gap-10">
-              <div className="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
+              <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
                 <div className="flex items-center gap-4 md:gap-6">
                   <img
                     src={zocoLogoScrolled}
                     alt="ZOCO"
-                    className="h-[26px] w-[112px] md:h-[33px] md:w-[220px]"
+                    className="h-[26px] w-[130px] md:h-[33px] md:w-[220px]"
                   />
-                  <div className="flex items-center gap-2 md:gap-3">
-                    <span className="flex h-7 w-7 items-center justify-center rounded-full bg-ink/10 md:h-8 md:w-8">
-                      <img src={facebookIcon} alt="" className="h-6 w-6 md:h-[33px] md:w-[33px]" />
-                    </span>
-                    <span className="flex h-7 w-7 items-center justify-center rounded-full bg-ink/10 md:h-8 md:w-8">
-                      <img src={instagramIcon} alt="" className="h-6 w-6 md:h-[33px] md:w-[33px]" />
-                    </span>
-                    <span className="flex h-7 w-7 items-center justify-center rounded-full bg-ink/10 md:h-8 md:w-8">
-                      <img src={youtubeIcon} alt="" className="h-6 w-6 md:h-[33px] md:w-[33px]" />
-                    </span>
+                  <div className="hidden items-center gap-2 md:flex md:gap-3">
+                    <img src={facebookIcon} alt="Facebook" className="h-8 w-8 md:h-[34px] md:w-[34px]" />
+                    <img src={instagramIcon} alt="Instagram" className="h-8 w-8 md:h-[34px] md:w-[34px]" />
+                    <img src={youtubeIcon} alt="YouTube" className="h-8 w-8 md:h-[34px] md:w-[34px]" />
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3">
+                <div className="hidden items-center gap-3 md:flex">
                   <a
                     href="https://apps.apple.com/us/app/zoco-tickets/id6758010461"
                     target="_blank"
@@ -67,21 +61,59 @@ export default function Footer() {
                 </div>
               </div>
 
-              <p className="text-center text-[14px] font-semibold text-ink/50 md:text-[20px]">
+              <p className="text-left text-[14px] font-semibold text-ink/50 md:text-center md:text-[20px]">
                 La única plataforma sin cargos por servicio ni por ticket
               </p>
-            </div>
 
-            <div className="mt-6 flex flex-col items-center gap-2 text-[14px] text-ink/50 md:mt-8 md:flex-row md:flex-wrap md:justify-center md:gap-6 md:text-[18px]">
-              {footerLinks.map((link) => (
-                <a key={link.label} href={link.href} className="hover:text-ink">
-                  {link.label}
+              <div className="flex flex-col items-start gap-2 text-[14px] text-ink/50 md:mt-4 md:flex-row md:flex-wrap md:justify-center md:gap-6 md:text-[18px]">
+                {footerLinks.map((link) => (
+                  <a key={link.label} href={link.href} className="hover:text-ink">
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+
+              <div className="flex items-center gap-3 md:hidden">
+                <img src={facebookIcon} alt="Facebook" className="h-8 w-8" />
+                <img src={instagramIcon} alt="Instagram" className="h-8 w-8" />
+                <img src={youtubeIcon} alt="YouTube" className="h-8 w-8" />
+              </div>
+
+              <div className="flex items-center gap-3 md:hidden">
+                <a
+                  href="https://apps.apple.com/us/app/zoco-tickets/id6758010461"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex h-9 items-center gap-2 rounded-[10px] bg-[#2D3035] px-4 text-xs font-semibold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-[#B1C20E]"
+                >
+                  <img
+                    src={appleLogo}
+                    alt="App Store"
+                    className="h-4 w-4 object-contain"
+                    loading="lazy"
+                  />
+                  App Store
                 </a>
-              ))}
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.men7ar31.zocotickets"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex h-9 items-center gap-2 rounded-[10px] bg-[#2D3035] px-4 text-xs font-semibold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-[#B1C20E]"
+                >
+                  <img
+                    src={googlePlayLogo}
+                    alt="Google Play"
+                    className="h-4 w-4 object-contain"
+                    loading="lazy"
+                  />
+                  Google Play
+                </a>
+              </div>
+
+              <p className="text-center text-[12px] text-ink/40 md:text-[18px]">
+                Copyright © ZOCO 2026
+              </p>
             </div>
-            <p className="mt-6 text-center text-[12px] text-ink/40 md:text-[18px]">
-              Copyright © ZOCO 2026
-            </p>
           </div>
         </Reveal>
       </div>

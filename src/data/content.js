@@ -36,7 +36,7 @@ export const panelCarousel = {
         "Seguí ventas, asistentes y rendimiento en un solo lugar.",
       icon: iconStats,
       videoUrl:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/2.mp4",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/mockup1.mp4",
       poster:
         "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/2.jpg",
     },

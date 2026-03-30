@@ -17,7 +17,7 @@ export default function CTASection() {
               <h2 className="text-3xl text-[23px] leading-[1.1] font-display font-semibold text-ink md:text-[45px] w-full max-w-[901px] md:w-[901px] mx-auto">
               Empezá a vender entradas hoy mismo.
               </h2>
-              <p className="mt-7 text-[13px] font-medium uppercase leading-[1.1]  tracking-[10%] text-ink md:text-[18px] max-w-[899px] mx-auto">
+              <p className="mt-7 text-[15px] font-medium uppercase leading-[1.1]  tracking-[10%] text-ink md:text-[18px] max-w-[899px] mx-auto">
                 Configurá tu evento en minutos y empezá a vender sin complicaciones. Sin costo por ticket. Sin coMISIONES.
               </p>
               <div className="mt-6">

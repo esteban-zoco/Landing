@@ -135,7 +135,7 @@ export default function VideoCarouselSection() {
                 ) : null}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6 text-white md:bottom-6 md:left-14 md:right-6">
-                  <div className="flex items-center gap-2 text-[18px] font-semibold leading-[19px] md:text-[17px] md:leading-[19px]">
+                  <div className="flex items-center gap-2 text-[13px] font-semibold leading-[17px] md:text-[17px] md:leading-[19px]">
                     {slide.icon ? (
                       <img
                         src={slide.icon}
@@ -147,7 +147,7 @@ export default function VideoCarouselSection() {
                     <span>{slide.title}</span>
                   </div>
                   {isActive ? (
-                    <p className="mt-2 text-[15px] leading-[1.1] text-white/85 max-w-[531px] md:leading-[20px] md:text-[15px] md:leading-normal">
+                    <p className="mt-2 text-[13px] leading-[1.1] text-white/85 max-w-[531px] md:leading-[20px] md:text-[15px] md:leading-normal">
                       {slide.description}
                     </p>
                   ) : null}
