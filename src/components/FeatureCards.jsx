@@ -184,7 +184,7 @@ export default function FeatureCards() {
                 />
                 <div className="relative z-10 flex h-full flex-col">
                   <div className="relative z-10 max-w-[240px] md:max-w-[320px] mx-auto md:mx-0">
-                    <h3 className="text-[23px] font-medium leading-[25px] text-ink transition-colors duration-700 md:duration-500 group-hover:text-white group-data-[active=true]:text-white md:text-[30px] md:leading-[1.15]">
+                    <h3 className="text-[23px] font-medium leading-[25px] text-ink transition-colors duration-700 md:duration-500 group-hover:text-white group-data-[active=true]:text-white md:text-[30px] md:leading-[1.15] md:max-w-[264px]">
                       Control total de tu evento en tiempo real
                     </h3>
                     <p className="mt-2 max-w-[220px] text-[14px] leading-none text-white/90 opacity-0 transition-all duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100 md:mt-3 md:text-sm md:leading-normal">

@@ -142,7 +142,7 @@ export default function EventTypesCarousel() {
             <TitleReveal className="max-w-[502px] font-semibold text-[23px] font-display leading-tight md:text-[36px]">
              Una solución pensada para cada tipo de evento.
             </TitleReveal>
-            <p className="max-w-[429px] leading-[1.1] text-[15px] md:leading-relaxed text-ink md:text-[15px]">
+            <p className="max-w-[492px] leading-[22px] text-[15px] md:leading-[22px] text-ink md:text-[17px]">
 Desde eventos masivos hasta experiencias más exclusivas, adaptá ZOCO a tu operación y vendé sin límites.  <strong>Elegí tu tipo de evento y empezá en minutos.</strong> 
             </p>
           </div>
