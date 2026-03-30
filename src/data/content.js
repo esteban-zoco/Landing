@@ -46,7 +46,7 @@ export const panelCarousel = {
         "Asigná roles y controlá operaciones sin desorden.",
       icon: iconReport,
       videoUrl:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/3.mp4",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/mockup2.mp4",
       poster:
         "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/3.jpg",
     },
@@ -56,7 +56,7 @@ export const panelCarousel = {
         "Validá tickets al instante y seguí la asistencia en vivo.",
       icon: iconTeam,
       videoUrl:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/1.mp4",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/mockup3.mp4",
       poster:
         "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/1.jpg",
     },
@@ -66,7 +66,7 @@ export const panelCarousel = {
         "Creá accesos especiales con QR listo para compartir.",
       icon: iconScan,
       videoUrl:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/4.mp4",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/mockup4.mp4",
       poster:
         "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/4.jpg",
     },
@@ -76,7 +76,7 @@ export const panelCarousel = {
         "Entregá certificados digitales sin trabajo manual.",
       icon: iconCertificate,
       videoUrl:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/5.mp4",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/mockup5.mp4",
       poster:
         "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/5.jpg",
     },
@@ -86,7 +86,7 @@ export const panelCarousel = {
         "Visualizá ingresos de entradas y barra en tiempo real.",
       icon: iconCertificate,
       videoUrl:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/6.mp4",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/mockup6.mp4",
       poster:
         "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/6.jpg",
     },

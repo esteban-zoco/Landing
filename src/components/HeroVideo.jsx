@@ -78,7 +78,7 @@ export default function HeroVideo() {
               style={{ opacity: contentOpacity, y: contentY }}
               className="max-w-[980px] px-6 text-white"
             >
-              <div className="translate-y-[80px] md:translate-y-[160px]">
+              <div className="translate-y-[160px] md:translate-y-[160px]">
              {/* <p className="mb-4 text-xs uppercase tracking-[0.3em] text-white/70">
                 Plataforma integral de eventos
               </p>*/}

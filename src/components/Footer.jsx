@@ -20,7 +20,7 @@ export default function Footer() {
                   <img
                     src={zocoLogoScrolled}
                     alt="ZOCO"
-                    className="h-[26px] w-[130px] md:h-[33px] md:w-[220px]"
+                    className="h-[26px] w-[190px] md:h-[33px] md:w-[220px]"
                   />
                   <div className="hidden items-center gap-2 md:flex md:gap-3">
                     <img src={facebookIcon} alt="Facebook" className="h-8 w-8 md:h-[34px] md:w-[34px]" />

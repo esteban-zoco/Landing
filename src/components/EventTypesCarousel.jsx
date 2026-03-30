@@ -29,7 +29,7 @@ function MobileEventCard({ item, isActive, cardRef }) {
         <h3 className="text-[26px] font-semibold leading-[1.05]">
           {item.title}
         </h3>
-        <p className="mt-2 text-[14px] text-white/85">{item.description}</p>
+      
       </motion.div>
       <motion.div
         initial={false}
@@ -140,10 +140,10 @@ export default function EventTypesCarousel() {
         <div className="container-shell !max-w-[1280px]">
           <div className="mb-14 flex flex-col gap-6 md:grid md:grid-cols-[1.1fr_0.9fr] md:items-start md:gap-16">
             <TitleReveal className="max-w-[502px] font-semibold text-[23px] font-display leading-tight md:text-[36px]">
-             Una solución pensada para cada tipo de evento.
+              Una solución pensada para cada tipo de evento.
             </TitleReveal>
-            <p className="max-w-[492px] leading-[22px] text-[15px] md:leading-[22px] text-ink md:text-[17px]">
-Desde eventos masivos hasta experiencias más exclusivas, adaptá ZOCO a tu operación y vendé sin límites.  <strong>Elegí tu tipo de evento y empezá en minutos.</strong> 
+            <p className="max-w-[492px] leading-[17px] text-[15px] md:leading-[22px] text-ink md:text-[17px]">
+              Desde eventos masivos hasta experiencias más exclusivas, adaptá ZOCO a tu operación y vendé sin límites.  <strong>Elegí tu tipo de evento y empezá en minutos.</strong> 
             </p>
           </div>
         </div>
@@ -190,7 +190,7 @@ Desde eventos masivos hasta experiencias más exclusivas, adaptá ZOCO a tu oper
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
-                  <h3 className="text-lg font-semibold">{item.title}</h3>
+                  <h3 className="text-[26px] font-semibold">{item.title}</h3>
                 </div>
               </motion.article>
             ))}
