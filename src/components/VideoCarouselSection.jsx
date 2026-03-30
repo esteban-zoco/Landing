@@ -94,7 +94,7 @@ export default function VideoCarouselSection() {
     >
       <Reveal className="container-shell">
         <div className="max-w-2xl md:mb-16">
-          <TitleReveal className="font-semibold leading-[1.1] text-[23px] font-display md:text-[45px] md:min-w-[1061px] md:leading-[1.1]">{title}</TitleReveal>
+          <TitleReveal className="font-semibold leading-[1.1] text-[23px] font-display md:text-[45px] md:min-w-[730px] md:leading-[1.1]">{title}</TitleReveal>
         </div>
 
         <div className="space-y-6">
@@ -147,7 +147,7 @@ export default function VideoCarouselSection() {
                     <span>{slide.title}</span>
                   </div>
                   {isActive ? (
-                    <p className="mt-2 text-[15px] leading-[1.1] text-white/85 max-w-[445px] md:leading-[20px] md:text-[18px] md:leading-normal">
+                    <p className="mt-2 text-[15px] leading-[1.1] text-white/85 max-w-[531px] md:leading-[20px] md:text-[18px] md:leading-normal">
                       {slide.description}
                     </p>
                   ) : null}

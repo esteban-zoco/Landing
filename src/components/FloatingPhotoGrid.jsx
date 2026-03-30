@@ -123,12 +123,8 @@ export default function FloatingPhotoGrid() {
         </div>
         <div className="pointer-events-none absolute inset-0 hidden items-center justify-center lg:flex">
           <div className="mx-auto w-full max-w-[971px] text-center">
-            <p className="text-[22px] font-medium uppercase tracking-[0.2em] text-ink">
-              Vende entradas y gestiona tus eventos.
-            </p>
             <p className=" text-[22px] font-medium uppercase tracking-[0.18em] text-ink ">
-              Unica plataforma 100% gratuita. Sin cargos de servicio. Sin costo
-              por ticket. Sin contratos de permanencia.
+                VENDÉ ENTRADAS Y QUEDATE CON TODO. Sin costo por ticket. Sin comisiones. Sin contratos.
             </p>
           </div>
         </div>

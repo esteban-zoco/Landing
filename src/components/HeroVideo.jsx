@@ -80,7 +80,7 @@ export default function HeroVideo() {
              {/* <p className="mb-4 text-xs uppercase tracking-[0.3em] text-white/70">
                 Plataforma integral de eventos
               </p>*/}
-              <h1 className="mx-auto max-w-[908px] font-display text-[44px] font-semibold leading-[42px] sm:text-[40px] sm:leading-[48px] lg:text-[64px] lg:leading-[66px]">
+              <h1 className="mx-auto max-w-[830px] font-display text-[44px] font-semibold leading-[42px] sm:text-[40px] sm:leading-[48px] lg:text-[64px] lg:leading-[66px]">
                 <span className="block">{heroContent.titleLine1}</span>
                 <span className="block">{heroContent.titleLine2}</span>
               </h1>

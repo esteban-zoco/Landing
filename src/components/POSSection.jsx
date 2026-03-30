@@ -13,6 +13,31 @@ export default function POSSection() {
 
   const scale = useTransform(scrollYProgress, [0, 0.6], [1.20, 0.82]);
   const y = useTransform(scrollYProgress, [0, 0.6], [0, 40]);
+  const zocoPagosText = "ZOCO Servicios de Pago";
+  const zocoPagosHref = "https://zocopagos.com";
+
+  const renderFeatureDescription = (feature) => {
+    if (!feature.description.includes(zocoPagosText)) {
+      return feature.description;
+    }
+
+    const [before, after] = feature.description.split(zocoPagosText);
+
+    return (
+      <>
+        {before}
+        <a
+          href={zocoPagosHref}
+          target="_blank"
+          rel="noreferrer"
+          className="font-semibold text-ink underline decoration-ink/40 underline-offset-4 transition-colors hover:decoration-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink/30 focus-visible:ring-offset-2"
+        >
+          {zocoPagosText}
+        </a>
+        {after}
+      </>
+    );
+  };
 
   return (
     <section id="pos" ref={ref} className="section-spacing bg-white">
@@ -49,7 +74,7 @@ export default function POSSection() {
                     {feature.title}
                   </h3>
                   <p className="mt-2 text-[15px] leading-[1.1] font-normal text-ink md:leading-[22px] md:mt-3 md:text-[18px] md:leading-normal">
-                    {feature.description}
+                    {renderFeatureDescription(feature)}
                   </p>
                 </div>
               </li>

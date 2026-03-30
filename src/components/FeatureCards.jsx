@@ -106,8 +106,8 @@ export default function FeatureCards() {
       <Reveal className="container-shell !max-w-[1280px]">
         <div className="mb-10 max-w-[342px] md:mb-16 md:max-w-[1080px]">
           <TitleReveal className="mt-0 font-semibold text-[23px] font-display leading-[25px] md:mt-3 md:text-[45px] md:leading-[1.1]">
-            No somos una ticketera más. <br />
-            Conectamos todo lo que un evento necesita.
+            No solo somos una ticketera.<br />
+            Somos todo el sistema de tu evento.
           </TitleReveal>
         </div>
 
@@ -135,11 +135,10 @@ export default function FeatureCards() {
               </div>
               <div className="mx-auto w-[242px] md:mx-0 md:w-[293px]">
                 <h3 className="mt-4 text-[23px] font-medium leading-[25px] text-ink transition-colors duration-700 md:duration-500 group-hover:text-white group-data-[active=true]:text-white md:mt-6 md:text-[30px] md:leading-[1] md:ml-[15px]">
-                  Creá y publicá gratis tus eventos
+                  Creá tu evento y vendé en minutos
                 </h3>
                 <p className="mt-3 translate-y-3 text-[14px] leading-none text-white/90 opacity-0 transition-all duration-700 md:duration-500 group-hover:translate-y-0 group-data-[active=true]:translate-y-0 group-hover:opacity-100 group-data-[active=true]:opacity-100 md:mt-4 md:text-sm md:leading-normal md:ml-[15px]">
-                  Configurá tu evento y empezá a vender entradas en minutos con
-                  un proceso de compra simple y sin fricciones.
+                    Configurá tu evento y empezá a vender entradas en minutos con un proceso de compra simple y sin fricciones.
                 </p>
               </div>
             </div>
@@ -162,13 +161,10 @@ export default function FeatureCards() {
                 />
                 <div className="relative z-10 w-[220px] max-w-[220px] text-left md:w-full md:max-w-[220px] mx-auto md:mx-0">
                   <h3 className="text-[23px] font-medium leading-[25px] text-ink transition-colors duration-700 md:duration-500 group-hover:text-white group-data-[active=true]:text-white md:text-[30px] md:leading-tight">
-                    Cero cargo
-                    para el
-                    organizador
+                    Vendé entradas sin pagar nada
                   </h3>
                   <p className="mt-0 max-h-0 overflow-hidden max-w-[220px] text-[14px] leading-none text-white/90 opacity-0 transition-all duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100 group-hover:max-h-[120px] group-data-[active=true]:max-h-[120px] group-hover:mt-3 group-data-[active=true]:mt-3 md:mt-4 md:text-sm md:leading-normal md:max-h-none md:overflow-visible">
-                    Vendé entradas sin pagar comisiones ni cargos ocultos. Toda
-                    la ganancia es para el organizador.
+                    Vendé entradas sin pagar comisiones ni cargos ocultos. Toda la ganancia es para el organizador.
                   </p>
                 </div>
               </div>
@@ -189,13 +185,10 @@ export default function FeatureCards() {
                 <div className="relative z-10 flex h-full flex-col">
                   <div className="relative z-10 max-w-[240px] md:max-w-[320px] mx-auto md:mx-0">
                     <h3 className="text-[23px] font-medium leading-[25px] text-ink transition-colors duration-700 md:duration-500 group-hover:text-white group-data-[active=true]:text-white md:text-[30px] md:leading-[1.15]">
-                      Gestioná todo en
-                      <br />
-                      un solo panel
+                      Control total de tu evento en tiempo real
                     </h3>
                     <p className="mt-2 max-w-[220px] text-[14px] leading-none text-white/90 opacity-0 transition-all duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100 md:mt-3 md:text-sm md:leading-normal">
-                      Administrá entradas, accesos, invitados y ventas desde un
-                      solo lugar.
+                      Administrá entradas, accesos, invitados y ventas desde un solo lugar.
                     </p>
                     <a
                       href="#funciones"
@@ -240,7 +233,7 @@ export default function FeatureCards() {
                 <div className="relative z-10 flex h-full flex-col">
                   <div className="relative z-10 mx-auto w-full max-w-[240px] px-3  md:max-w-[435px] md:px-6 lg:px-0">
                     <h3 className="text-[23px] min-w-[230px] font-medium leading-[25px] text-ink transition-colors duration-700 md:duration-500 group-hover:text-white group-data-[active=true]:text-white md:text-[28px] md:leading-[1.1]">
-                      Escaneá entradas al instante
+                      Ingresos rápidos, sin filas
                     </h3>
                     <p className="mt-2 text-[14px] leading-none text-white/90 opacity-0 transition-all duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100 md:mt-3 md:text-sm md:leading-normal">
                       Validá tickets con rapidez desde la app de escáner.
@@ -288,8 +281,7 @@ export default function FeatureCards() {
                 />
                 <div className="relative z-10 mt-0 w-[220px] max-w-[220px] text-left transition-transform duration-700 md:duration-500 group-hover:-translate-y-2 group-data-[active=true]:-translate-y-2 md:mt-4 md:w-full md:max-w-[210px] mx-auto md:mx-0">
                   <h3 className="translate-y-0 text-[23px] font-medium leading-[25px] text-ink transition-all duration-700 md:duration-500 group-hover:translate-y-0 group-data-[active=true]:translate-y-0 group-hover:text-white group-data-[active=true]:text-white md:translate-y-16 md:text-[30px] md:leading-tight">
-                    Pagos
-                    integrados
+                    Aceptá todos los medios de pago
                   </h3>
                   <p className="mt-0 max-h-0 overflow-hidden text-[14px] leading-none text-white/90 opacity-0 transition-all duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100 group-hover:max-h-[120px] group-data-[active=true]:max-h-[120px] group-hover:mt-3 group-data-[active=true]:mt-3 md:mt-4 md:text-sm md:leading-normal md:max-h-none md:overflow-visible">
                     Cobrá tus entradas de forma simple y segura con todas las

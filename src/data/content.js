@@ -15,7 +15,7 @@ export const navLinks = [
 ];
 
 export const heroContent = {
-  titleLine1: "Solución integral para todo tipo de eventos.",
+  titleLine1: "La única plataforma 100% gratuita",
   titleLine2: "",
   subtitle:
     "Ventas, accesos, comunicación y datos en un solo lugar, con una estética premium.",
@@ -28,12 +28,12 @@ export const heroContent = {
 };
 
 export const panelCarousel = {
-  title: "Organización simplificada con un panel donde controlás todo.",
+  title: "Control total de tu evento en un solo lugar.",
   slides: [
     {
-      title: "Estadísticas del evento",
+      title: "Tomá decisiones con datos reales",
       description:
-        "Accedé a métricas clave de ventas de entradas, asistentes registrados y rendimiento del evento.",
+        "Seguí ventas, asistentes y rendimiento en un solo lugar.",
       icon: iconStats,
       videoUrl:
         "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/2.mp4",
@@ -41,9 +41,9 @@ export const panelCarousel = {
         "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/2.jpg",
     },
     {
-      title: "Gestión del equipo",
+      title: "Todo tu equipo coordinado y bajo control",
       description:
-        "Creá usuarios y asigná un rol específico para delegar tareas a miembros del equipo.",
+        "Asigná roles y controlá operaciones sin desorden.",
       icon: iconReport,
       videoUrl:
         "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/3.mp4",
@@ -51,9 +51,9 @@ export const panelCarousel = {
         "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/3.jpg",
     },
     {
-      title: "Control de asistencia",
+      title: "Ingresos sin filas, control en tiempo real",
       description:
-        "Supervisá el ingreso de asistentes y validaciones de QR desde el panel.",
+        "Validá tickets al instante y seguí la asistencia en vivo.",
       icon: iconTeam,
       videoUrl:
         "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/1.mp4",
@@ -61,9 +61,9 @@ export const panelCarousel = {
         "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/1.jpg",
     },
     {
-      title: "Invitaciones especiales",
+      title: "Entradas exclusivas en segundos",
       description:
-        "Generá entradas con accesos exclusivos, definí una hora de vencimiento y ya tenés un QR listo para compartir.",
+        "Creá accesos especiales con QR listo para compartir.",
       icon: iconScan,
       videoUrl:
         "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/4.mp4",
@@ -71,9 +71,9 @@ export const panelCarousel = {
         "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/4.jpg",
     },
     {
-      title: "Certificados digitales",
+      title: "Generá certificados automáticamente",
       description:
-        "Emití certificados digitales para participantes, conferencias o eventos educativos.",
+        "Entregá certificados digitales sin trabajo manual.",
       icon: iconCertificate,
       videoUrl:
         "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/5.mp4",
@@ -81,9 +81,9 @@ export const panelCarousel = {
         "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/5.jpg",
     },
     {
-      title: "Reporte financiero",
+      title: "Sabé cuánto estás ganando en todo momento",
       description:
-        "Visualizá un resumen completo de los ingresos de tu evento, incluyendo ventas de entradas y consumos.",
+        "Visualizá ingresos de entradas y barra en tiempo real.",
       icon: iconCertificate,
       videoUrl:
         "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/6.mp4",
@@ -187,31 +187,31 @@ export const featureCards = [
 ];
 
 export const posSection = {
-  title: "Venta presencial con punto de venta integrado",
+  title: "Vendé entradas y cobrá todo desde un mismo sistema.",
   description:
     "Una experiencia omnicanal que combina ticketing online y POS físico con control total.",
   image:
     "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/freepik__ultrarealistic-product-render-of-two-modern-pos-de__40407+copia+1.svg",
   features: [
     {
-      title: "Experiencia de compra rápida",
+      title: "Filas más rápidas, más ventas",
       description:
-        "Ofrezca a los asistentes una entrada rápida y una admisión indolora para que pasen sin fricciones de las filas a los momentos.",
+        "Reducí tiempos de espera y aumentá la conversión en el evento.",
     },
     {
       title: "Hardware y software totalmente integrados",
       description:
-        "Acepte pagos en PDV con un lector de tarjetas totalmente integrado, impulsado por ZOCO Servicios de Pago.",
+        "Cobrá con terminales integradas directamente al sistema del evento. Impulsado por ZOCO Servicios de Pago.",
     },
     {
-      title: "Potentes informes",
+      title: "Control total de lo que vendés",
       description:
-        "Adáptese a las crecientes tendencias de su negocio con análisis unificados que combinan las ventas en el lugar y en línea.",
+        "Datos de todo: ventas, ingresos y consumos  en un solo reporte en tiempo real.",
     },
     {
-      title: "Cajas rápidas",
+      title: "Cobrá más rápido y sin errores",
       description:
-        "Cierre ventas de entradas y productos rápidamente en un panel fácil de usar que mantiene todo al alcance de su mano.",
+        "Cerrá ventas de entradas y productos rápidamente en un panel fácil de usar que mantiene todo al alcance de tu mano.",
     },
   ],
 };

@@ -1,4 +1,4 @@
-import Reveal from "./Reveal";
+﻿import Reveal from "./Reveal";
 import Button from "./ui/Button";
 import boletoWp from "../assets/Boletowp.svg";
 
@@ -13,13 +13,12 @@ export default function CTASection() {
               alt=""
               className="pointer-events-none absolute left-1/2 top-1/2 h-[320px] w-auto -translate-x-1/2 -translate-y-1/2 opacity-40 brightness-90"
             />
-            <div className="relative z-10 mx-auto max-w-3xl">
-              <h2 className="text-3xl text-[23px] leading-[1.1] font-display font-semibold text-ink md:text-[40px]">
-              ¿Querés empezar a vender entradas?
+            <div className="relative z-10 mx-auto w-full max-w-[960px]">
+              <h2 className="text-3xl text-[23px] leading-[1.1] font-display font-semibold text-ink md:text-[45px] w-full max-w-[901px] md:w-[901px] mx-auto">
+              Empezá a vender entradas hoy mismo.
               </h2>
-              <p className="mt-7 text-[13px] font-medium uppercase leading-[1.1]  tracking-[0.2em] text-ink md:text-[14px]">
-                Nuestro equipo puede ayudarte a configurar tu evento
-                y empezar a vender en minutos.
+              <p className="mt-7 text-[13px] font-medium uppercase leading-[1.1]  tracking-[10%] text-ink md:text-[18px] max-w-[899px] mx-auto">
+                Configurá tu evento en minutos y empezá a vender sin complicaciones. Sin costo por ticket. Sin coMISIONES.
               </p>
               <div className="mt-6">
                 <Button
