@@ -22,7 +22,7 @@ export const heroContent = {
   primaryCta: "Empezar ahora",
   secondaryCta: "Saber más",
   videoUrl:
-    "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/hero-video3.mp4",
+    "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/hero-video4.mp4",
   posterUrl:
     "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/video-herolanding.png",
 };
