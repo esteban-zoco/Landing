@@ -24,7 +24,7 @@ export const heroContent = {
   videoUrl:
     "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/hero-video4.mp4",
   posterUrl:
-    "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/video-herolanding.png",
+    "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/coverr-two-people-playing-tennis-8028-1080p.00_00_00_00.Imagen+fija001.png",
 };
 
 export const panelCarousel = {
