@@ -123,7 +123,7 @@ export default function FloatingPhotoGrid() {
         <div className="pointer-events-none absolute inset-0 hidden items-center justify-center lg:flex">
           <div className="mx-auto w-full max-w-[971px] text-center">
             <p className=" text-[22px] font-medium uppercase tracking-[0.18em] text-ink ">
-                VENDÉ ENTRADAS Y QUEDATE CON TODO. Sin costo por ticket. Sin comisiones. Sin contratos.
+                VENDÉ ENTRADAS Y QUEDATE CON TODO. <br /> Sin costo por ticket. Sin comisiones. Sin contratos.
             </p>
           </div>
         </div>

@@ -15,14 +15,14 @@ export const navLinks = [
 ];
 
 export const heroContent = {
-  titleLine1: "La única plataforma 100% gratuita",
+  titleLine1: "Vendé tickets y gestioná tu evento 100% gratis",
   titleLine2: "",
   subtitle:
     "Ventas, accesos, comunicación y datos en un solo lugar, con una estética premium.",
   primaryCta: "Empezar ahora",
   secondaryCta: "Saber más",
   videoUrl:
-    "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/video-herolanding.mp4",
+    "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/hero-video3.mp4",
   posterUrl:
     "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/video-herolanding.png",
 };
