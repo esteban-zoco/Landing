@@ -1,4 +1,4 @@
-﻿import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { motion, useInView, useScroll, useSpring, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import Reveal from "./Reveal";
 import { panelCarousel } from "../data/content";
@@ -12,6 +12,10 @@ export default function VideoCarouselSection() {
   const trackRef = useRef(null);
   const sectionRef = useRef(null);
   const hoverCooldownRef = useRef(0);
+  const isSectionInView = useInView(sectionRef, {
+    amount: 0.35,
+    margin: "0px 0px -10% 0px",
+  });
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start end", "center center"],
@@ -63,13 +67,14 @@ export default function VideoCarouselSection() {
 
     videoRefs.current.forEach((video, index) => {
       if (!video) return;
-      if (index === activeIndex) {
+      const shouldPlay = isSectionInView && index === activeIndex;
+      if (shouldPlay) {
         video.play().catch(() => {});
       } else {
         video.pause();
       }
     });
-  }, [activeIndex]);
+  }, [activeIndex, isSectionInView]);
 
   useEffect(() => {
     const prefersReduced = window.matchMedia(
@@ -202,3 +207,4 @@ export default function VideoCarouselSection() {
     </section>
   );
 }
+

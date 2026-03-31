@@ -138,12 +138,15 @@ export default function EventTypesCarousel() {
     >
       <Reveal className="w-full">
         <div className="container-shell !max-w-[1280px]">
-          <div className="mb-14 flex flex-col gap-6 md:grid md:grid-cols-[1.1fr_0.9fr] md:items-start md:gap-16">
+          <div className="mb-14 flex flex-col gap-6 md:grid md:grid-cols-[1.1fr_0.9fr] md:items-baseline md:gap-16">
             <TitleReveal className="max-w-[502px] font-semibold text-[23px] font-display leading-tight md:text-[36px]">
               Una solución pensada para cada tipo de evento.
             </TitleReveal>
             <p className="max-w-[492px] leading-[17px] text-[15px] md:leading-[22px] text-ink md:text-[17px]">
-              Desde eventos masivos hasta experiencias más exclusivas, adaptá ZOCO a tu operación y vendé sin límites.  <strong>Elegí tu tipo de evento y empezá en minutos.</strong> 
+              Desde eventos masivos hasta experiencias más exclusivas, adaptá ZOCO a tu operación y vendé sin límites.{" "}
+              <span className="font-semibold">
+                Elegí tu tipo de evento y empezá en minutos.
+              </span>
             </p>
           </div>
         </div>
