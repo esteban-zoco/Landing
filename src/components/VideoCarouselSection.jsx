@@ -12,6 +12,7 @@ export default function VideoCarouselSection() {
   const trackRef = useRef(null);
   const sectionRef = useRef(null);
   const hoverCooldownRef = useRef(0);
+  const activeIndexRef = useRef(0);
   const isSectionInView = useInView(sectionRef, {
     amount: 0.35,
     margin: "0px 0px -10% 0px",
@@ -26,6 +27,16 @@ export default function VideoCarouselSection() {
     damping: 24,
     mass: 0.9,
   });
+
+  const tryPlayVideo = (video) => {
+    if (!video) return;
+    video.muted = true;
+    video.defaultMuted = true;
+    const playPromise = video.play();
+    if (playPromise && typeof playPromise.catch === "function") {
+      playPromise.catch(() => {});
+    }
+  };
 
   const clampIndex = (nextIndex) => {
     if (nextIndex < 0) {
@@ -55,6 +66,7 @@ export default function VideoCarouselSection() {
   };
 
   useEffect(() => {
+    activeIndexRef.current = activeIndex;
     const track = trackRef.current;
     const card = cardRefs.current[activeIndex];
     if (track && card) {
@@ -69,12 +81,28 @@ export default function VideoCarouselSection() {
       if (!video) return;
       const shouldPlay = isSectionInView && index === activeIndex;
       if (shouldPlay) {
-        video.play().catch(() => {});
+        tryPlayVideo(video);
       } else {
         video.pause();
       }
     });
   }, [activeIndex, isSectionInView]);
+
+  useEffect(() => {
+    const onInteract = () => {
+      const video = videoRefs.current[activeIndexRef.current];
+      if (!video) return;
+      tryPlayVideo(video);
+    };
+
+    window.addEventListener("touchstart", onInteract, { passive: true });
+    window.addEventListener("click", onInteract);
+
+    return () => {
+      window.removeEventListener("touchstart", onInteract);
+      window.removeEventListener("click", onInteract);
+    };
+  }, []);
 
   useEffect(() => {
     const prefersReduced = window.matchMedia(
@@ -131,7 +159,10 @@ export default function VideoCarouselSection() {
                   className="h-full w-full object-cover"
                   src={slide.videoUrl}
                   poster={slide.poster}
+                  preload="metadata"
                   muted
+                  defaultMuted
+                  autoPlay
                   loop
                   playsInline
                 />
