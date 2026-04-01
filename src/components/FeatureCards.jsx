@@ -160,7 +160,7 @@ export default function FeatureCards() {
                   }}
                 />
                 <div className="relative z-10 w-[298px] max-w-[298px] text-left md:w-full md:max-w-[220px] mx-auto md:mx-0">
-                  <h3 className="text-[23px] font-medium leading-[25px] text-ink transition-colors duration-700 md:duration-500 group-hover:text-white group-data-[active=true]:text-white md:text-[30px] md:leading-tight">
+                  <h3 className="text-[23px] max-w-[240px] font-medium leading-[25px] text-ink transition-colors duration-700 md:duration-500 group-hover:text-white group-data-[active=true]:text-white md:text-[30px] md:leading-tight">
                     Vendé entradas sin pagar nada
                   </h3>
                   <p className="mt-0 max-h-0 overflow-hidden max-w-[298px] text-[14px] leading-none text-white/90 opacity-0 transition-all duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100 group-hover:max-h-[120px] group-data-[active=true]:max-h-[120px] group-hover:mt-3 group-data-[active=true]:mt-3 md:mt-4 md:text-sm md:leading-normal md:max-h-none md:overflow-visible">
@@ -232,7 +232,7 @@ export default function FeatureCards() {
                 />
                 <div className="relative z-10 flex h-full flex-col">
                   <div className="relative z-10 mx-auto w-full max-w-[298px] px-3  md:max-w-[435px] md:px-6 lg:px-0">
-                    <h3 className="text-[23px] min-w-[230px] font-medium leading-[25px] text-ink transition-colors duration-700 md:duration-500 group-hover:text-white group-data-[active=true]:text-white md:text-[28px] md:leading-[1.1]">
+                    <h3 className="text-[23px] max-w-[230px] font-medium leading-[25px] text-ink transition-colors duration-700 md:max-w-[408px] md:duration-500 group-hover:text-white group-data-[active=true]:text-white md:text-[28px] md:leading-[1.1]">
                       Ingresos rápidos, sin filas
                     </h3>
                     <p className="mt-2 text-[14px] leading-none text-white/90 opacity-0 transition-all duration-700 md:duration-500 group-hover:opacity-100 group-data-[active=true]:opacity-100 md:mt-3 md:text-sm md:leading-normal">
