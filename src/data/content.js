@@ -36,9 +36,9 @@ export const panelCarousel = {
         "Seguí ventas, asistentes y rendimiento en un solo lugar.",
       icon: iconStats,
       videoUrl:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/mockup1+(1).mp4",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/mockup1+(2).mp4",
       poster:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/2.jpg",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/1.png",
     },
     {
       title: "Todo tu equipo coordinado y bajo control",
@@ -48,7 +48,7 @@ export const panelCarousel = {
       videoUrl:
         "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/mockup2+(1).mp4",
       poster:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/3.jpg",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/2.png",
     },
     {
       title: "Ingresos sin filas, control en tiempo real",
@@ -56,9 +56,9 @@ export const panelCarousel = {
         "Validá tickets al instante y seguí la asistencia en vivo.",
       icon: iconTeam,
       videoUrl:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/mockup3.mp4",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/mockup3+(1).mp4",
       poster:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/1.jpg",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/3.png",
     },
     {
       title: "Entradas exclusivas en segundos",
@@ -66,9 +66,9 @@ export const panelCarousel = {
         "Creá accesos especiales con QR listo para compartir.",
       icon: iconScan,
       videoUrl:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/mockup4.mp4",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/mockup4+(1).mp4",
       poster:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/4.jpg",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/4.png",
     },
     {
       title: "Generá certificados automáticamente",
@@ -76,9 +76,9 @@ export const panelCarousel = {
         "Entregá certificados digitales sin trabajo manual.",
       icon: iconCertificate,
       videoUrl:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/mockup5.mp4",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/mockup5+(1).mp4",
       poster:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/5.jpg",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/5.png",
     },
     {
       title: "Sabé cuánto estás ganando en todo momento",
@@ -88,7 +88,7 @@ export const panelCarousel = {
       videoUrl:
         "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/mockup6.mp4",
       poster:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/6.jpg",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/6.png",
     },
   ],
 };
