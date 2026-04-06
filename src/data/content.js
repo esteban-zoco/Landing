@@ -86,7 +86,7 @@ export const panelCarousel = {
         "Visualizá ingresos de entradas y barra en tiempo real.",
       icon: iconCertificate,
       videoUrl:
-        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/mockup6.mp4",
+        "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/mockup6+(1).mp4",
       poster:
         "https://zoco-ticket-images.s3.us-east-2.amazonaws.com/Videos-landing/Videos+carrusel+/6.png",
     },
