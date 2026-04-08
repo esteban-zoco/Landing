@@ -4,20 +4,84 @@ import zocoLogo from "../assets/logo/zocotickets.png";
 import freeContractRaw from "../data/contracts/free-contract.txt?raw";
 import commercialContractRaw from "../data/contracts/commercial-contract.txt?raw";
 
-const parseContractSections = (rawText) =>
-  rawText
-    .split(/\n{2,}/)
-    .map((block) =>
-      block
-        .split("\n")
-        .map((line) => line.trim())
-        .filter(Boolean)
-    )
-    .filter((lines) => lines.length > 0)
-    .map((lines) => ({
-      title: lines[0],
-      paragraphs: lines.slice(1),
-    }));
+const isHeadingLine = (line) => {
+  if (!line) return false;
+  if (/^CAP[ÍI]TULO\b/i.test(line)) return true;
+  if (/^(CL[ÁA]USULA|\d+\.\s*CL[ÁA]USULA)\b/i.test(line)) return true;
+  if (/^\d+\.\s+[A-ZÁÉÍÓÚÜÑ]/.test(line)) return true;
+  if (/^[a-z]\)\s+[A-ZÁÉÍÓÚÜÑ]/.test(line)) return true;
+
+  // Headings in all caps (short enough to avoid classifying full paragraphs)
+  if (line.length <= 120 && /^[A-ZÁÉÍÓÚÜÑ0-9 .,:;()\-–—]+$/.test(line)) {
+    return true;
+  }
+
+  return false;
+};
+
+const parseContractSections = (rawText) => {
+  const lines = rawText
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean);
+
+  const sections = [];
+  let currentSection = null;
+
+  lines.forEach((line) => {
+    if (!currentSection || isHeadingLine(line)) {
+      currentSection = { title: line, paragraphs: [] };
+      sections.push(currentSection);
+      return;
+    }
+
+    currentSection.paragraphs.push(line);
+  });
+
+  return sections;
+};
+
+const downloadPdf = async ({ filename, title, body }) => {
+  const { jsPDF } = await import("jspdf");
+  const doc = new jsPDF({
+    orientation: "portrait",
+    unit: "pt",
+    format: "a4",
+  });
+
+  const pageWidth = doc.internal.pageSize.getWidth();
+  const pageHeight = doc.internal.pageSize.getHeight();
+  const marginX = 44;
+  const marginTop = 52;
+  const marginBottom = 44;
+  const maxTextWidth = pageWidth - marginX * 2;
+  const lineHeight = 15;
+
+  let y = marginTop;
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(13);
+  const titleLines = doc.splitTextToSize(title, maxTextWidth);
+  titleLines.forEach((line) => {
+    doc.text(line, marginX, y);
+    y += lineHeight + 1;
+  });
+
+  y += 8;
+  doc.setFont("helvetica", "normal");
+  doc.setFontSize(10.5);
+  const textLines = doc.splitTextToSize(body, maxTextWidth);
+
+  textLines.forEach((line) => {
+    if (y > pageHeight - marginBottom) {
+      doc.addPage();
+      y = marginTop;
+    }
+    doc.text(line, marginX, y);
+    y += lineHeight;
+  });
+
+  doc.save(filename);
+};
 
 export default function OrganizerContractsPage() {
   const [openId, setOpenId] = useState("");
@@ -37,6 +101,8 @@ export default function OrganizerContractsPage() {
         subtitle:
           "Texto completo del contrato aplicable a organizadores de eventos gratuitos.",
         sections: freeSections,
+        rawText: freeContractRaw,
+        downloadName: "contrato-eventos-gratuitos-zoco.pdf",
       },
       {
         id: "commercial",
@@ -46,6 +112,8 @@ export default function OrganizerContractsPage() {
         subtitle:
           "Texto completo del contrato comercial aplicable a organizadores que venden entradas y procesan pagos con ZOCO.",
         sections: commercialSections,
+        rawText: commercialContractRaw,
+        downloadName: "contrato-comercial-zoco.pdf",
       },
     ],
     [commercialSections, freeSections]
@@ -84,31 +152,52 @@ export default function OrganizerContractsPage() {
                     key={contract.id}
                     className={`contracts-item ${isOpen ? "is-open" : ""}`}
                   >
-                    <button
-                      type="button"
-                      className="contracts-item-header"
-                      onClick={() =>
-                        setOpenId((prev) => (prev === contract.id ? "" : contract.id))
-                      }
-                      aria-expanded={isOpen}
-                    >
+                    <div className="contracts-item-header">
                       <div className="contracts-item-heading">
                         <span className="contracts-item-tag">{contract.tag}</span>
                         <h2>{contract.title}</h2>
                         <p>{contract.subtitle}</p>
                       </div>
-                      <span className="contracts-item-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none">
-                          <path
-                            d="M6 9L12 15L18 9"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </span>
-                    </button>
+                      <div className="contracts-item-actions">
+                        <button
+                          type="button"
+                          className="contracts-download-btn"
+                          onClick={(event) => {
+                            event.stopPropagation();
+                            void downloadPdf({
+                              filename: contract.downloadName,
+                              title: contract.title,
+                              body: contract.rawText,
+                            });
+                          }}
+                        >
+                          Descargar
+                        </button>
+                        <button
+                          type="button"
+                          className="contracts-toggle-btn"
+                          onClick={() =>
+                            setOpenId((prev) => (prev === contract.id ? "" : contract.id))
+                          }
+                          aria-expanded={isOpen}
+                          aria-label={
+                            isOpen
+                              ? `Cerrar ${contract.tag}`
+                              : `Abrir ${contract.tag}`
+                          }
+                        >
+                          <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                              d="M6 9L12 15L18 9"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
 
                     <div className="contracts-item-panel">
                       <div className="contracts-item-content">
