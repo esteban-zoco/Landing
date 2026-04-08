@@ -12,6 +12,7 @@ export default function VideoCarouselSection() {
   const trackRef = useRef(null);
   const sectionRef = useRef(null);
   const hoverCooldownRef = useRef(0);
+  const hoverLockUntilRef = useRef(0);
   const activeIndexRef = useRef(0);
   const isSectionInView = useInView(sectionRef, {
     amount: 0.35,
@@ -52,8 +53,11 @@ export default function VideoCarouselSection() {
     setActiveIndex(clampIndex(nextIndex));
   };
 
-  const handleHoverStep = (index) => {
-    const now = Date.now();
+  const handleHoverStep = (index, eventTimestamp) => {
+    const now = eventTimestamp ?? 0;
+    if (now < hoverLockUntilRef.current) {
+      return;
+    }
     if (now - hoverCooldownRef.current < 450) {
       return;
     }
@@ -104,21 +108,6 @@ export default function VideoCarouselSection() {
     };
   }, []);
 
-  useEffect(() => {
-    const prefersReduced = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    );
-    if (prefersReduced.matches) {
-      return undefined;
-    }
-
-    const interval = setInterval(() => {
-      setActiveIndex((prev) => clampIndex(prev + 1));
-    }, 10000);
-
-    return () => clearInterval(interval);
-  }, [slides.length]);
-
   return (
     <section
       id="funciones"
@@ -143,7 +132,9 @@ export default function VideoCarouselSection() {
                 ref={(node) => {
                   cardRefs.current[index] = node;
                 }}
-                onMouseEnter={() => handleHoverStep(index)}
+                onMouseEnter={(event) =>
+                  handleHoverStep(index, event.timeStamp)
+                }
                 onFocus={() => setActiveIndex(index)}
                 style={{ scale: cardScale }}
                 className={`relative h-[460px] w-[342px] shrink-0 overflow-hidden rounded-xl bg-ink/10 shadow-card transition-all duration-500 md:h-[572px] md:w-[520px] ${
@@ -156,6 +147,13 @@ export default function VideoCarouselSection() {
                   ref={(node) => {
                     videoRefs.current[index] = node;
                   }}
+                  onEnded={(event) => {
+                    if (!isSectionInView) return;
+                    hoverLockUntilRef.current = event.timeStamp + 800;
+                    setActiveIndex((prev) =>
+                      prev === index ? clampIndex(prev + 1) : prev
+                    );
+                  }}
                   className="h-full w-full object-cover"
                   src={slide.videoUrl}
                   poster={slide.poster}
@@ -163,7 +161,6 @@ export default function VideoCarouselSection() {
                   muted
                   defaultMuted
                   autoPlay
-                  loop
                   playsInline
                 />
                 {!isActive ? (
