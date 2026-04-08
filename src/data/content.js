@@ -269,6 +269,7 @@ export const footerLinks = [
   { label: "Inicio", href: "#" },
   { label: "Eventos", href: "#eventos" },
   { label: "Política de Privacidad", href: "#" },
-  { label: "Términos y Condiciones", href: "#" },
+  { label: "Términos y Condiciones", href: "/terminos-y-condiciones-organizador" },
+  { label: "Contratos", href: "/contratos" },
   { label: "¿Necesitás soporte?", href: "#" },
 ];

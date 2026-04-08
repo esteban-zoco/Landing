@@ -10,9 +10,28 @@ import EventTypesCarousel from "./components/EventTypesCarousel";
 import CTASection from "./components/CTASection";
 import AppDownloadSection from "./components/AppDownloadSection";
 import Footer from "./components/Footer";
+import OrganizerTermsPage from "./pages/OrganizerTermsPage";
+import OrganizerContractsPage from "./pages/OrganizerContractsPage";
 
 export default function App() {
+  const normalizedPath = window.location.pathname.replace(/\/+$/, "") || "/";
+  const isOrganizerTermsPage = [
+    "/terminos-y-condiciones-organizador",
+    "/terminos-y-condiciones",
+    "/termsandcondition",
+  ].includes(normalizedPath);
+  const isOrganizerContractsPage = [
+    "/contratos",
+    "/contratos-organizador",
+    "/contracts",
+  ].includes(normalizedPath);
+  const isLegalPage = isOrganizerTermsPage || isOrganizerContractsPage;
+
   useEffect(() => {
+    if (isLegalPage) {
+      return undefined;
+    }
+
     const prefersReduced = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
     );
@@ -37,7 +56,14 @@ export default function App() {
       cancelAnimationFrame(frame);
       lenis.destroy();
     };
-  }, []);
+  }, [isLegalPage]);
+
+  if (isOrganizerTermsPage) {
+    return <OrganizerTermsPage />;
+  }
+  if (isOrganizerContractsPage) {
+    return <OrganizerContractsPage />;
+  }
 
   return (
     <div className="relative overflow-hidden">

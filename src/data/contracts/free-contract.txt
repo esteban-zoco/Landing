@@ -1,0 +1,170 @@
+CONTRATO DE PRESTACIÓN DE SERVICIOS TECNOLÓGICOS PARA GESTIÓN DE EVENTOS GRATUITOS
+
+Entre ZOCO S.A.S., CUIT N ° 30716799766, con domicilio en Av. Perón 2580 de la ciudad de Yerba Buena provincia de Tucumán, argentina, en adelante “ZOCO” y por la otra parte, ____________________________________, CUIT N ° ______________________________, con domicilio en ______________________________________________________ de la Ciudad de__________________________________ provincia de _____________________ argentina, en adelante “EL ORGANIZADOR”, conjuntamente denominadas “las Partes”, se celebra el presente Contrato Comercial de Prestación de Servicios de Venta Electrónica de Entradas y Procesamiento de Pagos (en adelante, el “Contrato”), conforme a las siguientes cláusulas:
+
+CAPÍTULO I
+
+DISPOSICIONES GENERALES Y ALCANCE DEL VÍNCULO CONTRACTUAL
+
+1. CLÁUSULA PRIMERA: PARTES INTERVINIENTES.
+
+A los efectos del presente Contrato, se entenderá por ZOCO a ZOCO S.A.S., en su carácter de titular y prestador de la plataforma de venta electrónica de entradas denominada “ZOCO Tickets”.
+
+Asimismo, a los efectos del presente Contrato, se considerará ORGANIZADOR a toda persona humana o jurídica que asuma la responsabilidad de planificar, producir, auspiciar, promover o financiar la realización de un evento gratuito (en adelante, el “Evento”), cualquiera sea su denominación comercial o rol operativo, incluyendo —sin carácter limitativo— a organizadores, productores, coproductores, promotores, sponsors, titulares de derechos o representantes del Evento. Todas estas figuras, individual o solidariamente, serán responsables frente a ZOCO por las obligaciones emergentes de este Contrato, en los términos del Código Civil y Comercial de la Nación y la normativa vigente.
+
+2. CLÁUSULA SEGUNDA: OBJETO
+
+El presente Contrato tiene por objeto establecer los términos y condiciones bajo los cuales ZOCO prestará servicios tecnológicos al ORGANIZADOR, consistentes en:
+
+a) la habilitación y administración de una plataforma digital para la emisión y gestión de entradas gratuitas del Evento;
+
+b) la emisión y distribución electrónica de entradas en nombre y por cuenta del ORGANIZADOR;
+
+c) la provisión de herramientas tecnológicas para el registro de asistentes, validación de accesos y control mediante códigos QR; y
+
+Se deja expresamente establecido que, en el marco del presente Contrato, ZOCO no provee infraestructura de procesamiento de pagos ni canaliza cobros, en razón del carácter gratuito del Evento.
+
+ZOCO no participa en la organización, promoción, ejecución, producción ni habilitación del Evento, actuando exclusivamente como proveedor independiente de servicios tecnológicos.
+
+3. CLÁUSULA TERCERA. NATURALEZA JURÍDICA DE LA RELACIÓN
+
+Las Partes declaran que el presente contrato tiene naturaleza estrictamente comercial.
+ZOCO presta un servicio de plataforma tecnológica a favor del ORGANIZADOR, en su carácter de cliente comercial.
+En ningún caso se generará entre las Partes relación de representación, mandato, agencia, franquicia, sociedad, joint venture o empleo.
+Asimismo, las Partes reconocen que este contrato no se encuentra alcanzado por la Ley N° 24.240 de Defensa del Consumidor ni por la normativa de relaciones de consumo.
+
+4. CLÁUSULA CUARTA: ACEPTACIÓN DE TÉRMINOS Y CONDICIONES COMPLEMENTARIOS
+
+La suscripción del presente Contrato implica la aceptación expresa, plena e incondicionada por parte del ORGANIZADOR de los Términos y Condiciones del Panel del Organizador de ZOCO Tickets, disponibles en el siguiente enlace: https://www.zocotickets.com/event.
+
+El ORGANIZADOR declara haber leído, comprendido y aceptado dichas condiciones, reconociendo que las mismas forman parte integrante del presente Contrato como si aquí se transcribieran en su totalidad.
+
+En consecuencia, las disposiciones contenidas en dichos instrumentos resultarán plenamente aplicables a la relación contractual entre las Partes, en todo aquello que no se oponga expresamente a lo aquí pactado.
+
+CAPÍTULO II – PRESTACIÓN DEL SERVICIO Y COMPROMISOS DE LAS PARTES
+
+CLÁUSULA QUINTA: DE LAS OBLIGACIONES DE ZOCO
+
+ZOCO se obliga, en el marco del presente Contrato, a:
+
+a) habilitar y mantener operativa la plataforma digital “ZOCO Tickets” para la emisión y gestión electrónica de entradas gratuitas correspondientes al Evento, conforme las condiciones técnicas vigentes al momento de su utilización;
+
+b) poner a disposición del ORGANIZADOR el acceso al panel de gestión, a través del cual podrá visualizar en tiempo real la cantidad de asistentes registrados y demás información vinculada a la operatoria del Evento;
+
+c) brindar soporte técnico razonable respecto del funcionamiento de la plataforma y del panel, dentro de los canales y horarios definidos por ZOCO;
+
+d) resguardar la confidencialidad de la información a la que acceda con motivo del presente vínculo y tratar los datos personales conforme la normativa vigente en materia de protección de datos.
+
+Las obligaciones precedentemente descriptas se limitan estrictamente a la prestación de servicios tecnológicos, no asumiendo ZOCO responsabilidad alguna respecto de la organización, realización, seguridad, cancelación, convocatoria ni contenido del Evento, aspectos que permanecen bajo la exclusiva responsabilidad del ORGANIZADOR.
+
+ZOCO no garantiza niveles mínimos de asistencia ni resultados derivados del uso de la plataforma.
+
+CLÁUSULA SEXTA: DE LAS OBLIGACIONES DEL ORGANIZADOR:
+
+a). RESPONSABILIDAD PRINCIPAL DEL ORGANIZADOR: 1. El ORGANIZADOR es el único y exclusivo responsable de la organización, producción, habilitación y realización del Evento, incluyendo la contratación de artistas, la locación del espacio, la seguridad, la logística y la comunicación al público. 2. Asume total responsabilidad frente a los asistentes, artistas, proveedores, autoridades administrativas y cualquier tercero que pudiera verse afectado por el desarrollo, suspensión o cancelación del Evento. 3. Se compromete a mantener indemne a ZOCO frente a cualquier reclamo, sanción o contingencia derivada de la organización, cancelación o ejecución del Evento. 4. El ORGANIZADOR (en su carácter de organizador, productor, promotor y/o sponsor) se obliga a contratar y mantener vigentes los seguros suficientes y obligatorios para la realización del evento bajo su exclusiva cuenta y cargo.
+
+b) HABILITACIONES Y CUMPLIMIENTO NORMATIVO
+
+El ORGANIZADOR será responsable de obtener todas las autorizaciones, permisos y habilitaciones exigidas por las autoridades competentes (municipales, provinciales o nacionales), así como del cumplimiento de la normativa sobre seguridad, higiene, aforo, sanidad, accesibilidad, ruidos, expendio de bebidas y espectáculos públicos.
+ZOCO no tendrá obligación alguna de verificar tales cumplimientos ni asumirá responsabilidad por su falta.
+
+c) PERMISO DE USO DE MARCA E IMÁGENES DEL ORGANIZADOR:
+
+El Organizador autoriza de manera expresa a ZOCO S.A.S. a utilizar su nombre comercial, marca, logotipos, identidad visual y las imágenes, piezas gráficas, audiovisuales y contenidos vinculados a los eventos gestionados a través de la Plataforma, exclusivamente con fines de difusión, promoción, comunicación institucional, comercial y operativa de la Plataforma y de los servicios brindados por ZOCO.
+
+La presente autorización se otorga de forma gratuita, no exclusiva, irrevocable, por tiempo indeterminado y con alcance territorial ilimitado, pudiendo ZOCO utilizar dicho material en sitios web, aplicaciones, redes sociales, material institucional, presentaciones comerciales y demás soportes digitales o físicos vinculados a su actividad.
+
+El Organizador declara ser titular de los derechos necesarios sobre el material autorizado o contar con las autorizaciones correspondientes, manteniendo indemne a ZOCO frente a cualquier reclamo de terceros.
+
+d) CESIÓN DE ESPACIOS PUBLICITARIOS A FAVOR DE ZOCO
+
+El ORGANIZADOR acepta y se obliga, en la medida de lo razonablemente posible y conforme las características del Evento, a incluir, sin costo alguno para ZOCO S.A.S., la marca, nombre comercial, logotipo y/o mensajes institucionales de ZOCO tanto en la Plataforma como en los espacios publicitarios físicos y digitales vinculados al Evento, incluyendo —sin carácter enunciativo— escenario, pantallas, backings, señalética, acreditaciones, material gráfico, redes sociales, sitio web oficial del Evento y cualquier otro soporte de difusión utilizado antes, durante y después de su realización.
+
+Dicha inclusión se realizará conforme a los lineamientos, formatos y especificaciones que ZOCO indique razonablemente, respetando la integridad de su identidad visual y procurando una exhibición adecuada y proporcional a la magnitud, naturaleza y disponibilidad de espacios del Evento.
+
+La cesión de dichos espacios publicitarios se otorga de forma gratuita, no exclusiva y durante toda la vigencia del vínculo contractual, comprendiendo la jornada de realización del Evento y sus instancias previas de promoción, en la medida en que tales espacios existan y se encuentren disponibles.
+
+e) USO DE MATERIAL FOTOGRÁFICO Y AUDIOVISUAL DEL EVENTO
+
+El ORGANIZADOR autoriza de manera expresa, gratuita, no exclusiva, irrevocable y por tiempo indeterminado a ZOCO S.A.S. a utilizar, reproducir, editar, comunicar públicamente, difundir y explotar el material fotográfico, audiovisual y gráfico generado en el marco de los eventos gestionados a través de la Plataforma, incluyendo aquel producido por fotógrafos, filmmakers, productoras audiovisuales u otros prestadores contratados directa o indirectamente por el ORGANIZADOR.
+
+La presente autorización comprende su utilización con fines institucionales, promocionales, comerciales y operativos de ZOCO y de la Plataforma, en cualquier medio, formato o soporte, ya sea digital o físico, existente o que pudiera desarrollarse en el futuro, sin limitación territorial.
+
+El ORGANIZADOR declara y garantiza que:
+
+a) cuenta con los derechos suficientes para otorgar la presente autorización;
+b) ha obtenido las cesiones, licencias y/o permisos necesarios por parte de los autores del material, sus productores, artistas intervinientes y demás titulares de derechos de propiedad intelectual;
+c) ha gestionado las autorizaciones de uso de imagen de las personas eventualmente retratadas, conforme la normativa vigente.
+
+En consecuencia, el ORGANIZADOR asume plena responsabilidad frente a cualquier reclamo, acción judicial o administrativa, intimación o demanda vinculada a derechos de autor, derechos conexos, derechos de imagen o cualquier otro derecho de propiedad intelectual relacionado con el material autorizado, obligándose a mantener indemne y a resarcir integralmente a ZOCO frente a cualquier contingencia derivada de su utilización.
+
+f) VALIDACIÓN Y CONTROL DE ACCESO MEDIANTE LECTOR QR
+
+El ORGANIZADOR deberá utilizar el sistema de validación electrónica provisto por ZOCO para la acreditación y control de ingreso de las entradas emitidas a través de la Plataforma, mediante la aplicación de lectura de códigos QR indicada por ZOCO.
+
+Será exclusiva responsabilidad del ORGANIZADOR la correcta utilización del lector QR, la designación y capacitación del personal afectado al control de acceso, así como la organización operativa de los puntos habilitados para la validación durante el día del Evento.
+
+El ORGANIZADOR deberá prever y garantizar la disponibilidad de dispositivos adecuados, conectividad a internet suficiente y condiciones técnicas necesarias para el correcto funcionamiento del sistema de validación.
+
+ZOCO pone a disposición del ORGANIZADOR las herramientas tecnológicas para la emisión y validación digital de entradas, no asumiendo responsabilidad alguna por la logística de acceso, control físico de ingreso, organización de filas, seguridad, admisión o cualquier otra actividad vinculada a la ejecución material del Evento.
+
+g) INFORMACIÓN A CARGO DEL ORGANIZADOR
+
+Es exclusiva responsabilidad del Organizador detallar, definir y cargar en la Plataforma —o comunicar por los medios que correspondan— la totalidad de los requisitos de admisión, condiciones de acceso, restricciones y prohibiciones aplicables a cada evento.
+
+En particular, deberá informar de manera clara y previa al consumidor, entre otros aspectos: la fecha, horario y lugar de realización del evento; condiciones de ingreso y permanencia; requisitos de acreditación o identificación; y el listado de objetos o elementos prohibidos —tales como pirotecnia, dispositivos de grabación profesional, cámaras fotográficas o de video, sustancias prohibidas, bebidas o productos no autorizados, elementos que puedan afectar la seguridad del evento u otros que determine— quedando su determinación sujeta al exclusivo criterio del Organizador y a la normativa vigente.
+
+El ejercicio del derecho de admisión y permanencia deberá fundarse en condiciones previamente informadas al consumidor y ajustarse a la legislación aplicable.
+
+ZOCO actúa únicamente como intermediario tecnológico y no será responsable por omisiones, errores o falta de actualización en la información suministrada por el Organizador.
+
+h) Uso exclusivo para entradas gratuitas.
+
+El ORGANIZADOR se obliga a utilizar la Plataforma exclusivamente para la emisión y distribución de entradas de carácter gratuito, en concordancia con el objeto y naturaleza del presente Contrato.
+
+En consecuencia, queda expresamente prohibida la creación, publicación, distribución o utilización de entradas con fines de comercialización, reventa o cualquier otra modalidad que implique una contraprestación económica, directa o indirecta, por parte de los asistentes.
+
+En caso de que el ORGANIZADOR desee comercializar entradas, deberá previamente suscribir el contrato específico aplicable a eventos arancelados y cumplir con el procedimiento de admisión y habilitación correspondiente por parte de ZOCO.
+
+El incumplimiento de la presente cláusula facultará a ZOCO a suspender o cancelar el acceso a la Plataforma de forma inmediata, sin perjuicio de las acciones legales que pudieran corresponder.
+
+7. CLÁUSULA SÉPTIMA: CANCELACIÓN, SUSPENSIÓN O REPROGRAMACIÓN DEL EVENTO
+
+En caso de cancelación, suspensión o reprogramación del Evento, cualquiera sea su causa —incluyendo, sin carácter limitativo, fuerza mayor, caso fortuito, decisión unilateral del ORGANIZADOR o disposición de autoridad competente— el ORGANIZADOR deberá comunicarlo de manera inmediata, clara y fehaciente tanto a ZOCO como a los asistentes, informando las condiciones aplicables.
+
+El ORGANIZADOR será el único y exclusivo responsable de brindar información adecuada, veraz y suficiente a los asistentes respecto de la situación del Evento, así como de las decisiones adoptadas frente a los mismos.
+
+ZOCO podrá, a su exclusivo criterio y sujeto a disponibilidad operativa, colaborar técnicamente en las comunicaciones, actuando en todo momento por cuenta y orden del ORGANIZADOR, sin que ello implique asunción de responsabilidad alguna.
+
+En ningún caso ZOCO será responsable frente a asistentes, autoridades o terceros por la cancelación, suspensión o reprogramación del Evento, ni por las consecuencias derivadas de tales circunstancias.
+
+CLÁUSULA OCTAVA: BENEFICIOS Y CONTRAPRESTACIONES COMERCIALES
+
+En consideración a la habilitación y puesta a disposición por parte de ZOCO de la plataforma digital “ZOCO Tickets” para la gestión de entradas del Evento, las Partes acuerdan que el ORGANIZADOR otorgará a ZOCO, como contraprestación comercial, los siguientes beneficios:
+
+a) la cesión de espacios publicitarios dentro del ámbito físico y/o digital del Evento, en condiciones razonables y acordes a su naturaleza y magnitud, para la exhibición de la marca ZOCO, su logotipo y/o materiales institucionales;
+
+b) la inclusión y promoción de la marca ZOCO como proveedor tecnológico del sistema de gestión de entradas en piezas de comunicación, redes sociales, sitio web oficial del Evento, material gráfico y demás soportes de difusión vinculados al mismo, conforme la modalidad que las Partes acuerden;
+
+c) la autorización expresa, gratuita, no exclusiva y sin límite territorial, para que ZOCO utilice imágenes, fotografías, registros audiovisuales y/o material gráfico del Evento con fines institucionales, promocionales o comerciales propios, incluyendo su difusión en medios digitales, redes sociales, presentaciones corporativas y campañas publicitarias;
+
+d) y, en general, cualquier otra acción razonable de visibilidad o posicionamiento de marca que las Partes acuerden en función de las características del Evento.
+
+Las autorizaciones aquí previstas se entenderán otorgadas sin que ello genere derecho a compensación económica adicional a favor del ORGANIZADOR, salvo pacto expreso en contrario.
+
+CLÁUSULA NOVENA: LIMITACIÓN DE RESPONSABILIDAD E INDEMNIDAD
+
+El ORGANIZADOR se obliga a mantener indemne a ZOCO, sus directores, administradores, empleados y sociedades vinculadas frente a cualquier reclamo, acción o contingencia derivada, directa o indirectamente, de la organización, realización, cancelación o cualquier aspecto vinculado al Evento, así como del incumplimiento de obligaciones legales o contractuales a su cargo.
+Dicha obligación comprenderá el reintegro de los gastos y honorarios en que zoco hubiera tenido que incurrir y subsistirá con posterioridad a la finalización del presente Contrato.
+
+CLÁUSULA DÉCIMA – VIGENCIA Y JURISDICCIÓN
+
+El presente Contrato tendrá vigencia desde su firma y se mantendrá operativo hasta la finalización del Evento.
+
+No obstante ello, las obligaciones relativas a indemnidad, uso de material, confidencialidad y cualquier otra que por su naturaleza deba subsistir, permanecerán vigentes hasta su total cumplimiento, aun con posterioridad a la finalización mencionada.
+
+El presente Contrato se regirá por las leyes de la República Argentina.
+
+Las Partes acuerdan someter toda controversia derivada del presente a la jurisdicción de los Tribunales ordinarios de la Provincia de Tucumán, con renuncia expresa a cualquier otro fuero o jurisdicción que pudiera corresponder.
+
+En prueba de conformidad, se firman dos ejemplares de un mismo tenor y a un solo efecto, en la Ciudad de ___________________, a los ______ días del mes de __________ de ______.
