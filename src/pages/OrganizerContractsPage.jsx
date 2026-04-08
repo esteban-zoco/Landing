@@ -41,6 +41,42 @@ const parseContractSections = (rawText) => {
   return sections;
 };
 
+const drawJustifiedLine = (doc, line, x, y, targetWidth, justify) => {
+  const normalized = line.trim().replace(/\s+/g, " ");
+  if (!justify || !normalized.includes(" ")) {
+    doc.text(normalized, x, y);
+    return;
+  }
+
+  const words = normalized.split(" ");
+  const gapCount = words.length - 1;
+  if (gapCount <= 0) {
+    doc.text(normalized, x, y);
+    return;
+  }
+
+  const baseText = words.join(" ");
+  const baseWidth = doc.getTextWidth(baseText);
+  const extraSpace = targetWidth - baseWidth;
+
+  if (extraSpace <= 0) {
+    doc.text(baseText, x, y);
+    return;
+  }
+
+  const regularSpaceWidth = doc.getTextWidth(" ");
+  const extraPerGap = extraSpace / gapCount;
+
+  let cursorX = x;
+  words.forEach((word, index) => {
+    doc.text(word, cursorX, y);
+    cursorX += doc.getTextWidth(word);
+    if (index < gapCount) {
+      cursorX += regularSpaceWidth + extraPerGap;
+    }
+  });
+};
+
 const downloadPdf = async ({ filename, title, body }) => {
   const { jsPDF } = await import("jspdf");
   const doc = new jsPDF({
@@ -69,15 +105,34 @@ const downloadPdf = async ({ filename, title, body }) => {
   y += 8;
   doc.setFont("helvetica", "normal");
   doc.setFontSize(10.5);
-  const textLines = doc.splitTextToSize(body, maxTextWidth);
 
-  textLines.forEach((line) => {
-    if (y > pageHeight - marginBottom) {
-      doc.addPage();
-      y = marginTop;
-    }
-    doc.text(line, marginX, y);
-    y += lineHeight;
+  const paragraphs = body
+    .split(/\n{2,}/)
+    .map((paragraph) => paragraph.replace(/\n+/g, " ").trim())
+    .filter(Boolean);
+
+  paragraphs.forEach((paragraph) => {
+    const lines = doc.splitTextToSize(paragraph, maxTextWidth);
+
+    lines.forEach((line, index) => {
+      if (y > pageHeight - marginBottom) {
+        doc.addPage();
+        y = marginTop;
+      }
+
+      const isLastLineOfParagraph = index === lines.length - 1;
+      drawJustifiedLine(
+        doc,
+        line,
+        marginX,
+        y,
+        maxTextWidth,
+        !isLastLineOfParagraph
+      );
+      y += lineHeight;
+    });
+
+    y += 4;
   });
 
   doc.save(filename);
