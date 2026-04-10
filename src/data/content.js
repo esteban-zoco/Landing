@@ -268,7 +268,7 @@ export const appDownload = {
 export const footerLinks = [
   { label: "Inicio", href: "#" },
   { label: "Eventos", href: "#eventos" },
-  { label: "Política de Privacidad", href: "#" },
+  { label: "Política de Privacidad", href: "/politica-de-privacidad" },
   { label: "Términos y Condiciones", href: "/terminos-y-condiciones-organizador" },
   { label: "Contratos", href: "/contratos" },
   { label: "¿Necesitás soporte?", href: "#" },

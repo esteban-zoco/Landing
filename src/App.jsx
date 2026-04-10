@@ -12,6 +12,7 @@ import AppDownloadSection from "./components/AppDownloadSection";
 import Footer from "./components/Footer";
 import OrganizerTermsPage from "./pages/OrganizerTermsPage";
 import OrganizerContractsPage from "./pages/OrganizerContractsPage";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 
 export default function App() {
   const normalizedPath = window.location.pathname.replace(/\/+$/, "") || "/";
@@ -25,7 +26,13 @@ export default function App() {
     "/contratos-organizador",
     "/contracts",
   ].includes(normalizedPath);
-  const isLegalPage = isOrganizerTermsPage || isOrganizerContractsPage;
+  const isPrivacyPolicyPage = [
+    "/politica-de-privacidad",
+    "/politicas-y-privacidad",
+    "/privacy-policy",
+  ].includes(normalizedPath);
+  const isLegalPage =
+    isOrganizerTermsPage || isOrganizerContractsPage || isPrivacyPolicyPage;
 
   useEffect(() => {
     if (isLegalPage) {
@@ -63,6 +70,9 @@ export default function App() {
   }
   if (isOrganizerContractsPage) {
     return <OrganizerContractsPage />;
+  }
+  if (isPrivacyPolicyPage) {
+    return <PrivacyPolicyPage />;
   }
 
   return (
