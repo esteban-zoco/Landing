@@ -200,7 +200,7 @@ export default function FeatureCards() {
                       </span>
                     </a>
                   </div>
-                  <div className="relative mt-4 flex w-full -translate-y-20 justify-center transition-transform duration-700 md:duration-500 group-hover:-translate-y-8 group-data-[active=true]:-translate-y-8 md:absolute md:bottom-0 md:right-6 md:mt-0 md:w-auto md:translate-y-0 md:justify-end md:group-hover:translate-y-0 md:group-data-[active=true]:translate-y-0 md:group-hover:translate-x-4 md:group-data-[active=true]:translate-x-4">
+                  <div className="relative mt-4 flex w-full -translate-y-20 justify-center transition-transform duration-700 md:duration-500 group-hover:-translate-y-8 group-data-[active=true]:-translate-y-8 group-hover:translate-x-4 group-data-[active=true]:translate-x-4 md:absolute md:bottom-[-10px] md:right-6 md:mt-0 md:w-auto md:translate-y-0 md:justify-end md:group-hover:translate-y-2.5 md:group-data-[active=true]:translate-y-2.5 md:group-hover:translate-x-11 md:group-data-[active=true]:translate-x-11">
                     <img
                       src={panelMobileImage}
                       alt="GestiÃ³n en un solo panel"
